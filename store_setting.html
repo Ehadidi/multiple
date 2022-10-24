@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .ck-editor__main {
+            height: 70px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                    <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="dashboard_logo">
+                        <div class="container-fluid">
+                            <img src="images/logo.svg" alt="">
+                            <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                        </div>
+                    </div>
+                    <div class="user_nav">
+                        <div class="container-fluid">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <form class="search_form">
+                                    <div class="d-flex align-items-center">
+                                        <label class="mb-0">
+                                            <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                        </label>
+                                        <div class="nice_select_label">
+                                            <select class="filter_search niceSelect" type="text">
+                                                <option value="">الطلبات</option>
+                                                <option value="">المنتجات</option>
+                                                <option value="">العملاء</option>
+                                            </select>
+                                        </div>
+                                        <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                                <div class="user_dropdown dropdown pl-3 pr-3">
+                                    <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user_box">
+                                            <img src="images/4284.jpg" alt="">
+                                            <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="user_drop">
+                                        <a class="dropdown-item default_link" href="profile.html" type="button">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="ml-2 mr-2">الملف الشخصي</span>
+                                        </a>
+                                        <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <span class="ml-2 mr-2">التنبيهات</span>
+                                        </a>
+                                        <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                            <i class="fa-solid fa-wrench"></i>
+                                            <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item default_link" href="login.html" type="button">
+                                            <i class="fa-solid fa-power-off"></i>
+                                            <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <div class="d-flex justify-content-between">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">اعدادت المتجر</li>
+                        </ol>
+                    </nav>
+                    <div class="help">
+                        <a href="#"><i class="far fa-life-ring"></i> مساعدة ؟
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="settingInfo d-flex justify-content-between mb-4">
+                            <div class="info d-flex flex-column">
+                                <h4>سلة برو</h4>
+                                <p class="newSub"> التجديد القادم في الاثنين 27 يونيو 2022 </p>
+                                <p class="moreInfo"> الباقة المثالية لتوسع متجرك من خلال أدوات التسويق والخدمات بدون قيود </p>
+                                <div class="infoLinks d-flex justify-content-start">
+                                    <a href="#">استكشف مزايا الباقة</a>
+                                    <a href="#">  ترقية الباقة</a>
+                                </div>
+                            </div>
+
+                            <div class="svg"><img src="images/online-shopping.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="settingInfo d-flex flex-column align-items-center">
+                            <p>اكسب نقاط ولاء عن كل متجر جديد</p>
+
+                            <div class="copyCupon d-flex">
+                                <i class="fas fa-battery-full"></i>
+                                <span id="code" class="code">298f4%*$$#</span>
+                                <i class="fas fa-clone" 
+                                    id="clone"
+                                    data-clipboard-demo=""
+                                    data-clipboard-target="#code"
+                                    data-bs-toggle="tooltip"
+                                ></i>
+                            </div>
+
+                            <div class="socialIcons d-flex justify-content-center mt-3 mb-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                                <a href="#"><i class="fas fa-at"></i></a>
+                            </div>
+
+                            <div class="midPoint">
+                                <p class="mid">نقطة الولاء : <span>12345</span></p>
+                            </div>
+
+                            <div class="Models">
+                                <button href="" data-toggle="modal" data-target="#ques_answ" class=" default_link btn round_btn_main ques">اسئلة واجوبة</button>
+                                <button href="" data-toggle="modal" data-target="#make_point" class=" default_link btn round_btn_main points">سجل النقاط</button>
+
+                                <!--  بداية اسئلة واجوبة  -->
+                                <div id="ques_answ" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal__title">
+                                                <span><b>تفاصيل كوبون الدعوة</b></span>
+                                                <button type="button" class="close_modal btn" data-dismiss="modal">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal_body mt-3 p-4">
+                                                <p class="font-weight-bold">كيفية الاستفادة من كوبون الدعوة ؟</p>
+
+                                                <ol class="mt-3 mb-3">
+                                                    <li>انسخ الكوبون وارسله للشخص الذي ترغب بدعوته.</li>
+                                                    <li>يقوم الشخص بإستخدام كوبون التخفيض عند الاشتراك لأول مرة* في إحدى الباقات.</li>
+                                                    <li>يحصل هو على خصم 10% وتكسب أنت قيمة 10% من اشتراكه في رصيد متجرك في حال الاشتراك بالباقة الشهرية.</li>
+                                                    <li>يحصل هو على خصم 20% وتكسب أنت قيمة 20% من اشتراكه في رصيد متجرك في حال الاشتراك بالباقة السنوية.</li>
+                                                </ol>
+
+                                                <p class="text-danger mt-2 mb-w">* ينطبق الكوبون على المتاجر الجديدة فقط</p>
+
+                                                <p>مثال توضيحي/ عند اشتراك المتجر لأول مرة بواسطة كوبون الدعوة، مثلا في باقة سلة بلس لمدة سنة (990 ريال) سيحصل هو على 10% خصم وتصبح (891 ريال)، وستنتقل قيمة الخصم الخاصة به وهي (99 ريال) إلى رصيدك أي ستحصل على شهر مجاناً عن كل متجر جديد !</p>
+
+                                                <p class="font-weight-bold mt-2 mb-4">أسئلة وأجوبة</p>
+
+                                                <p >ماهي المتاجر التي ممكن أن تستفيد من كوبون الدعوة؟</p>
+                                                <p class="mb-4"> المتاجر الجديدة التي لم يسبق لها الاشتراك في إحدى الباقات المدفوعة.</p>
+
+                                                <p >هل يمكن استخدام الكوبون أكثر من مرة للمتجر الواحد؟</p>
+                                                <p class="mb-4">لا يمكن ذلك</p>
+
+                                                <p>هل يوجد حد لعدد المتاجر التي يمكن دعوتها؟</p>
+                                                <p class="mb-4"> لا يوجد حد لعدد المتاجر المدعوة. </p>
+
+                                                <p>كيف يمكنني استبدال الرصيد الذي حصلت عليه؟</p>
+                                                <p class="mb-4"> يمكن الاستفادة منه عند تجديد أو ترقية الباقة الخاصة بك وذلك عند إتمام الطلب من متجر سلة.</p>
+
+                                                <p>هل يمكنني الحصول على بوليصات شحن من خلال رصيد المتجر؟</p>
+                                                <p class="mb-4">  لا يمكن ذلك. </p>
+
+                                                <p>هل يمكنني الحصول على بوليصات شحن من خلال رصيد المتجر؟</p>
+                                                <p class="mb-4">  لا يمكن ذلك. </p>
+
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  نهاية اسئلة واجوبة  -->
+
+                                <!--  بداية  الاجوبة  -->
+                                <div id="make_point" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal__title">
+                                                <span><b>سجل النقاط</b></span>
+                                                <button type="button" class="close_modal btn" data-dismiss="modal">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal_body mt-3 p-4">
+                                                <!-- one Item -->
+                                                <div class="storeItem d-flex justify-content-between align-items-center">
+                                                    <div class="d-flex">
+                                                        <a href="#"><img src="images/appstore.png" alt=""></a>
+                                                        <a href="#" class="name"><p>
+                                                        FactoryGamesSA / فاكتوري قيمز
+                                                        </p></a>
+                                                    </div>
+
+                                                    <div class="d-flex">
+                                                        <p class="rate">9.9</p>
+                                                        <p class="date">من سنتين</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  نهاية الاجوبة   -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- start modules -->
+                <div class="modules mt-4 mb-4">
+                    <p class="moduleName">اعدادات المنتجات</p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="mainSettings.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-cog"></i></span>
+                                    <p class="summary">الاعدادات الاساسية</p>
+                                    <p class="details">الرابط , الشعار , الاسم , المقر</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="Shipping_delivery.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-truck-moving"></i></span>
+                                    <p class="summary"> خبارات الشحن والتوصيل</p>
+                                    <p class="details">الربط مع شركات الشحن</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="payment_settings.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-credit-card"></i></span>
+                                    <p class="summary"> طرق الدفع</p>
+                                    <p class="details">تفعيل المدفوعات الالكترونية</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="wallet.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-credit-card"></i></span>
+                                    <p class="summary"> المحفظة والفواتير</p>
+                                    <p class="details">رصيد المحفظة , الفواتير</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="Currencies.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+                                    <p class="summary">العملات </p>
+                                    <p class="details">العملات المتاحة في المتجر</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="Store_Options.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-sliders-h"></i></span>
+                                    <p class="summary">خبارات المتجر </p>
+                                    <p class="details">خيارات التحكم بالمتجر</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="languages.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-language"></i></span>
+                                    <p class="summary">اللغات </p>
+                                    <p class="details">تفعيل تعدد اللغات</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="domain_settings.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-globe"></i></span>
+                                    <p class="summary">اعدادات الدومين </p>
+                                    <p class="details">التحكم في اعدادت الدومين في المتجر</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a data-toggle="modal" data-target="#maintenance" href="">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="far fa-stop-circle"></i></span>
+                                    <p class="summary">وضع الصيانة </p>
+                                    <p class="details">اغلاق المتجر بشكل مؤقت</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a data-target="#rate_settings" data-toggle="modal" href="">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-medal"></i></span>
+                                    <p class="summary">اعددات التقييم </p>
+                                    <p class="details">تحديد اعدادت التقييم الخاصة بالمتجر</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="rules_settings.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                                    <p class="summary"> قيود شركات الشحن</p>
+                                    <p class="details">اضافة قيود محددة لشركات الشحن</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="payment_rules.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                    <p class="summary"> الحماية من الإحتيال</p>
+                                    <p class="details">إضافة قيود محددة للحماية من الاحتيال</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="notification.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-bell"></i></span>
+                                    <p class="summary"> الاشعارات</p>
+                                    <p class="details">اعداد الاشعار الخاص بك</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a data-toggle="modal" data-target="#bells_settings" href="">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-scroll"></i></span>
+                                    <p class="summary"> اعدادات فواتير المتجر</p>
+                                    <p class="details">التحكم بالفواتير الصادرة</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modules mt-4 mb-4">
+                    <p class="moduleName">اعدادات المتجر</p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <a data-target="#Notify_me" data-toggle="modal" href="">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-user-clock"></i></span>
+                                    <p class="summary">اعلمني عند التوقر </p>
+                                    <p class="details">ارسال تنبيه الى العميل في حالة توفر المنتج</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="brands_settings.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-bookmark"></i></span>
+                                    <p class="summary"> الماركات التجارية</p>
+                                    <p class="details">عرض الماركات التجارية والتحكم بها</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a data-target="#Inventory" data-toggle="modal" href="">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-archive"></i></span>
+                                    <p class="summary"> اعدادات المخزون </p>
+                                    <p class="details">تحديد الاعدادات الخاصة بالمنتجات وكميتها وطريقة عرضها</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modules mt-4 mb-4">
+                    <p class="moduleName">الاعدادات المتقدمة </p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="Installed_apps.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-box-open"></i></span>
+                                    <p class="summary"> التطبيقات </p>
+                                    <p class="details">تطبيقات متجر سلة  </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="Installed_apps.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-puzzle-piece"></i></span>
+                                    <p class="summary"> ربط الخدمات</p>
+                                    <p class="details">الاحصائيات , الاعلانات , الشات</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="store_employees.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-users"></i></span>
+                                    <p class="summary">موظفو المتاجر</p>
+                                    <p class="details">التحكم في صلاحيات موظفو المتاجر</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="store_branches.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-box-open"></i></span>
+                                    <p class="summary"> الفروع والمستودعات</p>
+                                    <p class="details">استلام الطلبات من الفروع والمستودعات</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="safe_settings.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fab fa-keycdn"></i></span>
+                                    <p class="summary">الحماية والامن </p>
+                                    <p class="details">تغعيل المصادقة الثانئية</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="advertisements.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-microphone"></i></span>
+                                    <p class="summary">الاعلانات </p>
+                                    <p class="details">عرض الاعلانات للعملاء في المتجر</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="SEO_settings.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-search"></i></span>
+                                    <p class="summary">SEO </p>
+                                    <p class="details">تحسين الظهور في محركات البحث</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="taxes.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-scroll"></i></span>
+                                    <p class="summary">ضريبة القيمة المضافة </p>
+                                    <p class="details">اعدادت الضريبة</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="special_links.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-link"></i></span>
+                                    <p class="summary">روابط مخصصة </p>
+                                    <p class="details">روابط مخصصة ضمن نطاق متجرك</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="account_manage.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-shield-alt"></i></span>
+                                    <p class="summary"> التحكم بالحساب</p>
+                                    <p class="details">ايقاف الاشتراك حذف المتجر</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="Data_import.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-upload"></i></span>
+                                    <p class="summary"> استيراد البيانات</p>
+                                    <p class="details">استيردا البيانات من مختلف المنصات</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modules mt-4 mb-4">
+                    <p class="moduleName">الارشيف</p>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <a href="archive_payment.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-scroll"></i></span>
+                                    <p class="summary"> عمليات الدفع الالكتروني</p>
+                                    <p class="details">البحث في عميات الدفع الالكتروني</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <a href="message_archive.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-folder-open"></i></span>
+                                    <p class="summary">ارشيف الرسائل النصية </p>
+                                    <p class="details">الرسائل الصادرة من المتجر</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <a href="restore_data.html">
+                                <div class="moduleItem d-flex justify-content-center align-items-center flex-column">
+                                    <span class="icon"><i class="fas fa-trash-alt"></i></span>
+                                    <p class="summary"> استعادة البيانات </p>
+                                    <p class="details">استعادة البيانات والطلبات المحذوفة</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end modules -->
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--maintenance-->
+<div id="maintenance" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>وضع الصيانة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">وضع الصيانة</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    بعد تفعيل وضع الصيانة ستتمكن لوحدك من الدخول للمتجر والعمل على تجهيزه، بينما العملاء ستظهر لهم صفحة الصيانة. للاطلاع عليها قم بالدخول على متجرك من متصفح آخر أو بتسجيل الخروج من لوحة التحكم
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="d-block mt-2 mb-2 fontBold">العنوان الرئيسي للصيانة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="عنوان حالة الموقع المغلق">
+                                        <span class="input_icon"><i class="fa-solid fa-a"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="d-block mt-2 mb-2 fontBold">رسالة الصيانة</span>
+                                    <label class="position-relative w-100">
+                                        <div class="form_textarea"><textarea style="min-height: 70px;" type="text" placeholder="نص حلة الموقع المغلق"></textarea></div>
+                                        <span class="input_icon"><i class="fas fa-book"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end maintenance-->
+
+<!--rate_settings-->
+<div id="rate_settings" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>وضع الصيانة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">نشر تقييم المتجر تلقائيا</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    نشر تقييمات المتجر مباشرة دون الحاجة للمراجعة
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">نشر تقييم المنتجات تلقائيا</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    نشر تقييمات المتجر مباشرة دون الحاجة للمراجعة
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">طلب تقييم المتجر</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    طلب تقييمات المتجر من العميل
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">طلب تقييم شركة الشحن</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    طلب تقييمات شركة الشحن من العميل
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">طلب تقييم المنتجات</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    طلب تقييمات المنتجات من العميل
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column mb-2">
+                                    <h6 class="font13 fontBold">رسالة الشكر</h6>
+                                    <p class="text-secondary font12">
+                                        رسالة الشكر التى تظهر للعميل بعد الانتهاء من التقييم
+                                    </p>
+                                </div>
+                                <div id="editor"></div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">ارسال رسائل طلب التقييم</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    حدد المدة التي ترغب بأن تصل فيها رسالة التقييم بعد أن يصبح الطلب ضمن إحدى الحالات التالية (تم التنفيذ، تم التوصيل، تم الشحن)
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="وقت اﻷرسال بعد اكتمال الطلب">
+                                        <span class="input_icon"><i class="fa-solid fa-calendar"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                   <h6 class="fontBold font13"> نص الرسالة</h6>
+                                    <p class="text-secondary font11">اختيار طريقة الارسال ونص الرسالة.</p>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">رسائل SMS</option>
+                                        <option value="">نوع الصفحة</option>
+                                        <option value="">الخصوصية</option>
+                                        <option value="">عامة</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="offer_message" id="editor1"></div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="prev_message_title">
+                                    <span class="d-flex align-items-center text-secondary"><i class="fa-solid fa-eye ml-2 mr-2"></i>معاينة الرسالة</span>
+                                </div>
+                                <div class="message_prev main_bg">
+                                    <p class="txt__prev"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end rate_settings-->
+
+
+<!--bells_settings-->
+<div id="bells_settings" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>إعدادات الفواتير</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <div class="d-flex flex-column">
+                                        <h6 class="fontBold font12">عنوان المتجر</h6>
+                                        <p class="text-secondary font11">إضافة عبارة مخصصة قبل اسم المتجر، أعلى الفاتورة</p>
+                                    </div>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="عنوان المتجر">
+                                        <span class="input_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font12"> طريقة إصدار الفاتورة</h6>
+                                    <p class="text-secondary font11">في حال اختيار مزود مختلف عن سلة , سيكون التاجر مسؤول عن ربط الفوترة مع سلة</p>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">سلة</option>
+                                        <option value="">مخصص</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">عرض الرقم الضريبي</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    عرض الرقم الضريبي الخاص بالمتجر أعلى الفاتورة
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">إخفاء صور المنتجات من الفاتورة</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    عدم إظهار صورة المنتج في تفاصيل الفاتورة
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">عرض وصف المنتجات</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    عرض نبذة من وصف المنتجات أسفل أسماء المنتجات
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">عرض الأسعار بعد التخفيض</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    عرض أسعار المنتجات قبل وبعد التخفيض
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">عرض بيانات التواصل</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    عرض بيانات التواصل بالمتجر أسفل الفاتورة
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">عرض الإقرار في الفاتورة/تفاصيل الطلب</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    عرض نصّ الإقرار أسفل فاتورة الطلب
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">إرسال الفاتورة/ تفاصيل الطلب تلقائياً</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    عند إتمام الطلب ترسل الفاتورة بشكل تلقائي للعميل
+                                </p>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font12"> اختيار حالات الطلب</h6>
+                                    <p class="text-secondary font11">خصص حالات الطلب التي تود إرسال الفاتورة فيها بشكل تلقائي</p>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">ملغي</option>
+                                        <option value="">تم التنفيذ</option>
+                                        <option value="">بإنظار المراجعة</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end bells_settings-->
+
+
+<!--Notify_me-->
+<div id="Notify_me" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>اعلمني عند التوفر</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">تفعيل اعلمني عند التوفر</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" checked class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    السماح للعملاء بالاشتراك في اعلمني عند التوفر
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font13"> نص الرسالة</h6>
+                                    <p class="text-secondary font11 mb-0">اختيار طريقة الارسال ونص الرسالة.</p>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">رسائل SMS</option>
+                                        <option value="">البريد الإلكتروني</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="offer_message" id="editor2"></div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="prev_message_title">
+                                    <span class="d-flex align-items-center text-secondary"><i class="fa-solid fa-eye ml-2 mr-2"></i>معاينة الرسالة</span>
+                                </div>
+                                <div class="message_prev main_bg">
+                                    <p class="txt__prev"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end Notify_me-->
+
+<!--Inventory-->
+<div id="Inventory" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>إعدادات المخزون</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">عرض المنتجات التي نفذت</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" checked class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    تفعيل هذه الخاصية يتيح للعميل استعراض المنتجات التي نفذت وغير متوفرة في المتجر.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">تحديد كمية المنتج يدوياً</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" checked class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    تفعيل هذه الخاصية يتيح للعميل إدخال كمية المنتج بشكل يدوي.
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex align-items-center justify-content-between mb-2">
+                                    <h6 class="font13 fontBold">عرض المنتجات التي نفذت في نهاية الصفحات</h6>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" checked class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-secondary font12">
+                                    تفعيل هذه الخاصية يتيح للعميل استعراض المنتجات التي نفذت وغير متوفرة في نهاية الصفحة للمتجر.
+                                </p>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font13"> إظهار الكمية المتبقية للمنتج في صفحة المنتج</h6>
+                                    <p class="text-secondary font11 mb-0">تفعيل هذه الخاصية يتيح للعميل استعراض الكمية المتبقية للمنتج في صفحة المنتج.</p>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">إخفاء الكمية</option>
+                                        <option value="">إظهار الكمية</option>
+                                        <option value="">عرض الكمية اقل من 5 قطع</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end Inventory-->
+
+<!-- for copy => cliborad.js -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/d3-5.8.2.min.js"></script>
+<script src="js/c3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+            console.log( editor );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+
+    ClassicEditor
+        .create( document.querySelector( '#editor1' ) )
+        .then( editor => {
+            console.log( editor );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+
+    ClassicEditor
+        .create( document.querySelector( '#editor2' ) )
+        .then( editor => {
+            console.log( editor );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<!-- cliborard -->
+<script>
+    let btn = document.getElementById('clone');
+    let clipboard = new ClipboardJS(btn);
+</script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="creatStoreBody">
+
+<!--register form-->
+<section class="register pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12 p-0">
+                <div class="create_steps">
+                    <div class="logo mb-4 mt-4">
+                        <div class="main_color d-flex align-items-center"  href="index.html">
+                            <img style="width: 40px" src="images/logo.svg" alt="logo">
+                            <h5 class="mb-0 ml-3 mr-3"><b>سلة</b></h5>
+                        </div>
+                    </div>
+                    <ul class="steps_list">
+                        <li class="completed">
+                            <div class="step_link">
+                                <span class="num"><i class="fas fa-check"></i></span>
+                                <span class="ml-3 mr-3"><b>معلومات المتجر</b></span>
+                            </div>
+                        </li>
+                        <li class="act">
+                            <div class="step_link">
+                                <span class="num">2</span>
+                                <span class="ml-3 mr-3"><b>هوية المتجر</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">3</span>
+                                <span class="ml-3 mr-3"><b>موقع استلام الشحنات</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">4</span>
+                                <span class="ml-3 mr-3"><b>شركات الشحن</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">5</span>
+                                <span class="ml-3 mr-3"><b>الدفع الإلكتروني</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">6</span>
+                                <span class="ml-3 mr-3"><b>باقات سلة</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">7</span>
+                                <span class="ml-3 mr-3"><b>تدشين الموقع</b></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-12 p-0">
+                <div class="form_wrapper">
+                    <div class="create_title">
+                        <h5 class="main_color"><b>صف نشاط متجرك لعملائك</b></h5>
+                        <span>سيظهر الشعار والتعريف المكتوب أدناه في متجرك الإلكتروني لعملائك. ويمكنك التعديل عليهما لاحقا بعد إتمام التسجيل</span>
+                    </div>
+                    <form>
+                        <div class="row mt-5">
+                            <div class="col-12 mb-3 mt-3">
+                                <div class="form_input">
+                                    <label for="category" class="form_label"><b>ﻣﺎ ﻓﺌﺔ ﺗﺠﺎرﺗﻜﻢ؟</b></label>
+                                    <select id="category" class="select2" name="states[]" multiple="multiple">
+                                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Wyoming</option>
+                                        </optgroup>
+                                        <optgroup label="Alaskan/Hawaiian Time Zone">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Wyoming</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3 mt-3">
+                                <span class="form_label"><b>أضف الشعار</b><span class="text-secondary">(اختياري)</span></span>
+                                <div class="img-block">
+                                    <div class="upload-icon">
+                                        <img src="images/upload-icon.svg" alt="">
+                                        <span><b>اسحب الشعار الي هنا او اختره <span class="main_color">من الجهاز</span></b></span>
+                                    </div>
+                                    <input class="heddenUploud" type="file" name="images[]">
+                                    <div class="gallery topG">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3 mt-3">
+                                <div class="form_textarea">
+                                    <label for="store_describe" class="form_label"><b>وصف النشاط</b><span class="text-secondary">(اختياري)</span></label>
+                                    <textarea id="store_describe" type="text" placeholder="وصف النشاط"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="create_store_register.html" class="btn next_step">السابق</a>
+                                    <div>
+                                        <a href="step_three.html" class="btn next_step">تخطي</a>
+                                        <a href="step_three.html" class="btn submit_btn next_step">التالي</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end register form-->
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script>
+    $(function () {
+        var imagesPreview = function (input, placeToInsertImagePreview) {
+            $('.gallery').empty();
+            if (input.files) {
+                var filesAmount = input.files.length;
+                for (i = 0; i < filesAmount; i++) {
+                    var reader = new FileReader();
+                    reader.onload = function (event) {
+                        var image = document.createElement('img');
+                        image.setAttribute('src', event.target.result);
+                        // var fancyLink = document.createElement('a');
+                        var body = document.createElement('div');
+                        var button = document.createElement('button');
+                        // var input = document.createElement('input');
+                        // input.setAttribute('name', 'images[]');
+                        // input.setAttribute('type', 'hidden');
+                        button.setAttribute('class', 'close');
+                        button.innerHTML = '<i class="fa fa-times-circle"></i>';
+                        body.appendChild(image);
+                        // fancyLink.appendChild(image);
+                        body.appendChild(input);
+                        body.appendChild(button);
+                        body.setAttribute('class', 'images');
+                        // fancyLink.setAttribute('href', event.target.result);
+                        console.log(body);
+                        $('.gallery').append(body);
+                        ($($.parseHTML(body)).appendTo(placeToInsertImagePreview));
+                    }
+                    reader.readAsDataURL(input.files[i]);
+                }
+            }
+        };
+        $(document).on('click', '.close', function (event) {
+            event.preventDefault();
+            $(this).parent().remove();
+            $(".heddenUploud").val("");
+        });
+        $('.heddenUploud').on('change', function () {
+            imagesPreview(this, $(this).parent('.img-block').find(".gallery"));
+        });
+    });
+</script>
+</body>
+</html>

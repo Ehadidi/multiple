@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/flatpicker.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <!-- this for reports page -->
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+    <!-- end reports page -->
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/style_ltr.css">-->
+    <title>multi tenant</title>
+
+    <style>
+        .report_type_input > div:not(:first-child){
+            display: none;
+
+        }
+        .table td, .table th {
+            vertical-align: middle;
+            border-top: 1px solid #ededed75;
+            padding: 13px 6px !important;
+        }
+        .avatar_user {
+            width: 40px;
+            height: 40px;
+        }
+        #customer_pie_charts,#satisfaction_charts,#most_hours_chart,#shipping_companies_chart,#payment_methods_chart{
+            height: 300px;
+            direction: ltr;
+        }
+        .c3 text {
+            fill: #1a1e21;
+        }
+    </style>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                    <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="dashboard_logo">
+                        <div class="container-fluid">
+                            <img src="images/logo.svg" alt="">
+                            <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                        </div>
+                    </div>
+                    <div class="user_nav">
+                        <div class="container-fluid">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <form class="search_form">
+                                    <div class="d-flex align-items-center">
+                                        <label class="mb-0">
+                                            <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                        </label>
+                                        <div class="nice_select_label">
+                                            <select class="filter_search niceSelect" type="text">
+                                                <option value="">الطلبات</option>
+                                                <option value="">المنتجات</option>
+                                                <option value="">العملاء</option>
+                                            </select>
+                                        </div>
+                                        <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                                <div class="user_dropdown dropdown pl-3 pr-3">
+                                    <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user_box">
+                                            <img src="images/4284.jpg" alt="">
+                                            <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="user_drop">
+                                        <a class="dropdown-item default_link" href="profile.html" type="button">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="ml-2 mr-2">الملف الشخصي</span>
+                                        </a>
+                                        <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <span class="ml-2 mr-2">التنبيهات</span>
+                                        </a>
+                                        <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                            <i class="fa-solid fa-wrench"></i>
+                                            <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item default_link" href="login.html" type="button">
+                                            <i class="fa-solid fa-power-off"></i>
+                                            <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">التقارير</li>
+                    </ol>
+                </nav>
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+
+                    <div class="date_range">
+                        <div class="title_card W_auto bg-white">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-2 mr-2"><i class="fa-solid fa-calendar-day"></i></span>
+                                <span><b>تاريخ التقرير</b></span>
+                            </div>
+                        </div>
+                        <input class="dateRangePicker" readonly type="text" placeholder="date">
+                    </div>
+
+                    <!--<div id="dateRangePicker" class="position-relative"></div>-->
+                    <div class="d-flex align-items-center">
+                        <button class="btn white_btn export_report"><i class="fa-solid fa-share-from-square ml-1 mr-1"></i> تصدير</button>
+                        <button class="btn white_btn print_report"><i class="fa-solid fa-print ml-1 mr-1"></i> طباعة</button>
+                    </div>
+                </div>
+                <div class="main_card mt-4 mb-4">
+                    <div class="title_card bg-white">
+                        <span class="font15"><b>نوع التقرير</b></span>
+                        <div class="custom_arrow">
+                            <button class="reportTypeRight"><i class="fa-solid fa-angle-right"></i></button>
+                            <button class="reportTypeLeft"><i class="fa-solid fa-angle-left"></i></button>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="report_type">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item active" id="sales_tab" data-toggle="tab" href="#nav_sales" role="tab" aria-controls="nav_sales" aria-selected="true">
+                                    <button class="btn font14 fontBold text-secondary white_btn w-100 pt-2 pb-2">
+                                        <i class="fa-solid fa-wallet"></i>
+                                        <span>المبيعات</span>
+                                    </button>
+                                </a>
+                                <a class="nav-item" id="product_tab" data-toggle="tab" href="#nav_product" role="tab" aria-controls="product_tab" aria-selected="true">
+                                    <button class="btn font14 fontBold text-secondary white_btn w-100 pt-2 pb-2">
+                                        <i class="fas fa-tshirt"></i>
+                                        <span>المنتجات</span>
+                                    </button>
+                                </a>
+                                <a class="nav-item" id="customer_tab" data-toggle="tab" href="#nav_customer" role="tab" aria-controls="customer_tab" aria-selected="true">
+                                    <button class="btn font14 fontBold text-secondary white_btn w-100 pt-2 pb-2">
+                                        <i class="fas fa-users"></i>
+                                        <span>العملاء</span>
+                                    </button>
+                                </a>
+                                <a class="nav-item" id="visits_tab" data-toggle="tab" href="#nav_visits" role="tab" aria-controls="nav_visits" aria-selected="true">
+                                    <button class="btn font14 fontBold text-secondary white_btn w-100 pt-2 pb-2">
+                                        <i class="fa-solid fa-link"></i>
+                                        <span>الزيارات</span>
+                                    </button>
+                                </a>
+                                <a class="nav-item" id="mostCall_tab" data-toggle="tab" href="#nav_mostCall" role="tab" aria-controls="nav_mostCall" aria-selected="true">
+                                    <button class="btn font14 fontBold text-secondary white_btn w-100 pt-2 pb-2">
+                                        <i class="fas fa-tshirt"></i>
+                                        <span>الاكثر طلبا</span>
+                                    </button>
+                                </a>
+                                <a class="nav-item" id="mostSearch_tab" data-toggle="tab" href="#nav_mostSearch" role="tab" aria-controls="nav_mostSearch" aria-selected="true">
+                                    <button class="btn font14 fontBold text-secondary white_btn w-100 pt-2 pb-2">
+                                        <i class="fas fa-tshirt"></i>
+                                        <span>الاكثر بحثا</span>
+                                    </button>
+                                </a>
+                                <a class="nav-item" id="pay_recharge_tab" data-toggle="tab" href="#nav_pay_recharge" role="tab" aria-controls="nav_pay_recharge" aria-selected="true">
+                                    <button class="btn font14 fontBold text-secondary white_btn w-100 pt-2 pb-2">
+                                        <i class="fa-solid fa-truck"></i>
+                                        <span>الدفع و الشحن</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="report_type_input row mb-3">
+                            <div class="sales_tab col-12">
+                                <div class="inputs_row align-items-center">
+                                    <div class="flex-5">
+                                        <span class="fontBold">اختر التقرير الفرعي</span>
+                                        <div class="input_select p-0">
+                                            <select class="niceSelect sell_report_select">
+                                                <option selected value="cod_sell">مبيعات الاكواد</option>
+                                                <option value="branch_sales">مبيعات الفروع</option>
+                                                <option value="city_sales">مبيعات المدن</option>
+                                                <option value="Categories_sales">مبيعات التصنيفات</option>
+                                                <option value="Product_requests">طلبات المنتجات</option>
+                                                <option value="Summary">ملخص</option>
+                                                <option value="Sales_coupons">مبيعات كوبونات التخفيض</option>
+                                                <option value="Brand_sales">مبيعات الماركات</option>
+                                                <option value="product_sales">مبيعات المنتجات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 mt-3">
+                                       <button class="btn main_btn w-100 mt-1 ml-2 mr-2">عرض</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_tab col-12">
+                                <div class="inputs_row align-items-center">
+                                    <div class="flex-5">
+                                        <span class="fontBold">اختر التقرير الفرعي</span>
+                                        <div class="input_select p-0">
+                                            <select class="niceSelect product_report_select">
+                                                <option value="available">اعلمني عند التوفر</option>
+                                                <option value="most_profit">المنتجات الاكثر ربحا</option>
+                                                <option value="pending_carts">السلات المتروكة</option>
+                                                <option value="most_seller">المنتجات الأكثر مبيعا</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="flex-1 mt-3">
+                                        <button class="btn main_btn w-100 mt-1 ml-2 mr-2">عرض</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav_sales" role="tabpanel" aria-labelledby="sales_tab">
+                            <div class="main_card mt-4 mb-4 cod_sell">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>مبيعات الأكواد الرقمية</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">الأكواد</th>
+                                            <th scope="col" class="text-secondary">اجمالي المبيعات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>#455666</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#455666</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#455666</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 branch_sales d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>مبيعات الفروع</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">الفرع</th>
+                                            <th scope="col" class="text-secondary">اجمالي المبيعات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>اسم الفرع</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>اسم الفرع</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>اسم الفرع</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 city_sales d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>مبيعات المدن</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">المدينه</th>
+                                            <th scope="col" class="text-secondary">اجمالي المبيعات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>اسم المدينه</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>اسم المدينه</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>اسم المدينه</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 Categories_sales d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>مبيعات التصنيفات</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">التصنيف</th>
+                                            <th scope="col" class="text-secondary">الكمية المباعة</th>
+                                            <th scope="col" class="text-secondary">المبيعات قبل التخفيض</th>
+                                            <th scope="col" class="text-secondary">التخفيض</th>
+                                            <th scope="col" class="text-secondary">صافي المبيعات</th>
+                                            <th scope="col" class="text-secondary">الضرائب</th>
+                                            <th scope="col" class="text-secondary">اجمالي المبيعات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>اسم التصنيف</td>
+                                            <td>5</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>اسم التصنيف</td>
+                                            <td>5</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>اسم التصنيف</td>
+                                            <td>5</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 Product_requests d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>طلبات المنتجات</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">المنتج</th>
+                                            <th scope="col" class="text-secondary">رقم التخزين</th>
+                                            <th scope="col" class="text-secondary">الماركه</th>
+                                            <th scope="col" class="text-secondary">الكمية</th>
+                                            <th scope="col" class="text-secondary">اجمالي</th>
+                                            <th scope="col" class="text-secondary">رقم الطلب</th>
+                                            <th scope="col" class="text-secondary">تاريخ الطلب</th>
+                                            <th scope="col" class="text-secondary">حالة الطلب</th>
+                                            <th scope="col" class="text-secondary">طريقة الدفع</th>
+                                            <th scope="col" class="text-secondary">اسم العميل</th>
+                                            <th scope="col" class="text-secondary">رقم الجوال</th>
+                                            <th scope="col" class="text-secondary">البريد الإلكتروني</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/01.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>B2 6-4-7</td>
+                                            <td>ابل</td>
+                                            <td>5</td>
+                                            <td>258505 ر.س</td>
+                                            <td>5456464656</td>
+                                            <td>20-10-2022</td>
+                                            <td>تم التوصيل</td>
+                                            <td>بإنتظار الدفع</td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="customer_profile.html">Salah Elhadidi</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="tel:01022426998">201022426998+</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="mailto:sala7el7adidi@gmail.com">sala7el7adidi@gmail.com</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/01.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>B2 6-4-7</td>
+                                            <td>ابل</td>
+                                            <td>5</td>
+                                            <td>258505 ر.س</td>
+                                            <td>5456464656</td>
+                                            <td>20-10-2022</td>
+                                            <td>تم التوصيل</td>
+                                            <td>بإنتظار الدفع</td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="customer_profile.html">Salah Elhadidi</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="tel:01022426998">201022426998+</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="mailto:sala7el7adidi@gmail.com">sala7el7adidi@gmail.com</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/01.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>B2 6-4-7</td>
+                                            <td>ابل</td>
+                                            <td>5</td>
+                                            <td>258505 ر.س</td>
+                                            <td>5456464656</td>
+                                            <td>20-10-2022</td>
+                                            <td>تم التوصيل</td>
+                                            <td>بإنتظار الدفع</td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="customer_profile.html">Salah Elhadidi</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="tel:01022426998">201022426998+</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="mailto:sala7el7adidi@gmail.com">sala7el7adidi@gmail.com</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row Summary d-none">
+                                <div class="col-md-6 col-12">
+                                    <div class="main_card mt-4 mb-4 h-auto">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>مبيعات الفروع</b></span>
+                                        </div>
+                                        <div class="container-fluid overflow-auto">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13">إجمالي المبيعات</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="m-2 text-secondary">10,292.52 ر.س</span>
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13">تكاليف المنتجات</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="m-2 text-danger">-10,292.52 ر.س</span>
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13">كوبونات التخفيض</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="m-2 text-secondary">10,292.52 ر.س</span>
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13">الشحن</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="text-danger m-2">-10,292.52 ر.س</span>
+                                                    <span class="text-danger m-2">-50% <i class="fa-solid fa-chevron-down"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13">الضرائب</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="m-2 text-secondary">10,292.52 ر.س</span>
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13">رسوم الدفع الإلكتروني</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="m-2 text-secondary">10,292.52 ر.س</span>
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between p-2 second_bg">
+                                            <span class="font13">اجمالي المبيعات</span>
+                                            <div class="d-flex align-items-center">
+                                                <span class="m-2 text-secondary">10,292.52 ر.س</span>
+                                                <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="main_card h-auto mt-4 mb-4 pb-3">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>الطلبات</b></span>
+                                        </div>
+                                        <div class="container-fluid overflow-auto">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13"><span class="font30">14</span>طلب</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="ordersChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="main_card h-auto mt-4 mb-4 pb-3">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>معدل المرتجعات</b></span>
+                                        </div>
+                                        <div class="container-fluid overflow-auto">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13"><span class="font30">14</span>مرتجع</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="returnsChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="main_card h-auto mt-4 mb-4 pb-3">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>معدل تكرار الشراء</b></span>
+                                        </div>
+                                        <div class="container-fluid overflow-auto">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13"><span class="font30">14</span>عملية شراء</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas id="purchaseChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="main_card h-auto mt-4 mb-4 pb-3">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>معدل تكرار الشراء</b></span>
+                                        </div>
+                                        <div class="container-fluid overflow-auto">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font20">466.81 ر.س</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="text-success m-2">180% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <canvas height="50" id="cartChart"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 Sales_coupons d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>مبيعات كوبونات التخفيض</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">الكوبون</th>
+                                            <th scope="col" class="text-secondary">اجمالي المبيعات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>#455666</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#455666</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#455666</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 Brand_sales d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>مبيعات الماركات</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">الماركة</th>
+                                            <th scope="col" class="text-secondary">اجمالي المبيعات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>hp</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>dell</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>apple</td>
+                                            <td>2200 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 product_sales d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>مبيعات المنتجات</b></span>
+                                </div>
+                                <div class="container-fluid overflow-auto">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">المنتج</th>
+                                            <th scope="col" class="text-secondary">الماركه</th>
+                                            <th scope="col" class="text-secondary">النوع</th>
+                                            <th scope="col" class="text-secondary">السعر</th>
+                                            <th scope="col" class="text-secondary">الكمية المباعة</th>
+                                            <th scope="col" class="text-secondary">المبيعات قبل التخفيض</th>
+                                            <th scope="col" class="text-secondary">التخفيض</th>
+                                            <th scope="col" class="text-secondary">صافي المبيعات</th>
+                                            <th scope="col" class="text-secondary">الضرائب</th>
+                                            <th scope="col" class="text-secondary">إجمالي المبيعات</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/01.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>ابل</td>
+                                            <td>منتج جاهز</td>
+                                            <td><span class="main_color">١٠٥ ر.س</span></td>
+                                            <td>1</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/01.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>ابل</td>
+                                            <td>منتج جاهز</td>
+                                            <td><span class="main_color">١٠٥ ر.س</span></td>
+                                            <td>1</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/01.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>ابل</td>
+                                            <td>منتج جاهز</td>
+                                            <td><span class="main_color">١٠٥ ر.س</span></td>
+                                            <td>1</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/01.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>ابل</td>
+                                            <td>منتج جاهز</td>
+                                            <td><span class="main_color">١٠٥ ر.س</span></td>
+                                            <td>1</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                            <td>٠ ر.س</td>
+                                            <td>١٢٫١٠ ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav_product" role="tabpanel" aria-labelledby="product_tab">
+                            <div class="main_card mt-4 mb-4 available">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>منتجات "أعلمني عند التوفر"</b></span>
+                                </div>
+                                <div class="container-fluid">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">المنتج</th>
+                                            <th scope="col" class="text-secondary">السعر</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>545 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>545 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>545 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 most_profit d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>المنتجات الاكثر ربحا</b></span>
+                                </div>
+                                <div class="container-fluid">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">المنتج</th>
+                                            <th scope="col" class="text-secondary">تكلفة المنتج</th>
+                                            <th scope="col" class="text-secondary">سعر البيع</th>
+                                            <th scope="col" class="text-secondary">ارباح المنتج</th>
+                                            <th scope="col" class="text-secondary">عدد طلبات المنتج</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>7000 ر.س</td>
+                                            <td>7554 ر.س</td>
+                                            <td>7554 ر.س</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>7000 ر.س</td>
+                                            <td>7554 ر.س</td>
+                                            <td>7554 ر.س</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>7000 ر.س</td>
+                                            <td>7554 ر.س</td>
+                                            <td>7554 ر.س</td>
+                                            <td>5</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 pending_carts d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>منتجات "السلات المتروكة"</b></span>
+                                </div>
+                                <div class="container-fluid">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">اسم العميل</th>
+                                            <th scope="col" class="text-secondary">رقم الجوال</th>
+                                            <th scope="col" class="text-secondary">المنتج</th>
+                                            <th scope="col" class="text-secondary">تاريخ ترك السلة</th>
+                                            <th scope="col" class="text-secondary">سعر المنتج</th>
+                                            <th scope="col" class="text-secondary">كمية المنتج</th>
+                                            <th scope="col" class="text-secondary">اجمالي</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="customer_profile.html">Salah Elhadidi</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="tel:01022426998">201022426998+</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="products_details.html">حقيبة يد ماركة فرزاتشي</a>
+                                            </td>
+                                            <td>2022-03-24</td>
+                                            <td>754 ر.س</td>
+                                            <td>1</td>
+                                            <td>752 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="customer_profile.html">Salah Elhadidi</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="tel:01022426998">201022426998+</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="products_details.html">حقيبة يد ماركة فرزاتشي</a>
+                                            </td>
+                                            <td>2022-03-24</td>
+                                            <td>754 ر.س</td>
+                                            <td>1</td>
+                                            <td>752 ر.س</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="customer_profile.html">Salah Elhadidi</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="tel:01022426998">201022426998+</a>
+                                            </td>
+                                            <td>
+                                                <a class="main_link main_color default_link" href="products_details.html">حقيبة يد ماركة فرزاتشي</a>
+                                            </td>
+                                            <td>2022-03-24</td>
+                                            <td>754 ر.س</td>
+                                            <td>1</td>
+                                            <td>752 ر.س</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="main_card mt-4 mb-4 most_seller d-none">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>المنتجات الأكثر مبيعا"</b></span>
+                                </div>
+                                <div class="container-fluid">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="text-secondary">المنتج</th>
+                                            <th scope="col" class="text-secondary">الكمية المباعة</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/Nov19_14_sb10067951dd-001.jpg" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="products_details.html">اسم المنتج</a>
+                                                </div>
+                                            </td>
+                                            <td>5</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav_customer" role="tabpanel" aria-labelledby="customer_tab">
+                            <div class="row">
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>العملاء</b></span>
+                                        </div>
+                                        <div class="container-fluid position-relative">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13"><span class="font30">20</span>عميل</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="text-danger m-2">50% <i class="fa-solid fa-chevron-down"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div id="customer_pie_charts"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>رضا العملاء</b></span>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <span class="font13"><span class="font30">90%</span>راضين</span>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="text-success m-2">80% <i class="fa-solid fa-chevron-up"></i></span>
+                                                </div>
+                                            </div>
+                                            <div id="satisfaction_charts"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>العملاء الأكثر دفعا</b></span>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2580 ر.س</span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2580 ر.س</span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2580 ر.س</span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2580 ر.س</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav_visits" role="tabpanel" aria-labelledby="visits_tab">
+                            <div class="main_card mt-4 mb-4">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>الزيارات</b></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav_mostCall" role="tabpanel" aria-labelledby="mostCall_tab">
+                            <div class="row">
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card mt-4 mb-4">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>الايام الاكثر طلبا</b></span>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <canvas id="most_order_day"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card mt-4 mb-4">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>الساعات الاكثر طلبا</b></span>
+                                        </div>
+                                        <div id="most_hours_chart"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card mt-4 mb-4">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>العملاء الاكثر طلبا</b></span>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2 طلب</span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2 طلب</span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2 طلب</span>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between pt-2 pb-2">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                                    <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                </div>
+                                                <span>2 طلب</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav_mostSearch" role="tabpanel" aria-labelledby="mostSearch_tab">
+                            <div class="row">
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card mt-4 mb-4">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>المنتجات الأكثر بحثا</b></span>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col" class="text-secondary">المنتج</th>
+                                                    <th scope="col" class="text-secondary">عدد مرات البحث</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img class="avatar_user" src="images/newmatkStore.jpg" alt="">
+                                                            <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>2 مرات</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img class="avatar_user" src="images/newmatkStore.jpg" alt="">
+                                                            <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>2 مرات</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img class="avatar_user" src="images/newmatkStore.jpg" alt="">
+                                                            <a class="main_link default_link main_color ml-2 mr-2" href="customer_profile.html">salah elhadidi</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>2 مرات</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 mt-3 mb-3">
+                                    <div class="main_card mt-4 mb-4">
+                                        <div class="title_card bg-white">
+                                            <span class="font15"><b>الكلمات الأكثر بحثاً</b></span>
+                                        </div>
+                                        <div class="container-fluid">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col" class="text-secondary">كلمة البحث</th>
+                                                    <th scope="col" class="text-secondary">عدد مرات البحث</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>هواتف</td>
+                                                    <td>2 مرات</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>هواتف</td>
+                                                    <td>2 مرات</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>هواتف</td>
+                                                    <td>2 مرات</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav_pay_recharge" role="tabpanel" aria-labelledby="pay_recharge_tab">
+                            <div class="main_card mt-4 mb-4">
+                                <div class="title_card bg-white">
+                                    <span class="font15"><b>الدفع و الشحن</b></span>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12 mt-3 mb-3">
+                                            <div class="main_card">
+                                                <div class="title_card bg-white">
+                                                    <span class="font15"><b>شركات الشحن</b></span>
+                                                </div>
+                                                <div class="container-fluid position-relative">
+                                                    <div id="shipping_companies_chart"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-12 mt-3 mb-3">
+                                            <div class="main_card">
+                                                <div class="title_card bg-white">
+                                                    <span class="font15"><b>طرق الدفع</b></span>
+                                                </div>
+                                                <div class="container-fluid">
+                                                    <div id="payment_methods_chart"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/d3-5.8.2.min.js"></script>
+<script src="js/c3.min.js"></script>
+<script src="js/flatpicker.js"></script>
+<script src="js/sweetalert.js"></script>
+<script src="js/printThis.js"></script>
+<script src="js/wow.min.js"></script>
+<!-- this for reports page -->
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/daterangepicker.min.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="js/chartJS.js"></script>
+<!-- end report page -->
+<script src="js/main.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script>
+    // $('.report_type .owl-carousel').owlCarousel({
+    //     margin:10,
+    //     rtl: true,
+    //     responsiveClass:true,
+    //     nav:false,
+    //     items:5,
+    // })
+    // $('.reportTypeLeft').click(function (e) {
+    //     e.preventDefault();
+    //     // $('.owl-carousel').trigger('next.owl.carousel');
+    //     $('.report_type .owl-carousel').trigger('next.owl.carousel');
+    // });
+    //
+    // $('.reportTypeRight').click(function (e) {
+    //     e.preventDefault();
+    //     // $('.owl-carousel').trigger('prev.owl.carousel', [300]);
+    //     $('.report_type .owl-carousel').trigger('prev.owl.carousel', [300]);
+    // });
+</script>
+<script>
+    $(".export_report").on("click" , function (){
+        Swal.fire({
+            position: 'middle-center',
+            icon: 'success',
+            text: 'سوف يتم ارسال التقرير علي بريدك الإلكتروني بعد قليل',
+            showConfirmButton: true,
+            confirmButtonColor: 'var(--main)',
+            confirmButtonText: 'موافق',
+        })
+    })
+</script>
+<script>
+    // $(".print_report").on("click" , function (){
+    //     $(".tab-pane.show.active").printThis({
+    //         importCSS: true,
+    //         importStyle: false,
+    //         loadCSS: "css/style.css",
+    //         removeScripts: false,
+    //         debug: false,
+    //         printContainer: true,
+    //         pageTitle: "",
+    //         removeInline: false,
+    //         removeInlineSelector: "*",
+    //         printDelay: 333,
+    //         header: null,
+    //         footer: null,
+    //         base: false,
+    //         formValues: true,
+    //         canvas: false,
+    //         doctypeString: '...',
+    //         copyTagClasses: false,
+    //         beforePrint: null,
+    //         afterPrint: null
+    //     });
+    // })
+</script>
+<!--input date rang-->
+<script>
+    $('.dateRangePicker').daterangepicker({
+        "autoApply": true,
+        "showDropdowns": true,
+        ranges: {
+            'اليوم': [moment(), moment()],
+            'بالأمس': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'الاسبوع الماضي': [moment().subtract(1, 'week').startOf('week'), moment().subtract(1, 'week').endOf('week')],
+            'الشهر الماضي': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
+            'هذا الشهر': [moment().startOf('month'), moment().endOf('month')],
+            'السنه الحالية': [moment().startOf('year'), moment().endOf('year')],
+            'السنه الماضية': [moment().subtract(1, 'year').startOf('year'), moment().subtract(1, 'year').endOf('year')],
+        },
+        "locale": {
+            "format": "MM/DD/YYYY",
+            "separator": " - ",
+            "applyLabel": "Apply",
+            "cancelLabel": "Cancel",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "customRangeLabel": "Custom",
+            "weekLabel": "W",
+            "daysOfWeek": [
+                "احد",
+                "اثنين",
+                "ثلاثاء",
+                "اربعاء",
+                "خميس",
+                "جمعة",
+                "سبت",
+            ],
+            "monthNames": [
+                "يناير",
+                "فبراير",
+                "مارس",
+                "ابريل",
+                "مايو",
+                "يونو",
+                "يوليو",
+                "اغسطس",
+                "سبتمبر",
+                "اكتوبر",
+                "نوفمبر",
+                "ديسمبر"
+            ],
+            "firstDay": 1
+        },
+        // "parentEl": "#dateRangePicker",
+        "opens": "left",
+        // "startDate": "03/18/2022",
+        // "endDate": "03/24/2022",
+        // "minYear": 2020,
+        // "maxYear": 2025,
+    }, function(start, end, label) {
+        console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+    });
+    $('li[data-range-key="Custom"]').text('تحديد الفترة')
+</script>
+<!--scroll function-->
+<script>
+    const rightBtn = document.querySelector('.reportTypeRight');
+    const leftBtn = document.querySelector('.reportTypeLeft');
+
+    rightBtn.addEventListener("click", function(event) {
+        const content = document.querySelector('.report_type .nav-tabs');
+        content.scrollLeft += 300;
+        event.preventDefault();
+    });
+
+    leftBtn.addEventListener("click", function(event) {
+        const content = document.querySelector('.report_type .nav-tabs');
+        content.scrollLeft -= 300;
+        event.preventDefault();
+    });
+
+</script>
+<!--filter select -->
+<script>
+    $(document).ready(function () {
+        $(".nav-tabs > a").on("click", function () {
+            $(".report_type_input > div").hide();
+            $("." + $(this).attr("id")).show().siblings().hide();
+        })
+    })
+</script>
+<!--charts tab sale-->
+<script>
+    // ordersChart
+    const labels = [
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(110,213,255,.5)',
+            borderColor: 'rgb(110,213,255)',
+            data: [0, 10, 45, 1, 20, 30, 45, 5],
+            fill: true,
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            responsive: true,
+            scales: {
+                x: {
+                    display: true,
+                },
+                y: {
+                    display: false,
+                }
+            }
+        },
+    };
+
+    const myChart = new Chart(
+        document.getElementById('ordersChart'),
+        config
+    );
+
+    // returnsChart
+
+    const labels1 = [
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+    ];
+
+    const data1 = {
+        labels: labels1,
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(110,213,255,.5)',
+            borderColor: 'rgb(110,213,255)',
+            data: [0, 10, 45, 1, 20, 30, 45, 5],
+            fill: true,
+        }]
+    };
+
+    const config1 = {
+        type: 'line',
+        data: data1,
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            responsive: true,
+            scales: {
+                x: {
+                    display: true,
+                },
+                y: {
+                    display: false,
+                }
+            }
+        },
+    };
+
+    const myChart1 = new Chart(
+        document.getElementById('returnsChart'),
+        config1
+    );
+
+    // purchaseChart
+
+    const labels2 = [
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+        '26/3/2022',
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgba(110,213,255,.5)',
+            borderColor: 'rgb(110,213,255)',
+            data: [0, 10, 45, 1, 20, 30, 45, 5],
+            fill: true,
+        }]
+    };
+
+    const config2 = {
+        type: 'line',
+        data: data2,
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            responsive: true,
+            scales: {
+                x: {
+                    display: true,
+                },
+                y: {
+                    display: false,
+                }
+            }
+        },
+    };
+
+    const myChart2 = new Chart(
+        document.getElementById('purchaseChart'),
+        config2
+    );
+
+
+    // cartChart
+
+    const labels3 = [
+        'الان',
+        'منذ البداية',
+    ];
+
+    const data3 = {
+        labels: labels3,
+        datasets: [{
+            label: 'My First Dataset',
+            data: [10, 80,],
+            backgroundColor: 'rgb(35,176,212)',
+            borderColor: 'rgb(35,176,212)',
+            borderWidth: 3
+        }]
+    };
+
+    const config3 = {
+        type: 'bar',
+        data: data3,
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                    display:false,
+                }
+            }
+        },
+    };
+
+    const myChart3 = new Chart(
+        document.getElementById('cartChart'),
+        config3
+    );
+
+</script>
+<!--filter select tab sale-->
+<script>
+    $(document).on("change" , ".sell_report_select" , function (){
+        if (this.value == 'cod_sell'){
+            $(".cod_sell").removeClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").addClass("d-none");
+        } else if (this.value == 'branch_sales'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").removeClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").addClass("d-none");
+        } else if (this.value == 'city_sales'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").removeClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").addClass("d-none");
+
+        } else if (this.value == 'Categories_sales'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").removeClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").addClass("d-none");
+
+        } else if (this.value == 'Product_requests'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").removeClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").addClass("d-none");
+
+        } else if (this.value == 'Summary'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").removeClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").addClass("d-none");
+
+        } else if (this.value == 'Sales_coupons'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").removeClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").addClass("d-none");
+
+        }else if (this.value == 'Brand_sales'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").removeClass("d-none");
+            $(".product_sales").addClass("d-none");
+
+        }else if (this.value == 'product_sales'){
+            $(".cod_sell").addClass("d-none");
+            $(".branch_sales").addClass("d-none");
+            $(".city_sales").addClass("d-none");
+            $(".Categories_sales").addClass("d-none");
+            $(".Product_requests").addClass("d-none");
+            $(".Summary").addClass("d-none");
+            $(".Sales_coupons").addClass("d-none");
+            $(".Brand_sales").addClass("d-none");
+            $(".product_sales").removeClass("d-none");
+
+        }
+    })
+</script>
+<!--filter select tab product-->
+<script>
+    $(document).on("change" , ".product_report_select" , function (){
+        if (this.value == 'available'){
+            $(".available").removeClass("d-none");
+            $(".most_profit").addClass("d-none");
+            $(".pending_carts").addClass("d-none");
+            $(".most_seller").addClass("d-none");
+        } else if (this.value == 'most_profit'){
+            $(".available").addClass("d-none");
+            $(".most_profit").removeClass("d-none");
+            $(".pending_carts").addClass("d-none");
+            $(".most_seller").addClass("d-none");
+        }else if (this.value == 'pending_carts'){
+            $(".available").addClass("d-none");
+            $(".most_profit").addClass("d-none");
+            $(".pending_carts").removeClass("d-none");
+            $(".most_seller").addClass("d-none");
+        }else if (this.value == 'most_seller'){
+            $(".available").addClass("d-none");
+            $(".most_profit").addClass("d-none");
+            $(".pending_carts").addClass("d-none");
+            $(".most_seller").removeClass("d-none");
+        }
+    })
+</script>
+<!--charts tab customer-->
+<script>
+    am5.ready(function () {
+
+// Create root element
+// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root0 = am5.Root.new("customer_pie_charts");
+
+
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+        root0.setThemes([
+            am5themes_Animated.new(root0)
+        ]);
+
+
+// Create chart
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+        var chart0 = root0.container.children.push(am5percent.PieChart.new(root0, {
+            layout: root0.verticalLayout,
+            radius: am5.percent(50),
+            innerRadius: am5.percent(85),
+        }));
+
+
+// Create series
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+        var series0 = chart0.series.push(am5percent.PieSeries.new(root0, {
+            valueField: "value",
+            categoryField: "category",
+            alignLabels: false,
+        }));
+
+        series0.labels.template.set("visible", false);
+        series0.ticks.template.set("visible", false);
+
+
+// Set data
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+        series0.data.setAll([
+            {
+                value: 10,
+                category: "قام بالشراء",
+            },
+            {
+                value: 9,
+                category: "لم يشتري بعد",
+            },
+        ]);
+
+
+// Create legend
+// https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
+        var legend0 = chart0.children.push(am5.Legend.new(root0, {
+            centerX: am5.percent(50),
+            x: am5.percent(50),
+            marginTop: 15,
+            marginBottom: 15,
+        }));
+
+        legend0.data.setAll(series0.dataItems);
+
+
+// Play initial series animation
+// https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+        series0.appear(1000, 100);
+
+    }); // end am5.ready()
+
+    am5.ready(function () {
+
+
+
+
+// Create root element
+// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("satisfaction_charts");
+
+
+// Set themes
+// https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+
+// Create chart
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+        var chart = root.container.children.push(am5percent.PieChart.new(root, {
+            layout: root.verticalLayout,
+            radius: am5.percent(50),
+            innerRadius: am5.percent(85),
+        }));
+
+
+// Create series
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+        var series = chart.series.push(am5percent.PieSeries.new(root, {
+            valueField: "value",
+            categoryField: "category",
+            alignLabels: false,
+        }));
+
+        series.labels.template.set("visible", false);
+        series.ticks.template.set("visible", false);
+
+
+// Set data
+// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+        series.data.setAll([
+            {value: 10, category: "تقييم 1 نجوم"},
+            {value: 9, category: "تقييم 2 نجوم"},
+            {value: 6, category: "تقييم 3 نجوم"},
+            {value: 5, category: "تقييم 4 نجوم"},
+            {value: 4, category: "تقييم 5 نجوم"},
+        ]);
+
+
+// Create legend
+// https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
+        var legend = chart.children.push(am5.Legend.new(root, {
+            centerX: am5.percent(50),
+            x: am5.percent(50),
+            marginTop: 15,
+            marginBottom: 15,
+        }));
+
+        legend.data.setAll(series.dataItems);
+
+
+// Play initial series animation
+// https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+        series.appear(1000, 100);
+
+    }); // end am5.ready()
+</script>
+<!--charts tab most ordered-->
+<script>
+    // most days chart
+
+    const labels4 = [
+        'الاحد',
+        'الاثتين',
+        'الثلاثاء',
+        'الاربعاء',
+        'الخميس',
+        'الجمعة',
+    ];
+
+    const data4 = {
+        labels: labels4,
+        datasets: [{
+            label: 'My First Dataset',
+            data: [10, 80,],
+            backgroundColor: 'rgb(35,176,212)',
+            borderColor: 'rgb(35,176,212)',
+            borderWidth: 1
+        }]
+    };
+
+    const config4 = {
+        type: 'bar',
+        data: data4,
+        options: {
+            plugins: {
+                legend: {
+                    display: false,
+                }
+            },
+            scales: {
+                y: {
+                    display:false,
+                }
+            }
+        },
+    };
+
+    const myChart4 = new Chart(
+        document.getElementById('most_order_day'),
+        config4
+    );
+</script>
+<script>
+    am5.ready(function () {
+        var root1 = am5.Root.new("most_hours_chart");
+        root1.setThemes([
+            am5themes_Animated.new(root1)
+        ]);
+        var chart1 = root1.container.children.push(am5percent.PieChart.new(root1, {
+            layout: root1.verticalLayout,
+            radius: am5.percent(50),
+            innerRadius: am5.percent(85),
+        }));
+        var series1 = chart1.series.push(am5percent.PieSeries.new(root1, {
+            valueField: "value",
+            categoryField: "category",
+            alignLabels: false,
+        }));
+
+        series1.labels.template.set("visible", false);
+        series1.ticks.template.set("visible", false);
+        series1.data.setAll([
+            {value: 10, category: "تقييم 1 نجوم"},
+            {value: 9, category: "تقييم 2 نجوم"},
+            {value: 6, category: "تقييم 3 نجوم"},
+            {value: 5, category: "تقييم 4 نجوم"},
+            {value: 4, category: "تقييم 5 نجوم"},
+        ]);
+
+        var legend1 = chart1.children.push(am5.Legend.new(root1, {
+            centerX: am5.percent(50),
+            x: am5.percent(50),
+            marginTop: 15,
+            marginBottom: 15,
+        }));
+
+        legend1.data.setAll(series1.dataItems);
+        series1.appear(1000, 100);
+
+    });
+</script>
+<!--charts tab shipping & payment-->
+<script>
+    // shipping_companies_chart
+    am5.ready(function () {
+        var root2 = am5.Root.new("shipping_companies_chart");
+        root2.setThemes([
+            am5themes_Animated.new(root2)
+        ]);
+        var chart2 = root2.container.children.push(am5percent.PieChart.new(root2, {
+            layout: root2.verticalLayout,
+            radius: am5.percent(50),
+            innerRadius: am5.percent(85),
+        }));
+        var series2 = chart2.series.push(am5percent.PieSeries.new(root2, {
+            valueField: "value",
+            categoryField: "category",
+            alignLabels: false,
+        }));
+
+        series2.labels.template.set("visible", false);
+        series2.ticks.template.set("visible", false);
+        series2.data.setAll([
+            {value: 10, category: "mada",},
+        ]);
+        var legend2 = chart2.children.push(am5.Legend.new(root2, {
+            centerX: am5.percent(50),
+            x: am5.percent(50),
+            marginTop: 15,
+            marginBottom: 15,
+        }));
+
+        legend2.data.setAll(series2.dataItems);
+        series2.appear(1000, 100);
+
+    });
+
+    // payment_methods_chart
+
+    am5.ready(function () {
+        var root3 = am5.Root.new("payment_methods_chart");
+        root3.setThemes([
+            am5themes_Animated.new(root3)
+        ]);
+        var chart3 = root3.container.children.push(am5percent.PieChart.new(root3, {
+            layout: root3.verticalLayout,
+            radius: am5.percent(50),
+            innerRadius: am5.percent(85),
+        }));
+        var series3 = chart3.series.push(am5percent.PieSeries.new(root3, {
+            valueField: "value",
+            categoryField: "category",
+            alignLabels: false,
+        }));
+
+        series3.labels.template.set("visible", false);
+        series3.ticks.template.set("visible", false);
+        series3.data.setAll([
+            {value: 10, category: "الدفع عند الاستلام"},
+        ]);
+        var legend3 = chart3.children.push(am5.Legend.new(root3, {
+            centerX: am5.percent(50),
+            x: am5.percent(50),
+            marginTop: 15,
+            marginBottom: 15,
+        }));
+
+        legend3.data.setAll(series3.dataItems);
+        series3.appear(1000, 100);
+
+    });
+</script>
+</body>
+</html>

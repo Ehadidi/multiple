@@ -1,0 +1,61 @@
+  /* Apply dollar signs */
+  .product .product-price:before, .product .product-line-price:before, .totals-value:before {
+    content: 'ر.س';
+  }
+
+  /* Product entries */
+  .product {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+  }
+  
+  .product .product-image {
+    text-align: center;
+  }
+  
+  .product .product-image img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .product .product-details .product-title {
+    margin-right: 20px;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+  }
+  
+  .product .product-details .product-description {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+  }
+  
+  .product .product-quantity input {
+    font-size: 11px;
+    border: 2px solid #1d0f18;
+    padding: 5px;
+    width: 60px;
+    min-width: 60px;
+    height: 34px;
+  }
+  
+  .product .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    background-color: #c66;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .product .remove-product:hover {
+    background-color: #a44;
+  }
+  
+  /* Totals section */
+  .totals .totals-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+  }

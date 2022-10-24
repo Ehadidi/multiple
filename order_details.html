@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/flatpicker.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+<div class="side_option_layer"></div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--side option-->
+    <section class="side_option">
+        <div class="d-flex align-items-center justify-content-between mb-4 pl-2 pr-2">
+            <div class="d-flex align-items-center">
+                <span><i class="fa-solid fa-filter"></i></span>
+                <span class="ml-2 mr-2"><b>فرز الطلبات حسب</b></span>
+            </div>
+            <button class="btn remove_modal"><b>X</b></button>
+        </div>
+        <form>
+            <div id="accordion">
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                    <span><i class="fa-solid fa-flag"></i></span>
+                    <span class="ml-3 mr-3">حالة الطلب</span>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">مسودة</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">محذوف</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">بإنتظار الدفع</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">قيد التنفيذ</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">تم التنفيذ</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">جاري التوصيل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">تم التوصيل</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                    <i class="fa-solid fa-truck"></i>
+                    <span class="ml-3 mr-3">شركة الشحن</span>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">مندوب المتجر</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">البريد السعودي</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">زاجل</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                    <span><i class="fa-solid fa-credit-card"></i></span>
+                    <span class="ml-3 mr-3">نوع الطلب</span>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">فوري</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >
+                    <span><i class="fa-solid fa-wallet"></i></span>
+                    <span class="ml-3 mr-3">طريقة الدفع</span>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الدفع عند الإستلام</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">البطاقة الإئتمانية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" >
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <span class="ml-3 mr-3">الدولة و المدينة</span>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="input_select">
+                        <select class="niceSelect">
+                            <option value="">الكل</option>
+                            <option value="">السعودية</option>
+                            <option value="">الإمارات</option>
+                            <option value="">الكويت</option>
+                        </select>
+                    </div>
+                    <div class="input_select">
+                        <select class="niceSelect">
+                            <option value="">كل المدن</option>
+                            <option value="">مكة</option>
+                            <option value="">دبي</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" >
+                    <span><i class="fa-solid fa-store"></i></span>
+                    <span class="ml-3 mr-3">الفرع</span>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">المستودع الرئيسي</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" >
+                    <span><i class="fa-solid fa-arrow-down-wide-short"></i></span>
+                    <span class="ml-3 mr-3">ترتيب الطلبات</span>
+                </div>
+                <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">رقم الطلب - تصاعديا</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">رقم الطلب - تنازليا</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight" >
+                    <span><i class="fa-solid fa-window-restore"></i></span>
+                    <span class="ml-3 mr-3">قنوات البيع</span>
+                </div>
+                <div id="collapseEight" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">مستعرض جوال</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">مستعرض كمبيوتر</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine" >
+                    <span><i class="fa-solid fa-calendar-days"></i></span>
+                    <span class="ml-3 mr-3">تاريخ الطلب</span>
+                </div>
+                <div id="collapseNine" class="collapse" data-parent="#accordion">
+                    <div class="input_select">
+                        <div class="form_input">
+                            <input class="flatpickr" type="text" placeholder="من">
+                        </div>
+                    </div>
+                    <div class="input_select">
+                        <div class="form_input">
+                            <input class="flatpickr" type="text" placeholder="الي">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen" >
+                    <span><i class="fa-solid fa-tag"></i></span>
+                    <span class="ml-3 mr-3">الوسوم</span>
+                </div>
+                <div id="collapseTen" class="collapse" data-parent="#accordion">
+                    <div class="input_select">
+                        <select class="niceSelect">
+                            <option value="">الكل</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn submit_btn">عرض الناتج</button>
+                    </div>
+                    <div class="col-md-4 col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn gray_btn2 w-100">إعادة تعيين</button>
+                    </div>
+                    <div class="col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn white_btn w-100"><i class="fa-solid fa-file-arrow-down ml-1 mr-1"></i> تصدير الناتج</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!--end side option-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </div>
+                <div class="dashboard_logo">
+                    <div class="container-fluid">
+                        <img src="images/logo.svg" alt="">
+                        <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                    </div>
+                </div>
+                <div class="user_nav">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <form class="search_form">
+                                <div class="d-flex align-items-center">
+                                    <label class="mb-0">
+                                        <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                    </label>
+                                    <div class="nice_select_label">
+                                        <select class="filter_search niceSelect" type="text">
+                                            <option value="">الطلبات</option>
+                                            <option value="">المنتجات</option>
+                                            <option value="">العملاء</option>
+                                        </select>
+                                    </div>
+                                    <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="user_dropdown dropdown pl-3 pr-3">
+                                <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="user_box">
+                                        <img src="images/4284.jpg" alt="">
+                                        <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="user_drop">
+                                    <a class="dropdown-item default_link" href="profile.html" type="button">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="ml-2 mr-2">الملف الشخصي</span>
+                                    </a>
+                                    <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span class="ml-2 mr-2">التنبيهات</span>
+                                    </a>
+                                    <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                        <i class="fa-solid fa-wrench"></i>
+                                        <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item default_link" href="login.html" type="button">
+                                        <i class="fa-solid fa-power-off"></i>
+                                        <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="orders.html"> الطلبات</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">طلب #4644665</li>
+                    </ol>
+                </nav>
+                <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
+                    <a href="" class="btn round_btn_white"><span><i class="fa-solid fa-arrow-right"></i></span> <span class="ml-2 mr-2">الطلب السابق</span></a>
+                    <a href="" class="btn round_btn_white btn_disable"> <span class="ml-2 mr-2">الطلب التالي</span><span><i class="fa-solid fa-arrow-left"></i></span></a>
+                </div>
+                <div class="main_card">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+                            <div class="d-flex flex-column align-items-start mt-2 mb-2">
+                                <span class="text-secondary font12 mt-2 mb-2"><b><i class="fa-solid fa-hashtag"></i> رقم الطلب</b></span>
+                                <span class="font14 mt-2 mb-2"><b><i class="fa-solid fa-laptop"></i> 32497671</b></span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center mt-2 mb-2">
+                                <span class="text-secondary font12 mt-2 mb-2"><b><i class="fa-solid fa-calendar-days"></i>  تاريخ الطلب</b></span>
+                                <span class="font14 mt-2 mb-2"><b><i class="fa-solid fa-laptop"></i> الأربعاء 2 مارس 2022 | 11:29 ص</b></span>
+                            </div>
+                            <div class="d-flex flex-column align-items-end mt-2 mb-2">
+                                <span class="text-secondary font12 mt-2 mb-2"><b><i class="fa-solid fa-flag"></i> حالة الطلب</b></span>
+                                <a href="" data-toggle="modal" data-target="#order_status" class="btn round_btn_main mt-2 mb-2"><span>تم التوصل</span> <span class="ml-1 mr-1"><i class="fa-solid fa-angle-left"></i></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <form>
+                            <div style="width: fit-content" class="position-relative d-flex align-items-center">
+                                <label for="input_plus" class="ml-2 mr-2 mb-0">الوسوم : </label>
+                                <div class="tags ml-2 mr-2">
+                                    <div class="tag_added">
+                                        <span>tag</span>
+                                        <button class="btn p-0 remove_circle">x</button>
+                                    </div>
+                                </div>
+                                <input id="input_plus" class="input_plus font10 pt-1 pb-1 pl-2 pr-2" placeholder="إضافة وسم">
+                                <button class="btn add_rounded"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col-md-4 col-12 mt-2 mb-2">
+                        <div class="main_card">
+                            <div class="title_card">
+                                <span><b>العميل</b></span>
+                                <div class="edit_dropdown">
+                                    <button class="btn main_btn font10" type="button" data-toggle="dropdown"><i class="fa-solid fa-user ml-1 mr-1"></i> خيارات العميل</button>
+                                    <ul class="dropdown-menu quick">
+                                        <li>
+                                            <a class="default_link">
+                                                <span><i class="fas fa-box"></i></span>
+                                                <span class="ml-2 mr-2">طلبات العميل</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="default_link">
+                                                <span><i class="fa-solid fa-ban"></i></span>
+                                                <span class="ml-2 mr-2">حظر العميل</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="Archives_message.html" class="default_link">
+                                                <span><i class="fa-solid fa-envelope-open-text"></i></span>
+                                                <span class="ml-2 mr-2">إرشيف الرسائل</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="default_link send_rates">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span class="ml-2 mr-2">إرسال طلب تقييم</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="d-flex align-items-center pt-3 pb-3">
+                                    <a data-fancybox="fancybox" href="images/avatar_male.png"><img class="avatar_user" src="images/avatar_male.png" alt=""></a>
+                                    <div class="d-flex flex-column">
+                                        <span class="mb-3 font11"><b>Faleh Awadh</b></span>
+                                        <a href="tel:01584512058" class="main_color default_link d-flex align-items-center">
+                                            <span>02255######</span>
+                                            <button class="btn round_btn_main pt-1 pb-1 pl-3 pr-3 W_auto M_start_10"><i class="fa-solid fa-phone"></i>اتصال</button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mt-3 mb-3">
+                                    <a class="default_link main_color main_link font11 ml-2 mr-2" href="https://wa.me/965##########"><span><i class="fa-brands fa-whatsapp"></i></span> <span>واتساب</span></a>
+                                    <a class="default_link main_color main_link font11 ml-2 mr-2" data-target="#message_text" data-toggle="modal" href=""><span><i class="fa-solid fa-message"></i></span> <span>رسالة نصية</span></a>
+                                    <a class="default_link main_color main_link font11 ml-2 mr-2" href="mailto:no_reply@gmail.com"><span><i class="fa-solid fa-envelope"></i></span> <span>إيميل</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mt-2 mb-2">
+                        <div class="main_card">
+                            <div class="title_card">
+                                <span><b>الشحن</b></span>
+                                <button class="btn main_btn font10" data-toggle="modal" data-target="#export_policy"><i class="fa-solid fa-truck"></i> إصدار البوليصة</button>
+                            </div>
+                            <div class="container-fluid pt-3 pb-3">
+                                <span class="fontBold">الرياض، السعودية</span>
+                                <p class="mb-0 text-secondary">
+                                    حي ظهرة البديعة، شارع عبدالرحمن اللخمي، رقم 3102 على تقاطع شارع عبدالرحمن اللخمي مع شارع الشويكي، الرمز البريدي 12783
+                                    rthrt ( 1 )
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 mt-2 mb-2">
+                        <div class="main_card">
+                            <div class="title_card">
+                                <span><b>الدفع</b></span>
+                                <button class="btn main_btn font10 export_bell"><i class="fas fa-file-alt"></i> إصدار الفاتورة</button>
+                            </div>
+                            <div class="container-fluid">
+
+                                <!--pay when receive-->
+
+                                <!--                                <div class="d-flex align-items-center mt-3 mb-3">-->
+                                <!--                                    <span class="font20"><i class="fa-solid fa-wallet"></i></span>-->
+                                <!--                                    <span class="ml-3 mr-3 fontBold font13">الدفع عند الاستلام</span>-->
+                                <!--                                </div>-->
+
+                                <!--not paid -->
+
+                                <!--                                <div class="d-flex align-items-center mt-3 mb-3">-->
+                                <!--                                    <span class="ml-3 mr-3 fontBold font13">لم يتم الدفع</span>-->
+                                <!--                                </div>-->
+                                <div class="row mt-3 mb-3">
+                                    <div class="col-md-8 col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-start">
+                                            <span class="done_check"><i class="fa-solid fa-check"></i></span>
+                                            <div class="d-flex flex-column M_start_10 font13">
+                                                <span class="fontBold">تم تحويل المبلغ</span>
+                                                <span class="text-secondary">مصرف الراجحي</span>
+                                                <span class="text-secondary">تركي مبارك الدوسري</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12 mt-2 mb-2">
+                                        <a class="bell_img" data-fancybox="fancybox" href="images/report.png"><img src="images/report.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_card mt-5 mb-5">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <span><i class="fas fa-tshirt"></i></span>
+                            <span class="M_start_10"><b>المنتجات</b></span>
+                        </div>
+                    </div>
+                    <div class="table-responsive product_table">
+                        <table class="table mb-0">
+                            <thead>
+                            <tr>
+                                <th scope="col" class="text-right">المنتج</th>
+                                <th scope="col">الكمية</th>
+                                <th scope="col">السعر</th>
+                                <th scope="col">المجموع</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row" class="text-right">
+                                    <div class="d-flex align-items-center">
+                                        <img class="avatar_user" src="images/avatar_male.png" alt="">
+                                        <a class="default_link main_color main_link font12">اسم المنتج</a>
+                                    </div>
+                                </th>
+                                <td>5</td>
+                                <td>375 ر.س</td>
+                                <td>375 ر.س</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-right">مجموع السلة</th>
+                                <td colspan="3">375 ر.س</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-right">تكلفة الشحن</th>
+                                <td colspan="3">375 ر.س</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="text-right">اجمالي الطلب</th>
+                                <td colspan="3">375 ر.س</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="print_table_btn">
+                        <div class="edit_dropdown">
+                            <button class="btn white_btn main_color font13 pt-2 pb-2 pl-5 pr-5" type="button" data-toggle="dropdown"><i class="fa-solid fa-print"></i> طباعة الفاتوره</button>
+                            <ul class="dropdown-menu quick">
+                                <li>
+                                    <a class="default_link">
+                                        <span><i class="fas fa-file-alt"></i></span>
+                                        <span class="ml-2 mr-2">طباعة ملخص الطلب</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="default_link">
+                                        <span><i class="fas fa-file-alt"></i></span>
+                                        <span class="ml-2 mr-2">إصدار / طباعة فاتورة الطلب</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="default_link">
+                                        <span><i class="fa-solid fa-qrcode"></i></span>
+                                        <span class="ml-2 mr-2">قائمة تجهيز الطلب</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_card mt-5 mb-5">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <span><i class="fas fa-file-alt"></i></span>
+                            <span class="M_start_10"><b>سجل الطلب</b></span>
+                        </div>
+                        <button class="btn round_btn_main font11" data-toggle="collapse" href="#collapseReplay" role="button" aria-expanded="false" aria-controls="collapseReplay"><i class="fa-solid fa-comment-dots"></i> إضافة تعليق</button>
+                    </div>
+                    <div class="container-fluid pt-3 pb-3">
+                        <div class="collapse" id="collapseReplay">
+                            <div class="form_textarea">
+                                <textarea style="min-height: 50px;" type="text" placeholder="نص التعليق"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center mt-2 mb-2">
+                                <button class="btn round_btn_main font11"> إضافة</button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="font14"><i class="fa-solid fa-clock"></i></span>
+                                    <span class="font11">بإنظار المراحعة</span>
+                                </div>
+                                <div class="d-flex flex-column ml-2 mr-2">
+                                    <span class="font14 text-secondary">مدير المتجر</span>
+                                    <span class="font10 text-secondary">تم إنقاص المنتجات التالية من المخزون، ساعة يد ماركة بولغاري (1)</span>
+                                </div>
+                            </div>
+                            <span class="history_post font10">منذ 3 أيام</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-2 mb-2">
+                            <button class="btn round_btn_main m-1"><i class="fa-solid fa-pen-to-square"></i> تعديل الطلب </button>
+                            <button class="btn round_btn_red m-1"><i class="fa-solid fa-x"></i> حذف الطلب </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between mt-5 mb-5">
+                    <a href="" class="btn round_btn_white"><span><i class="fa-solid fa-arrow-right"></i></span> <span class="ml-2 mr-2">الطلب السابق</span></a>
+                    <a href="" class="btn round_btn_white btn_disable"> <span class="ml-2 mr-2">الطلب التالي</span><span><i class="fa-solid fa-arrow-left"></i></span></a>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+
+<!--order_status-->
+<div id="order_status" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>حالة الطلب #33447832</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mb-2 mt-2">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect status_select">
+                                        <option value="">بإنتظار الدفع</option>
+                                        <option value="">بإنتظار المرجعة</option>
+                                        <option value="">قيد التنفيذ</option>
+                                        <option value="Done">تم التنفيذ</option>
+                                        <option value="">جاري التوصيل</option>
+                                        <option value="">تم التوصيل</option>
+                                        <option value="">تم الشحن</option>
+                                        <option value="">ملغي</option>
+                                        <option value="Return">مسترجع</option>
+                                        <option value="InReturn">قيد الاسترجاع</option>
+                                    </select>
+                                    <span class="input_icon"><i class="far fa-comment-alt"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2 mt-2 select_store d-none">
+                                <div class="d-flex flex-column">
+                                    <span class="fontBold">الفرع/المستودع</span>
+                                    <span class="font11 text-secondary">يمكنك اختيار فرع/مستودع لالتقاط الشحنة من قبل شركة الشحن</span>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">أختر الفرع / المستودع</option>
+                                        <option value="">المستودع الرئيسي</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-store"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2 Return d-none">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="mb-2"><b>إعادة المنتجات للمخزون</b></span>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input marketing_coupon">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2 InReturn d-none">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <span class="mb-2"><b>تصدير بوليصة الإرجاع</b></span>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input marketing_coupon">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2 mt-2">
+                                <div class="form_input">
+                                    <span class="d-block mt-2 mb-2 font12">ملاحظات إضافية للعميل</span>
+                                    <label class="position-relative w-100">
+                                        <div class="form_textarea"><textarea style="min-height: 50px;" type="text" placeholder="ادخل الملاحظات"></textarea></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">تعديل حلة الطلب</button>
+                        <button class="btn gray_btn2" data-dismiss="modal">إغلاق</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end order_status-->
+
+<!--export_policy-->
+<div id="export_policy" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>إصدار بوليصة الشحن الخاصة بالطلب - 33348287</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mb-2 mt-2 select_store">
+                                <div class="d-flex flex-column">
+                                    <span class="fontBold">الفرع/المستودع</span>
+                                    <span class="font11 text-secondary">يمكنك اختيار فرع/مستودع لالتقاط الشحنة من قبل شركة الشحن</span>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">أختر الفرع / المستودع</option>
+                                        <option value="">المستودع الرئيسي</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-store"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn export_policy">إصدار البوليصة</button>
+                        <button class="btn gray_btn2" data-dismiss="modal">تراجع</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end export_policy-->
+
+<!--message_text-->
+<div id="message_text" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>مراسلة العميل</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex align-items-center pt-3 pb-3">
+                                    <a data-fancybox="fancybox" href="images/avatar_male.png"><img class="avatar_user" src="images/avatar_male.png" alt=""></a>
+                                    <div class="d-flex align-items-center justify-content-between w-100">
+                                        <span class="font11"><b>Faleh Awadh</b></span>
+                                        <a href="tel:01584512058" class="main_color default_link d-flex align-items-center"><span>02255######</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2 mt-2">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">رسالة إعلانية</option>
+                                        <option value="">رساله غير إعلانية</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="title_card">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                            <span class="ml-2 mr-2"><b> رصيد SMS</b></span>
+                                        </div>
+                                    </div>
+                                    <a href="store_subscribe.html" class="btn main_btn d-flex align-items-center"><h6 class="mb-0"><i class="fa-solid fa-dollar-sign"></i></h6><span class="ml-1 mr-1">شراء رصيد</span></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="font15"><i class="fa-solid fa-envelope"></i></span>
+                                    <span class="font11 fontBold text-secondary mt-3 mb-3">2</span>
+                                    <span class="text-secondary font13">الرصيد المطلوب</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="font15"><i class="fa-solid fa-envelopes-bulk"></i></span>
+                                    <span class="font11 fontBold text-secondary mt-3 mb-3">2</span>
+                                    <span class="text-secondary font13">الرصيد المتوفر</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">إرسال</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end message_text-->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/d3-5.8.2.min.js"></script>
+<script src="js/c3.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/sweetalert.js"></script>
+<script src="js/flatpicker.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).on("change" , ".status_select" , function (){
+        if (this.value == 'Done'){
+            $(".select_store").removeClass("d-none")
+            $(".Return").addClass("d-none")
+            $(".InReturn").addClass("d-none")
+        } else if (this.value == 'Return'){
+            $(".select_store").addClass("d-none")
+            $(".InReturn").addClass("d-none")
+            $(".Return").removeClass("d-none")
+        } else if (this.value == 'InReturn'){
+            $(".select_store").addClass("d-none")
+            $(".InReturn").removeClass("d-none")
+            $(".Return").addClass("d-none")
+        }
+        else{
+            $(".select_store").addClass("d-none")
+            $(".InReturn").addClass("d-none")
+            $(".Return").addClass("d-none")
+        }
+    })
+</script>
+<script>
+    $(document).on('click', '.export_bell' , function (e){
+        e.preventDefault();
+        Swal.fire({
+            position: 'middle-center',
+            icon: 'success',
+            text: 'تم إصدار الفاتورة بنجاح',
+            showConfirmButton: false,
+            timer: 2000
+        })
+    })
+</script>
+<script>
+    $(document).on('click', '.export_policy' , function (e){
+        e.preventDefault();
+        Swal.fire({
+            position: 'middle-center',
+            icon: 'success',
+            text: 'تم إرسال طلبكم الي شركة الشحن لإصدار بوليصة الشحن',
+            showConfirmButton: false,
+            timer: 2000
+        }).then(() => {
+            $(function () {
+                $('#export_policy').modal('toggle');
+            });
+        })
+    })
+</script>
+
+<script>
+    $(document).on('click', '.send_rates' , function (e){
+        e.preventDefault();
+        Swal.fire({
+            position: 'middle-center',
+            icon: 'success',
+            text: 'تم إرسال رسالة التقييم بنجاح',
+            showConfirmButton: false,
+            timer: 2000
+        })
+    })
+</script>
+</body>
+</html>

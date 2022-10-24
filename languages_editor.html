@@ -1,0 +1,1757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select-country.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-css/1.4.6/select2-bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .ck-editor__main {
+            height: 266px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </div>
+                <div class="dashboard_logo">
+                    <div class="container-fluid">
+                        <img src="images/logo.svg" alt="">
+                        <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                    </div>
+                </div>
+                <div class="user_nav">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <form class="search_form">
+                                <div class="d-flex align-items-center">
+                                    <label class="mb-0">
+                                        <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                    </label>
+                                    <div class="nice_select_label">
+                                        <select class="filter_search niceSelect" type="text">
+                                            <option value="">الطلبات</option>
+                                            <option value="">المنتجات</option>
+                                            <option value="">العملاء</option>
+                                        </select>
+                                    </div>
+                                    <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="user_dropdown dropdown pl-3 pr-3">
+                                <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="user_box">
+                                        <img src="images/4284.jpg" alt="">
+                                        <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="user_drop">
+                                    <a class="dropdown-item default_link" href="profile.html" type="button">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="ml-2 mr-2">الملف الشخصي</span>
+                                    </a>
+                                    <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span class="ml-2 mr-2">التنبيهات</span>
+                                    </a>
+                                    <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                        <i class="fa-solid fa-wrench"></i>
+                                        <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item default_link" href="login.html" type="button">
+                                        <i class="fa-solid fa-power-off"></i>
+                                        <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="store_setting.html"> إعدادات المتجر</a></li>
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="languages.html"> اللغات</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">محرر النصوص</li>
+                    </ol>
+                </nav>
+                <div class="main_card pt-4 pb-2 mt-2 mb-5">
+                    <div class="container-fluid">
+                        <div class="row align-items-end">
+                            <div class="col-8 mt-2 mb-2">
+                                <span class="form_label mb-0">اختر من القائمة</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect editor_select">
+                                        <option selected disabled>تحديد القسم</option>
+                                        <option value="store_interface">واجهة المتجر</option>
+                                        <option value="products">المنتجات</option>
+                                        <option value="Categories">التصنيفات</option>
+                                        <option value="brands">الماركات التجارية</option>
+                                        <option value="profile_pages">الصفحات التعريفية</option>
+                                        <option value="store_data">بيانات المتجر</option>
+                                        <option value="home_links">روابط القائمة الرئيسية</option>
+                                        <option value="branches">الفروع</option>
+                                        <option value="Ads">الإعلانات</option>
+                                        <option value="Special_offers">الععروض الخاصة</option>
+                                        <option value="shipping_company">شركات الشحن</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4 mt-2 mb-2">
+                                <span class="form_label">تغيير اللغة</span>
+                                <div class="input_select select_picker p-0 position-relative">
+                                    <select class="selectpicker" data-width="fit">
+                                        <option data-content='<img width="15px" src="images/united-kingdom.png"> English'>English</option>
+                                        <option selected  data-content='<img width="15px" src="images/saudi-arabia.png"> العربيه'>العربيه</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store_interface editor__option__content">
+                    <div class="main_card p-3">
+                        <h6 class="font15 fontBold">ترجمة واجهة المتجر</h6>
+                        <div class="container-fluid">
+                            <select class="interface__select2" multiple>
+                                <option value="">كل العناصر</option>
+                                <option value="1">عام</option>
+                                <option value="2">تقسيمات عامه</option>
+                                <option value="3">الصفحات</option>
+                                <option value="4">تطبيق الجوال</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-4 mb-4">
+                        <h6 class="text-center font17 fontBold mb-4">عام</h6>
+                        <div class="main_card">
+                            <div class="title_card">
+                                <span class="fontBold">عام / كلمات عامة</span>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-5 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label">الاسم</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                        <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                    </div>
+                                    <div class="col-6 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label text-end">name</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label">الاسم</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                        <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                    </div>
+                                    <div class="col-6 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label text-end">name</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label">الاسم</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                        <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                    </div>
+                                    <div class="col-6 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label text-end">name</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-5 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label">الاسم</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                        <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                    </div>
+                                    <div class="col-6 mt-2 mb-2">
+                                        <div class="form_input mb-0">
+                                            <span class="form_label text-end">name</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة المنتجات</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Categories editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة التصنيفات</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brands editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة الماركات التجارية</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile_pages editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة الصفحات التعريفية</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store_data editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة بيانات المتجر</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_links editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة روابط القائمة الرئيسيه</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="branches editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة الفروع</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Ads editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة الاعلانات</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Special_offers editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة العروض الخاصة</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping_company editor__option__content">
+                    <div class="main_card mt-3 mb-3">
+                        <div class="title_card">
+                            <h6 class="font13 mb-0 fontBold">ترجمة شركات الشحن</h6>
+                        </div>
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-8 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البحث عن نص...">
+                                            <span class="input_icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2 d-flex align-items-center">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                            <span class="font12 ml-2 mr-2">عرض النصوص غير المترجمة فقط</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_card mt-3 mb-3">
+                        <div class="container-fluid pt-3 pb-3">
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label">الاسم</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" readonly disabled type="text" placeholder="الاسم">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <div class="form_input mb-0">
+                                        <span class="form_label text-end">name</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-5 mt-2 mb-2">
+                                    <span class="form_label">الوصف</span>
+                                    <div class="description second_bg bordered_eee round_edge5 p-3">
+                                        <p>
+                                            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+
+                                            أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+
+                                            أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+
+                                            أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+
+                                            نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+
+                                            كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم."
+
+                                            "سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+
+                                            دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس ايت
+
+                                            كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو. نيمو أنيم أبسام فوليوباتاتيم كيواي
+
+                                            فوليوبتاس سايت أسبيرناتشر أيوت أودايت أيوت فيوجايت, سيد كيواي كونسيكيونتشر ماجناي
+
+                                            دولارس أيوس كيواي راتاشن فوليوبتاتيم سيكيواي نيسكايونت. نيكيو بوررو كيوايسكيوم
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                    <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                </div>
+                                <div class="col-6 mt-2 mb-2">
+                                    <span class="form_label text-end">Description</span>
+                                    <div class="ck__editor"></div>
+                                </div>
+                            </div>
+                            <div class="mt-3 mb-3">
+                                <h6 class="fontBold font13">sub category:</h6>
+                                <div class="bordered_eee round_edge5 p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-5 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label">الاسم</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" readonly="" disabled="" type="text" placeholder="الاسم">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-1 mt-2 mb-2 d-flex justify-content-center">
+                                            <i class="arrow_left_gray ml-4 mr-3 mt-3"></i>
+                                        </div>
+                                        <div class="col-6 mt-2 mb-2">
+                                            <div class="form_input mb-0">
+                                                <span class="form_label text-end">name</span>
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0 text-end" type="text" placeholder="name">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/bootstrap-select-country.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="https://cdn.ckeditor.com/ckeditor5/32.0.0/classic/ckeditor.js"></script>
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        let branch_all = [];
+
+        function formatResult(state) {
+            if (!state.id) {
+                var btn = $('<div class="text-right"><button id="all-branch" style="margin-right: 10px;" class="btn btn-default">Select All</button><button id="clear-branch" class="btn btn-default">Clear All</button></div>')
+                return btn;
+            }
+
+            branch_all.push(state.id);
+            var id = 'state' + state.id;
+            return $(
+                '<div class="check_label interface_check  mb-0 ml-2 mr-2 d-flex align-items-center">' +
+                '    <input id="' + id + '" type="checkbox" class="d-none" ' + (state.selected ? 'checked' : '') + '>' +
+                '    <div class="check_span"><i class="fas fa-check"></i></div>' +
+                    '<label class="mb-0 ml-2 mr-2" for="checkbox1">'
+                         +state.text+
+                    '</label>' +
+                '</div>',
+                {id: id});
+        }
+
+        function arr_diff(a1, a2) {
+            var a = [], diff = [];
+            for (var i = 0; i < a1.length; i++) {
+                a[a1[i]] = true;
+            }
+            for (var i = 0; i < a2.length; i++) {
+                if (a[a2[i]]) {
+                    delete a[a2[i]];
+                } else {
+                    a[a2[i]] = true;
+                }
+            }
+            for (var k in a) {
+                diff.push(k);
+            }
+            return diff;
+        }
+
+        let optionSelect2 = {
+            templateResult: formatResult,
+            closeOnSelect: false,
+            width: '100%'
+        };
+
+        let $select2 = $(".interface__select2").select2(optionSelect2);
+
+        var scrollTop;
+
+        $select2.on("select2:selecting", function( event ){
+            var $pr = $( '#'+event.params.args.data._resultId ).parent();
+            scrollTop = $pr.prop('scrollTop');
+        });
+
+        $select2.on("select2:select", function( event ){
+            $(window).scroll();
+
+            var $pr = $( '#'+event.params.data._resultId ).parent();
+            $pr.prop('scrollTop', scrollTop );
+
+            $(this).val().map(function(index) {
+                $("#state"+index).prop('checked', true);
+            });
+        });
+
+        $select2.on("select2:unselecting", function ( event ) {
+            var $pr = $( '#'+event.params.args.data._resultId ).parent();
+            scrollTop = $pr.prop('scrollTop');
+        });
+
+        $select2.on("select2:unselect", function ( event ) {
+            $(window).scroll();
+
+            var $pr = $( '#'+event.params.data._resultId ).parent();
+            $pr.prop('scrollTop', scrollTop );
+
+            var branch  =   $(this).val() ? $(this).val() : [];
+            var branch_diff = arr_diff(branch_all, branch);
+            branch_diff.map(function(index) {
+                $("#state"+index).prop('checked', false);
+            });
+        });
+
+        $(document).on("click", "#all-branch",function(){
+            $(".interface__select2 > option").not(':first').prop("selected", true);// Select All Options
+            $(".interface__select2").trigger("change")
+            $(".select2-results__option").not(':first').attr("aria-selected", true);
+            $("[id^=state]").prop("checked", true);
+            $(window).scroll();
+        });
+
+        $(document).on("click", "#clear-branch", function(){
+            $(".interface__select2 > option").not(':first').prop("selected", false);
+            $(".interface__select2").trigger("change");
+            $(".select2-results__option").not(':first').attr("aria-selected", false);
+            $("[id^=state]").prop("checked", false);
+            $(window).scroll();
+        });
+    });
+</script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '.ck__editor' ) )
+        .then( editor => {
+            console.log( editor );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+<script>
+    $(function(){
+        $('.selectpicker').selectpicker();
+    });
+</script>
+<script>
+    $(".editor_select").change(function (){
+        $(".editor__option__content").removeClass("show")
+        var select_val = $(this).val();
+        console.log(select_val)
+        $("."+select_val).addClass("show")
+    })
+</script>
+</body>
+</html>

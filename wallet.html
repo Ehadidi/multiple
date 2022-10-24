@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .table td {
+            vertical-align: middle;
+            border: 0;
+            padding: 15px;
+        }
+        .upArea{
+            width: 100%;
+            position: relative;
+            background-color: #f8f8f8;
+            margin: 10px 0;
+        }
+        .imageLoud{
+            width: 100%;
+            border: 1px solid #ddd;
+            display: flex;
+            justify-content: center;
+            z-index: 6;
+            background-color: #fff;
+            padding: 5px 0;
+            height: 200px;
+        }
+        .remove_up{
+            position: absolute;
+            top: 21px;
+            left: 21px;
+            color: crimson !important;
+            z-index: 6;
+        }
+        #uploaded_img{
+            width: 300px;
+            max-height: 100%;
+        }
+        .up_text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+        }
+        .upload_container{
+            min-height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .hidden_upload{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 5;
+            opacity: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                    <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="dashboard_logo">
+                        <div class="container-fluid">
+                            <img src="images/logo.svg" alt="">
+                            <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                        </div>
+                    </div>
+                    <div class="user_nav">
+                        <div class="container-fluid">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <form class="search_form">
+                                    <div class="d-flex align-items-center">
+                                        <label class="mb-0">
+                                            <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                        </label>
+                                        <div class="nice_select_label">
+                                            <select class="filter_search niceSelect" type="text">
+                                                <option value="">الطلبات</option>
+                                                <option value="">المنتجات</option>
+                                                <option value="">العملاء</option>
+                                            </select>
+                                        </div>
+                                        <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                                <div class="user_dropdown dropdown pl-3 pr-3">
+                                    <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user_box">
+                                            <img src="images/4284.jpg" alt="">
+                                            <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="user_drop">
+                                        <a class="dropdown-item default_link" href="profile.html" type="button">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="ml-2 mr-2">الملف الشخصي</span>
+                                        </a>
+                                        <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <span class="ml-2 mr-2">التنبيهات</span>
+                                        </a>
+                                        <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                            <i class="fa-solid fa-wrench"></i>
+                                            <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item default_link" href="login.html" type="button">
+                                            <i class="fa-solid fa-power-off"></i>
+                                            <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">المحفظه</li>
+                    </ol>
+                </nav>
+                <div class="link_box bg-white round_edge5 mt-4 mb-5 p-3">
+                    <a href="verify_store.html" class="d-block default_link">
+                        <div class="d-flex align-items-start">
+                            <div class="bg-danger text-white pt-1 pb-1 pr-2 pl-2 round_edge5 font20">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="d-flex flex-column ml-2 mr-2">
+                                <h6 class="fontBold font13">توثيق المتجر <span class="text-danger fontThin">(غير مكتمل)</span></h6>
+                                <p class="text-secondary font12 mb-1">يتطلب توثيق بيانات مالك المتجر والحساب البنكي لإستقبال المبالغ والمدفوعات الإلكترونية وسحب رصيد المتجر</p>
+                                <p class="mb-0 font12 text-danger"> فقط مالك المتجر يستطيع الدخول لتوثيق المتجر.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-6 col-12 mt-2 mb-2">
+                        <div class="main_card">
+                            <div class="title_card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="ml-2 mr-2"><i class="fa-solid fa-wallet"></i></span>
+                                        <span><b>رصيد المتجر</b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="d-flex align-items-center flex-column text_opacity text-secondary">
+                                    <span class="font35 mt-2 mb-2"><i class="fa-solid fa-wallet"></i></span>
+                                    <h6 class="font17 mt-2 mb-2">لا يوجد لديك رصيد حاليا</h6>
+                                    <span class="font13 mt-2 mb-2">أضف رصيد عن طريق إضافة الرصيد</span>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center mt-3 mb-3">
+                                    <button data-toggle="modal" data-target="#add_funds" class="btn main_btn ml-2 mr-2">إضافة رصيد</button>
+                                    <button class="btn white_btn main_color bordered_main ml-2 mr-2">سحب رصيد</button>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3 mb-3">
+                                    <a class="default_link main_link" href="transactions_History.html">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-box-archive"></i>
+                                            <span class="ml-1 mr-1">سجل العمليات</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mt-2 mb-2">
+                        <div class="main_card">
+                            <div class="title_card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="ml-2 mr-2"><img width="35px" src="images/logo.svg" alt=""></span>
+                                        <span><b>رصيد المدفوعات الإلكترونية </b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="d-flex align-items-center flex-column text_opacity text-secondary">
+                                    <span class="font35 mt-2 mb-2"><i class="fa-solid fa-wallet"></i></span>
+                                    <h6 class="font17 mt-2 mb-2">لا يوجد لديك رصيد حاليا</h6>
+                                </div>
+                                <div class="d-flex justify-content-center mt-3 mb-3">
+                                    <a class="default_link main_link" href="History_electronic_payments.html">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fa-solid fa-box-archive"></i>
+                                            <span class="ml-1 mr-1">سجل العمليات</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2 mb-2">
+                        <div class="main_card">
+                            <div class="title_card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="ml-2 mr-2"><i class="fa-solid fa-sliders"></i></span>
+                                        <span><b> إعدادات الفوترة </b></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="pt-4 pb-4">
+                                    <a data-target="#default_pay_way" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                        <div class="d-flex align-items-center">
+                                            <h6 class="font25 text-secondary mb-0"><i class="fa-solid fa-wallet"></i></h6>
+                                            <div class="d-flex flex-column ml-3 mr-3">
+                                                <h6 class="font12 fontBold text-dark">طريقة الدفع الإفتراضية</h6>
+                                                <p class="text-secondary font11 mb-0">البطاقة الإئتمانية</p>
+                                            </div>
+                                        </div>
+                                        <i class="arrow_left_gray"></i>
+                                    </a>
+                                </div>
+                                <div class="pt-4 pb-4">
+                                    <a data-target="#add_card" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                        <div class="d-flex align-items-center">
+                                            <h6 class="font25 text-secondary mb-0"><i class="fa-solid fa-credit-card"></i></h6>
+                                            <div class="d-flex flex-column ml-3 mr-3">
+                                                <h6 class="font12 fontBold text-dark">البطاقة الإئتمانية</h6>
+                                                <p class="text-secondary font11 mb-0">لا توجد بطاقات مضافة حتى الآن</p>
+                                            </div>
+                                        </div>
+                                        <i class="arrow_left_gray"></i>
+                                    </a>
+                                </div>
+                                <div class="pt-4 pb-4">
+                                    <a data-target="#bank_account_receive" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                        <div class="d-flex align-items-center">
+                                            <h6 class="font25 text-secondary mb-0"><i class="fas fa-university"></i></h6>
+                                            <div class="d-flex flex-column ml-3 mr-3">
+                                                <h6 class="font12 fontBold text-dark">الحساب البنكي لاستقبال المبالغ</h6>
+                                                <p class="text-secondary font11 mb-0">مصرف الراجحي - متجر موضة - SA5880000550608010080053</p>
+                                            </div>
+                                        </div>
+                                        <i class="arrow_left_gray"></i>
+                                    </a>
+                                </div>
+                                <div class="pt-4 pb-4">
+                                    <a data-target="#invoices_email" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                        <div class="d-flex align-items-center">
+                                            <h6 class="font25 text-secondary mb-0"><i class="fas fa-mail-bulk"></i></h6>
+                                            <div class="d-flex flex-column ml-3 mr-3">
+                                                <h6 class="font12 fontBold text-dark">البريد الإلكتروني لاستلام الفواتير</h6>
+                                                <p class="text-secondary font11 mb-0">user2@salla.sa</p>
+                                            </div>
+                                        </div>
+                                        <i class="arrow_left_gray"></i>
+                                    </a>
+                                </div>
+                                <div class="pt-4 pb-4">
+                                    <a data-target="#company_address" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                        <div class="d-flex align-items-center">
+                                            <h6 class="font25 text-secondary mb-0"><i class="fas fa-map-marked"></i></h6>
+                                            <div class="d-flex flex-column ml-3 mr-3">
+                                                <h6 class="font12 fontBold text-dark">عنوان الشركة</h6>
+                                                <p class="text-secondary font11 mb-0">الرياض، السعودية</p>
+                                            </div>
+                                        </div>
+                                        <i class="arrow_left_gray"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2 mb-2">
+                        <div class="main_card mt-5 mb-5">
+                            <div class="title_card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="ml-2 mr-2"><i class="fas fa-file-invoice"></i></span>
+                                        <span><b>فواتير المشتريات</b></span>
+                                    </div>
+                                </div>
+                                <a href="Previous_bills.html" class="btn white_btn font12"> الفواتير السابقة</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-2 mb-2">
+                        <div class="main_card mt-5 mb-5">
+                            <div class="title_card">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <span class="ml-2 mr-2"><i class="fas fa-list"></i></span>
+                                        <span><b>الاشتراكات المفعلة</b></span>
+                                    </div>
+                                </div>
+                                <a href="" class="default_link main_link main_color font12"> تصدير</a>
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">تفاصيل الاشتراك</th>
+                                    <th scope="col">مدة الاشتراك</th>
+                                    <th scope="col">تاريخ الاشتراك</th>
+                                    <th scope="col">تاريخ التجديد القادم</th>
+                                    <th scope="col">رسوم الاشتراك</th>
+                                    <th scope="col"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="text-dark font11">سلة برو</span>
+                                    </td>
+                                    <td>
+                                        <span class="text-dark font11">مفتوح</span>
+                                    </td>
+                                    <td>
+                                        <span class="text-dark font11">	2021-05-27</span>
+                                    </td>
+                                    <td>
+                                        <span class="text-dark font11">2022-06-27</span>
+                                    </td>
+                                    <td>
+                                        <span class="text-dark fontBold font11">0.00 ر.س</span>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown pl-3 pr-3">
+                                            <div class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <span class="ml-2 mr-2"><i class="fas fa-ellipsis-h"></i></span>
+                                            </div>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item default_link font11" href="edit_product.html" type="button">
+                                                    <span class="ml-2 mr-2">ترقية الباقة</span>
+                                                </a>
+                                                <a  class="dropdown-item default_link font11" href="products_details.html" type="button">
+                                                    <span class="ml-2 mr-2">إلغاء التجديد التلقائي</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--add_funds-->
+<div id="add_funds" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="d-flex justify-content-end p-3">
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span class="font25 text-secondary" aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="d-flex flex-column align-items-center">
+                <h2 class="fontBold">الرصيد الحالي</h2>
+                <div class="d-flex align-items-center">
+                    <h2 class="fontBold">0</h2>
+                    <h2 class="fontBold ml-2 mr-2 text-secondary font14">ر.س</h2>
+                </div>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="font12">إضافة المبلغ المطلوب</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="أدخل المبلغ المطلوب">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 mt-2 mb-2">
+                                    <span class="fontBold font13">الدفع بواسطة</span>
+                                    <div class="position-relative pt-2 pb-2 ml-2 mr-2">
+                                        <label class="radio-label mb-0">
+                                            <input checked id="pay_credit" class="radio-input" type="radio" name="pay_by" value="">
+                                            <span class="custom_checked"></span>
+                                            <span class="ml-2 mr-2"><img width="50px" src="images/visa-mastercard.jpg" alt=""></span>
+                                            <span class="ml-1 mr-1 main_color fontBold">البطاقة الائتمانية</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row pay_credit">
+                                <div class="col-12 mt-2 mb-2">
+                                    <div class="form_input">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="رقم البطاقة">
+                                            <span class="input_icon"><i class="fa-solid fa-credit-card"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mt-2 mb-2">
+                                    <div class="form_input">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="الإسم المدون في البطاقة">
+                                            <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mt-2 mb-2">
+                                    <div class="form_input">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="email" placeholder="MM/YY">
+                                            <span class="input_icon"><i class="fa-solid fa-calendar"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12 mt-2 mb-2">
+                                    <div class="form_input">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="CVC">
+                                            <span class="input_icon"><i class="fas fa-user-shield"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2 mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <label class="check_label mb-0 ml-2 mr-2">
+                                            <input type="checkbox" class="d-none">
+                                            <div class="check_span"><i class="fas fa-check"></i></div>
+                                        </label>
+                                        <span class="font13">حفظ البطاقة في الحساب (مدى غير مدعومة حاليا)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mt-2 mb-2">
+                                    <div class="position-relative pt-2 pb-2 ml-2 mr-2">
+                                        <label class="radio-label mb-0">
+                                            <input id="bank_trans" class="radio-input" type="radio" name="pay_by" value="">
+                                            <span class="custom_checked"></span>
+                                            <span class="ml-1 mr-1 font13">تحويل بنكي</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row bank_trans">
+                                <div class="col-12 mt-2 mb-2">
+                                    <p class="mb-1 font10 text-danger">
+                                        يتم تأكيد عمليات التحويل البنكي من خلال الإدارة المالية والمحاسبة خلال أوقات العمل من الأحد للخميس من الـ 9ص حتى الـ 5م، نشكر لكم صبركم وحسن انتظاركم
+                                    </p>
+                                    <div class="secondary_bg">
+                                        <div class="container-fluid pt-3 pb-3">
+                                            <div class="d-flex align-items-center mt-2 mb-2">
+                                                <span class="font13 flex-1">البنك</span>
+                                                <span class="font13 flex-1">مصرف الراجحي</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2 mb-2">
+                                                <span class="font13 flex-1">صاحب الحساب</span>
+                                                <span class="font13 flex-1">مؤسسة تطبيق سلة لتقنية المعلومات</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2 mb-2">
+                                                <span class="font13 flex-1">رقم الحساب</span>
+                                                <span class="font13 flex-1">362608016546543</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-2 mb-2">
+                                                <span class="font13 flex-1">رقم الآيبان</span>
+                                                <span class="font13 flex-1">SA2680000362608016546543</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="upArea">
+                                        <label class="upload_container">
+                                            <input type="file" class="d-none" onchange="readURL(this);">
+                                            <span class="text-secondary font12 up_text">ارفاق الملف...</span>
+                                            <div class="imageLoud">
+                                                <a class="fancy_link" data-fancybox="" href="images/desktop0.jpeg">
+                                                    <img src="images/desktop0.jpeg" id="uploaded_img" alt="uploaded">
+                                                </a>
+                                            </div>
+                                        </label>
+                                        <a class="btn default_link remove_up">X</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end add_funds-->
+
+<!--default_pay_way-->
+<div id="default_pay_way" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>طريقة الدفع الإفتراضية</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column">
+                                    <h6 class="text-dark fontBold font14">تحديد طريقة الدفع الإفتراضية</h6>
+                                    <p class="text-secondary font10">
+                                        سيتم استخدام الطريقة الأساسية والبديلة عند التجديد التلقائي للباقة
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2 mt-2">
+                                <span class="form_label">الطريقة الأساسية</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">البطاقة الإئتمانية</option>
+                                        <option value="">المحفظه</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2 mt-2">
+                                <span class="form_label">الطريقة البديلة</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">البطاقة الإئتمانية</option>
+                                        <option value="">المحفظه</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إغلاق</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end default_pay_way-->
+
+<!--add_card-->
+<div id="add_card" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>إضافة بطاقة جديدة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column">
+                                    <h6 class="text-dark font12">يتم استخدام البطاقة في عملية التجديد التلقائي للباقة دون الحاجة إلى شراء الباقة بشكل يدوي .</h6>
+                                    <ul>
+                                        <li>سيتجدد الإشتراك تلقائيا في حين موعد التجديد إلا إذا قمت بإلغاء ميزة التجديد التلقائي.</li>
+                                        <li>إذا قمت بإلغاء الاشتراك، يمكنك الإستمرار في استخدامه حتى تاريخ الفوترة التالي.</li>
+                                        <li>حفظ بطاقة مدى غير مدعومة حالياً.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="رقم البطاقة">
+                                        <span class="input_icon"><i class="fa-solid fa-credit-card"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="الإسم المدون في البطاقة">
+                                        <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="email" placeholder="MM/YY">
+                                        <span class="input_icon"><i class="fa-solid fa-calendar"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="CVC">
+                                        <span class="input_icon"><i class="fas fa-user-shield"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex align-items-center">
+                                    <label class="check_label mb-0 ml-2 mr-2">
+                                        <input type="checkbox" class="d-none">
+                                        <div class="check_span"><i class="fas fa-check"></i></div>
+                                    </label>
+                                    <span class="font13">
+                                        اوافق علي
+                                        <a class="default_link main_link main_color" href="">الشروط و الأحكام</a>
+                                        و
+                                        <a class="default_link main_link main_color" href="">إتفاقية الاستخدام</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn w-100">إضافة البطاقه</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end add_card-->
+
+<!--bank_account_receive-->
+<div id="bank_account_receive" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>الحساب البنكي لاستقبال المبالغ</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column second_bg p-3 round_edge5">
+                                    <p class="text-dark fontBold font12">بيانات الحساب البنكي يجب أن تطابق بيانات مالك المتجر أو إسم الشركة في السجل التجاري</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2 mt-2">
+                                <span class="form_label">البنك</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">مصرف الراجحي</option>
+                                        <option value="">بنك القاهره</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="form_label">إسم صاحب الحساب</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="إسم صاحب الحساب">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="form_label">رقم الحساب</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="رقم البطاقة">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="form_label">رقم الإبيان</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="رقم الإبيان">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <p class="font11 text-secondary">
+                                    بعد الحفظ ستتم مراجعة طلب التعديل من قبل الفريق المختص خلال 1-2 يوم عمل، خلالها سيتم تعليق السحب من رصيد المدفوعات الإلكترونية حتى اكتمال المراجعة
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn" data-dismiss="modal">إغلاق</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end bank_account_receive-->
+
+<!--invoices_email-->
+<div id="invoices_email" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>البريد الإلكتروني لاستلام الفواتير</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column">
+                                    <h6 class="text-dark fontBold font14">إضافة البريد الإلكتروني الرسمي لاستلام الفواتير</h6>
+                                    <p class="text-secondary font10">
+                                        سيتم إرسال الفواتير الشهريه وفواتير المدفوعات الإلكترونية إلى هذا البريد الإلكتروني
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="form_label">البريد الإلكتروني</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البريد الإلكتروني">
+                                        <span class="input_icon"><i class="fas fa-mail-bulk"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إغلاق</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end invoices_email-->
+
+<!--company_address-->
+<div id="company_address" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>عنوان الشركة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column">
+                                    <h6 class="text-dark fontBold font14">إضافة عنوان الشركة الرسمي</h6>
+                                    <p class="text-secondary font10">
+                                        سيتم إضافة بيانات عنوان الشركة إلى الفاتورة الضريبية
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="form_label">إسم الشركة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="إدخل إسم الشركة">
+                                        <span class="input_icon"><i class="fas fa-building"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="form_label">العنوان</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="أدخل العنوان">
+                                        <span class="input_icon"><i class="fas fa-map-marked"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="form_label">الرقم الضريبي</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="أدخل الرقم الضريبي">
+                                        <span class="input_icon"><i class="fas fa-id-card"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex align-items-center">
+                                    <span class="font12 text-dark">لتغير الرقم الضريبي</span>
+                                    <a class="font11 default_link main_color main_link ml-1 mr-1" href="taxes.html">إضغط هنا</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إغلاق</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end company_address-->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(".remove_up").on("click" , function (){
+        $(".imageLoud").remove();
+        $(".upArea").css('height' , '');
+        $(this).remove();
+    })
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            $(".upArea label").append('<div class="imageLoud">' +
+                '<a class="fancy_link" data-fancybox="" href="">' +
+                '<img src="" id="uploaded_img" alt="uploaded">' +
+                '</a>' +
+                '</div>');
+            $(".upArea").append('<a class="btn default_link remove_up">X</a>');
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#uploaded_img').attr('src', e.target.result);
+                $('.fancy_link').attr('href', e.target.result);
+                $(".upArea").css('height' , '200px');
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+        $(".remove_up").on("click" , function (){
+            $(".imageLoud").remove();
+            $(".upArea").css('height' , '');
+            $(this).remove();
+        })
+    }
+</script>
+<script>
+    $(function (){
+        $(".pay_credit").slideUp();
+        $(".bank_trans").slideUp();
+    })
+    $(function (){
+        if ($('#pay_credit').is(':checked')){
+            $(".pay_credit").slideDown(300);
+        }else {
+            $(".pay_credit").slideUp();
+        }
+    })
+    $(document).on("change" , "#pay_credit" , function (){
+        if ($(this).is(':checked')){
+            $(".pay_credit").slideDown(300);
+            $(".bank_trans").slideUp(300);
+        }else {
+            $(".pay_credit").slideUp(300);
+            $(".bank_trans").slideDown(300);
+        }
+    })
+
+    $(document).on("change" , "#bank_trans" , function (){
+        if ($(this).is(':checked')){
+            $(".pay_credit").slideUp(300);
+            $(".bank_trans").slideDown(300);
+        }else {
+            $(".pay_credit").slideDown(300);
+            $(".bank_trans").slideUp(300);
+        }
+    })
+</script>
+</body>
+</html>

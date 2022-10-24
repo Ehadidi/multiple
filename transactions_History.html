@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/flatpicker.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .table td {
+            vertical-align: middle;
+            border: 0;
+            border-bottom: 1px solid #f8f8f8;
+            padding: 20px;
+        }
+        thead tr{
+            background-color: #f4f4f4;
+        }
+        .table thead th {
+            font-weight: 400;
+            color: #999;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+<div class="side_option_layer"></div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--side option-->
+    <section class="side_option">
+        <div class="d-flex align-items-center justify-content-between mb-4 pl-2 pr-2">
+            <div class="d-flex align-items-center">
+                <span><i class="fa-solid fa-filter"></i></span>
+                <span class="ml-2 mr-2"><b>فرز العمليات حسب</b></span>
+            </div>
+            <button class="btn remove_modal"><b>X</b></button>
+        </div>
+        <form>
+            <div class="container-fluid">
+                <div class="form_input">
+                    <span class="form_label">رقم العملية</span>
+                    <label class="position-relative w-100">
+                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="رقم العملية">
+                        <span class="input_icon"></span>
+                    </label>
+                </div>
+            </div>
+            <div id="accordion">
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" >
+                    <span><i class="fa-solid fa-wallet"></i></span>
+                    <span class="ml-3 mr-3">المحفظه</span>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">الكل</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">المحفظه</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">نقاط الولاء</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                    <span class="ml-3 mr-3">نوع العملية</span>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">الكل</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">سحب رصيد</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">ايداع / شحن رصيد</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                    <span class="ml-3 mr-3">تفاصيل العملية</span>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">الكل</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">بوليصة شحن</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">طلب شراء</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">إيداع بنكي</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">إيداع مباشر</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >
+                    <span><i class="fa-solid fa-wallet"></i></span>
+                    <span class="ml-3 mr-3">تاريخ العملية</span>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="input_select">
+                        <div class="form_input">
+                            <input class="flatpickr" type="text" placeholder="من">
+                        </div>
+                    </div>
+                    <div class="input_select">
+                        <div class="form_input">
+                            <input class="flatpickr" type="text" placeholder="الي">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn submit_btn">عرض الناتج</button>
+                    </div>
+                    <div class="col-md-4 col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn gray_btn2 w-100">إعادة تعيين</button>
+                    </div>
+                    <div class="col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn white_btn w-100"><i class="fa-solid fa-file-arrow-down ml-1 mr-1"></i> تصدير الناتج</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!--end side option-->
+
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </div>
+                <div class="dashboard_logo">
+                    <div class="container-fluid">
+                        <img src="images/logo.svg" alt="">
+                        <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                    </div>
+                </div>
+                <div class="user_nav">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <form class="search_form">
+                                <div class="d-flex align-items-center">
+                                    <label class="mb-0">
+                                        <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                    </label>
+                                    <div class="nice_select_label">
+                                        <select class="filter_search niceSelect" type="text">
+                                            <option value="">الطلبات</option>
+                                            <option value="">المنتجات</option>
+                                            <option value="">العملاء</option>
+                                        </select>
+                                    </div>
+                                    <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="user_dropdown dropdown pl-3 pr-3">
+                                <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="user_box">
+                                        <img src="images/4284.jpg" alt="">
+                                        <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="user_drop">
+                                    <a class="dropdown-item default_link" href="profile.html" type="button">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="ml-2 mr-2">الملف الشخصي</span>
+                                    </a>
+                                    <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span class="ml-2 mr-2">التنبيهات</span>
+                                    </a>
+                                    <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                        <i class="fa-solid fa-wrench"></i>
+                                        <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item default_link" href="login.html" type="button">
+                                        <i class="fa-solid fa-power-off"></i>
+                                        <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="wallet.html"> المحفظه</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">سجل العمليات</li>
+                    </ol>
+                </nav>
+                <div class="page_option justify-content-end">
+                    <button class="btn filter_modal main_btn">
+                        <i class="fa-solid fa-filter"></i>
+                        <span>تصفية</span>
+                    </button>
+                </div>
+                <div class="main_card mt-4 mb-4">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-2 mr-2"><i class="fas fa-server"></i></span>
+                                <span><b> سجل عمليات - رصيد المتجر </b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">رقم العملية</th>
+                            <th scope="col">المحفظة</th>
+                            <th scope="col">نوع العملية</th>
+                            <th scope="col">تفاصيل العملية</th>
+                            <th scope="col">مبلغ العملية</th>
+                            <th scope="col">تاريخ العملية</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <a class="main_color main_link default_link" data-target="#transactions_details" data-toggle="modal" href="">937418132</a>
+                            </td>
+                            <td>
+                                <span class="font12">نقاط الولاء</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span class="font10 main_bg text-white pt-1 pb-1 pl-2 pr-2 round_edge30 d-block">تم التنفيذ</span>
+                                    <span class="font12 ml-2 mr-2"> إيداع/شحن رصيد</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="font12">عملية غير صحيحة</span>
+                            </td>
+                            <td>
+                                <span class="font12">8.61 ر.س</span>
+                            </td>
+                            <td>
+                                <span class="font12">06/05/2022 - 05:00 PM</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="main_color main_link default_link" data-target="#transactions_details" data-toggle="modal" href="">937418132</a>
+                            </td>
+                            <td>
+                                <span class="font12">نقاط الولاء</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span class="font10 main_bg text-white pt-1 pb-1 pl-2 pr-2 round_edge30 d-block">تم التنفيذ</span>
+                                    <span class="font12 ml-2 mr-2"> إيداع/شحن رصيد</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="font12">عملية غير صحيحة</span>
+                            </td>
+                            <td>
+                                <span class="font12">8.61 ر.س</span>
+                            </td>
+                            <td>
+                                <span class="font12">06/05/2022 - 05:00 PM</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="main_color main_link default_link" data-target="#transactions_details" data-toggle="modal" href="">937418132</a>
+                            </td>
+                            <td>
+                                <span class="font12">نقاط الولاء</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span class="font10 main_bg text-white pt-1 pb-1 pl-2 pr-2 round_edge30 d-block">تم التنفيذ</span>
+                                    <span class="font12 ml-2 mr-2"> إيداع/شحن رصيد</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="font12">عملية غير صحيحة</span>
+                            </td>
+                            <td>
+                                <span class="font12">8.61 ر.س</span>
+                            </td>
+                            <td>
+                                <span class="font12">06/05/2022 - 05:00 PM</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="main_color main_link default_link" data-target="#transactions_details" data-toggle="modal" href="">937418132</a>
+                            </td>
+                            <td>
+                                <span class="font12">نقاط الولاء</span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span class="font10 main_bg text-white pt-1 pb-1 pl-2 pr-2 round_edge30 d-block">تم التنفيذ</span>
+                                    <span class="font12 ml-2 mr-2"> إيداع/شحن رصيد</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="font12">عملية غير صحيحة</span>
+                            </td>
+                            <td>
+                                <span class="font12">8.61 ر.س</span>
+                            </td>
+                            <td>
+                                <span class="font12">06/05/2022 - 05:00 PM</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--transactions_details-->
+<div id="transactions_details" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>تفاصيل العملية #937418132</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="font12">رقم العملية</span>
+                                </td>
+                                <td class="text-end">
+                                    <span class="font12">937418132</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="font12">نوع المحفظة</span>
+                                </td>
+                                <td class="text-end">
+                                    <span class="font12">نقاط الولاء</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="font12">تفاصيل العملية</span>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <span class="font10 main_bg text-white pt-1 pb-1 pl-2 pr-2 round_edge30 d-block">تم التنفيذ</span>
+                                        <span class="font12 ml-2 mr-2"> إيداع/شحن رصيد</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="font12">تاريخ العملية</span>
+                                </td>
+                                <td class="text-end">
+                                    <span class="font12">06/05/2022 - 05:00 PM</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="font12">المبلغ</span>
+                                </td>
+                                <td class="text-end">
+                                    <span class="font12">8.61 ر.س</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="font12">الاجمالي</span>
+                                </td>
+                                <td class="text-end">
+                                    <span class="font12">8.61 ر.س</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end transactions_details-->
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/flatpicker.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

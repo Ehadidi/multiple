@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                    <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="dashboard_logo">
+                        <div class="container-fluid">
+                            <img src="images/logo.svg" alt="">
+                            <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                        </div>
+                    </div>
+                    <div class="user_nav">
+                        <div class="container-fluid">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <form class="search_form">
+                                    <div class="d-flex align-items-center">
+                                        <label class="mb-0">
+                                            <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                        </label>
+                                        <div class="nice_select_label">
+                                            <select class="filter_search niceSelect" type="text">
+                                                <option value="">الطلبات</option>
+                                                <option value="">المنتجات</option>
+                                                <option value="">العملاء</option>
+                                            </select>
+                                        </div>
+                                        <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                                <div class="user_dropdown dropdown pl-3 pr-3">
+                                    <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user_box">
+                                            <img src="images/4284.jpg" alt="">
+                                            <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="user_drop">
+                                        <a class="dropdown-item default_link" href="profile.html" type="button">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="ml-2 mr-2">الملف الشخصي</span>
+                                        </a>
+                                        <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <span class="ml-2 mr-2">التنبيهات</span>
+                                        </a>
+                                        <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                            <i class="fa-solid fa-wrench"></i>
+                                            <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item default_link" href="login.html" type="button">
+                                            <i class="fa-solid fa-power-off"></i>
+                                            <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">الشراكات</li>
+                    </ol>
+                </nav>
+                <div class="mt-4 mb-4">
+                    <span class="fontBold text-secondary font15 m-3 d-block">برامج الولاء</span>
+                    <div class="partners_group">
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/partner1.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/primCart.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 mb-4">
+                    <span class="fontBold text-secondary font15 m-3 d-block">التدريب</span>
+                    <div class="partners_group">
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/partner1.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/primCart.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/partner1.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/primCart.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/partner1.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                        <div class="secondary_card">
+                            <div class="d-flex align-items-center justify-content-center w-100">
+                                <img class="partner_logo" src="images/primCart.webp" alt="">
+                            </div>
+                            <button data-target="#partner_info" data-toggle="modal" class="btn partner_info">معلومات الشركة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--partner info-->
+<div id="partner_info" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>اسم الشركة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs " id="nav-tab" role="tablist">
+                                <a class="default_link active" id="coupon_data_tab" data-toggle="tab" href="#nav_coupon_data" role="tab" aria-controls="nav_coupon_data" aria-selected="true">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-list font14"></i>
+                                        <span class="ml-3 mr-3">نبذه عن الشراكة</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_includes_tab" data-toggle="tab" href="#nav_coupon_includes" role="tab" aria-controls="nav_coupon_includes" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-folder font14"></i>
+                                        <span class="ml-3 mr-3">معلومات الشراكة</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_excludes_tab" data-toggle="tab" href="#nav_coupon_excludes" role="tab" aria-controls="nav_coupon_excludes" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-file-excel font14"></i>
+                                        <span class="ml-3 mr-3">الأسئلة الشائعة</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav_coupon_data" role="tabpanel" aria-labelledby="coupon_data_tab">
+                                <div class="panner">
+                                    <img src="images/offerpic.webp" alt="">
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">نبذة عن منصة برايم كارت</span>
+                                    <p class="text-secondary font11">
+                                        منصة متخصصة بتقديم حلول وخدمات للمتاجر الإلكترونية وصناعة المحتوى التسويقي ونمو مشروعك على شبكة الإنترنت، ولدينا فريق متكامل لمساعدتك في تجهيز متجرك الإلكتروني بالشكل الذي يتناسب مع عملائك وجمهورك المستهدف، مع منصة برايم كارت انجز أعمالك بسهولة تامة.
+                                    </p>
+                                </div>
+                                <h6 class="fontBold font12 mt-3 mb-3 d-block">الخدمات المقدمة:</h6>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">1. خدمة رفع المنتجات والخدمات إلى متجرك الإلكتروني (7) ريال للمنتج:</span>
+                                    <p class="text-secondary font11">
+                                        بإمكانك اختيارك لعدد لا محدود من المنتجات أو الخدمات التي تريد رفعها إلى متجرك الإلكتروني، بالإضافة إلى كتابة وصف لتلك المنتجات والخدمات وتنسيقها بشكل واضح وجذّاب لعملائك بحيث تظهر للعميل تفاصيل المنتج والخيارات المتاحة له مع مراعاة اختيار الكلمات التسويقية لذلك.
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">2. خدمة تصميم شعار لمتجرك الإلكتروني (490) ريال:</span>
+                                    <p class="text-secondary font11">
+                                        تصميم شعار (لوقو) لمتجرك الإلكتروني يتناسب مع مجال متجرك الإلكتروني ليعطي هوية خاصة بمتجرك ومجال عملك على شبكة الإنترنت.
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">3. خدمة تصميم 3 بنرات متنوعة لمتجرك الإلكتروني (490) ريال:</span>
+                                    <p class="text-secondary font11">
+                                        تصميم (3) بنرات متنوّعة لمتجرك الإلكتروني وبنفس مجال عملك الخاص, علماََ بأن وجود هذه البنرات لها أهمية كبيرة في إظهار محتوى متجرك بشكل رائع وجذاب وملفت لعملائك المحتملين والتي تستطيع من خلالها إخبارهم بكل ماهو جديد لدى متجرك الإلكتروني.
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">4. خدمة تجهيز صفحات متجرك الإلكتروني (350) ريال:</span>
+                                    <p class="text-secondary font11">
+                                        تجهيز صفحات نصية احترافية لمتجرك الإلكتروني بما يتناسب مع مجال ونشاط متجرك، وتمكن أهمية صفحات متجرك الإلكتروني في توضيح سياسات متجرك الإلكتروني والتي تسهّل للعميل الوصول على الإجابات التي يريد معرفتها قبل عملية الشراء من متجرك الإلكتروني وبالتالي هذا يزيد من ثقة العميل بمتجرك الإلكتروني ويظهره بشكل احترافي، وأيضاَ لوجودها أهمية كبيرة لدى محركات البحث قوقل حيث تعتبر من العوامل الهامة لظهور متجرك الإلكتروني لدى محركات البحث في قوقل.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav_coupon_includes" role="tabpanel" aria-labelledby="coupon_includes_tab">
+                                <h6 class="fontBold font12 mt-3 mb-3 d-block">خطوات التسجيل</h6>
+                                <div class="txt_info">
+                                    <span class="font12 mt-3 mb-3 d-block">خطوات التسجيل أو طلب الخدمة:</span>
+                                    <ul>
+                                        <li>بعد القيام بقراءة بنود الخدمة بشكل جيد قم بإضافة الخدمة إلى سلة الشراء.</li>
+                                        <li>عند الطلب تأكد من وضع معلوماتك بشكل صحيح ليتمكن فريق برايم كارت من الرجوع والتواصل معك.</li>
+                                        <li>بعد الطلب وعملية الدفع سوف يقوم فريق برايم كارت بالتواصل معك خلال 24 ساعة من طلب الخدمة.</li>
+                                        <li>احرص على توضيح طلبك بدقة وعلى أن يكون الاتفاق واضحاَ حتى لا تحدث مشاكل لاحقاَ.</li>
+                                        <li>يسمح للعميل بإخبار فريق برايم كارت بالتعديلات التي يريدها وذلك قبل انتهاء مدة تنفيذ العمل وتسليمه للعميل.</li>
+                                    </ul>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">لضمان حقوقك</span>
+                                    <p class="text-secondary font11">
+                                        منصة برايم كارت تضمن لك حقك بشكل كامل فلا داع ﻷي قلق وكن مطمئناَ عند طلب شراء إحدى الخدمات المعروضة في الموقع، حيث سوف يقوم فريق برايم كارت بالتواصل معك وتنفيذ طلبك وتسليمه لك بالشكل الذي تم الإتفاق عليه
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">رابط الشراكة</span>
+                                    <a href="https://bit.ly/3oacOXa" class="default_link main_link main_color text-secondary font11"> https://bit.ly/3oacOXa</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_coupon_excludes" role="tabpanel" aria-labelledby="coupon_excludes_tab">
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">كم من الوقت يستغرق تنفيذ طلبي للخدمة التي قمت باختيارها؟</span>
+                                    <p class="text-secondary font11">
+                                        سوف يقوم فريق برايم كارت بالتواصل مع العميل خلال 24 ساعة من وقت عملية دفع العميل لمبلغ الخدمة وذلك لمناقشته ومعرفة طبيعة عمله ومتطلباته التي يريد إضافتها في العمل، وبعد ذلك وقت استغراق تنفيذ وتسليم العمل للعميل يعود ذلك بحسب نوع الخدمة التي قام العميل باختيارها.
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">هل من الممكن التعديل على العمل بعد تسليمه للعميل بشكل نهائي؟</span>
+                                    <p class="text-secondary font11">
+                                        نأسف لا يمكنك ذلك، ولكن بالتأكيد يمكنك التواصل مع فريق برايم كارت والتعديل على العمل فقط خلال وقت تنفيذه وقبل تسليمه بشكل نهائي، وعدد مرات التعديل على العمل يحدّد بحسب نوع الخدمة التي قام العميل باختيارها
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">كم من الوقت يستغرق تنفيذ طلبي للخدمة التي قمت باختيارها؟</span>
+                                    <p class="text-secondary font11">
+                                        سوف يقوم فريق برايم كارت بالتواصل مع العميل خلال 24 ساعة من وقت عملية دفع العميل لمبلغ الخدمة وذلك لمناقشته ومعرفة طبيعة عمله ومتطلباته التي يريد إضافتها في العمل، وبعد ذلك وقت استغراق تنفيذ وتسليم العمل للعميل يعود ذلك بحسب نوع الخدمة التي قام العميل باختيارها.
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">هل من الممكن التعديل على العمل بعد تسليمه للعميل بشكل نهائي؟</span>
+                                    <p class="text-secondary font11">
+                                        نأسف لا يمكنك ذلك، ولكن بالتأكيد يمكنك التواصل مع فريق برايم كارت والتعديل على العمل فقط خلال وقت تنفيذه وقبل تسليمه بشكل نهائي، وعدد مرات التعديل على العمل يحدّد بحسب نوع الخدمة التي قام العميل باختيارها
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">كم من الوقت يستغرق تنفيذ طلبي للخدمة التي قمت باختيارها؟</span>
+                                    <p class="text-secondary font11">
+                                        سوف يقوم فريق برايم كارت بالتواصل مع العميل خلال 24 ساعة من وقت عملية دفع العميل لمبلغ الخدمة وذلك لمناقشته ومعرفة طبيعة عمله ومتطلباته التي يريد إضافتها في العمل، وبعد ذلك وقت استغراق تنفيذ وتسليم العمل للعميل يعود ذلك بحسب نوع الخدمة التي قام العميل باختيارها.
+                                    </p>
+                                </div>
+                                <div class="txt_info">
+                                    <span class="fontBold font12 mt-3 mb-3 d-block">هل من الممكن التعديل على العمل بعد تسليمه للعميل بشكل نهائي؟</span>
+                                    <p class="text-secondary font11">
+                                        نأسف لا يمكنك ذلك، ولكن بالتأكيد يمكنك التواصل مع فريق برايم كارت والتعديل على العمل فقط خلال وقت تنفيذه وقبل تسليمه بشكل نهائي، وعدد مرات التعديل على العمل يحدّد بحسب نوع الخدمة التي قام العميل باختيارها
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <div class="d-flex align-items-center justify-content-end w-100">
+                            <button class="btn gray__btn">إغلاق</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end partner info-->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/d3-5.8.2.min.js"></script>
+<script src="js/c3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

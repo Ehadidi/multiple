@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="register_body">
+
+<!--register form-->
+    <section class="register">
+        <div class="container">
+            <div class="vh_div">
+                <div class="row">
+                    <div class="col-md-6 col-12 side_border overflow-hidden">
+                        <div class="d-flex flex-column align-items-center justify-content-center h-100 wow fadeInRight">
+                            <img class="logo_register" src="images/logo.svg" alt="logo">
+                            <h4 class="main_color mt-3 mb-3"><b>سهلة الي حد الإتقان</b></h4>
+                            <p class="text-center">
+                                <b>
+                                    منصة سلة تمكنك من إنشاء متجرك الإلكتروني خلال دقائق وإدارة منتجاتك بكل سهولة وفاعلية، لتنضم إلى أكثر من 18 ألف متجر يستخدمون أدوات ومميزات سلة المتجددة.
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 overflow-hidden">
+                        <form class="wow fadeInLeft" method="POST" id="register-form">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-12">
+                                    <div class="form_input">
+                                        <label for="user_name" class="form_label">اسم التاجر</label>
+                                        <input id="user_name" name="user_name" type="text" placeholder="أدخل اسم التاجر">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12">
+                                    <div class="form_input">
+                                        <label for="user_mail" class="form_label">البريد الإلكتروني</label>
+                                        <input id="user_mail" name="user_mail" type="email" placeholder="أدخل البريد الإلكتروني">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12">
+                                    <div class="form_input">
+                                        <label for="user_phone" class="form_label">رقم الجوال</label>
+                                        <input id="user_phone" name="user_phone" type="number" placeholder="أدخل رقم الجوال">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12">
+                                    <div class="form_input">
+                                        <label for="user_password" class="form_label">كلمة المرور</label>
+                                        <input id="user_password" name="user_password" type="password" placeholder="أدخل كلمة المرور">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12">
+                                    <div class="d-flex justify-content-center">
+                                        <a class="default_link main_color" data-toggle="collapse" href="#collapseCoupon" role="button" aria-expanded="false" aria-controls="collapseCoupon"><b>لديك كوبون دعوة ؟</b></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12 collapse" id="collapseCoupon">
+                                    <div class="form_input position-relative">
+                                        <label for="user_coupon" class="form_label">هل لديك كوبون دعوه؟</label>
+                                        <input id="user_coupon" type="text" placeholder="أدخل رمز الكوبون">
+                                        <button class="btn form_btn">تطبيق</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 col-12 mt-3 mb-3">
+                                    <button class="btn submit_btn">تسجيل</button>
+                                </div>
+                                <div class="col-md-8 col-12">
+                                    <div class="d-flex justify-content-center">
+                                        <span>بالتسجيل فأنا اوفق علي <a class="default_link main_color" data-toggle="modal" data-target="#policy_modal">سياسة المنصة</a></span>
+                                    </div>
+                                </div>
+                                <hr class="col-5">
+                                <div class="col-md-8 col-12">
+                                    <div class="d-flex justify-content-center">
+                                        <span>لديك حساب ؟ <a href="login.html" class="default_link main_color">تسجيل الدخول</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--end register form-->
+
+
+<!-- policy_modal -->
+<div id="policy_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="title_modal">
+                <h3>سياسة الخصوصيه</h3>
+            </div>
+            <div class="policy_txt">
+                <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+                    هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+                </p>
+                <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+                    هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+                </p>
+                <p>
+                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع.
+                    ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم فيظهر بشكل لا يليق.
+                    هذا النص يمكن أن يتم تركيبه على أي تصميم دون مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير مفهوم. لأنه مازال نصاً بديلاً ومؤقتاً.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end policy_modal -->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/messages_ar.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script>
+    $( "#register-form" ).validate({
+
+        rules: {
+          
+            user_name : {
+                required : true   
+            },
+            user_mail : {
+                required : true  ,
+                email: true 
+            },
+            user_phone : {
+                required: true,
+                digits: true,
+                minlength: 8,
+                maxlength: 14,
+            },
+            user_password : {
+                required : true ,
+                minlength: 8,
+
+            }
+        },
+
+    });
+</script>
+</body>
+</html>

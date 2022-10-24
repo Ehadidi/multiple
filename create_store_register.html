@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="creatStoreBody">
+
+<!--register form-->
+<section class="register pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12 p-0">
+                <div class="create_steps">
+                    <div class="logo mb-4 mt-4">
+                        <div class="main_color d-flex align-items-center"  href="index.html">
+                            <img style="width: 40px" src="images/logo.svg" alt="logo">
+                            <h5 class="mb-0 ml-3 mr-3"><b>سلة</b></h5>
+                        </div>
+                    </div>
+                    <ul class="steps_list">
+                        <li class="act">
+                            <div class="step_link">
+                                <span class="num">1</span>
+                                <span class="ml-3 mr-3"><b>معلومات المتجر</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">2</span>
+                                <span class="ml-3 mr-3"><b>هوية المتجر</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">3</span>
+                                <span class="ml-3 mr-3"><b>موقع استلام الشحنات</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">4</span>
+                                <span class="ml-3 mr-3"><b>شركات الشحن</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">5</span>
+                                <span class="ml-3 mr-3"><b>الدفع الإلكتروني</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">6</span>
+                                <span class="ml-3 mr-3"><b>باقات سلة</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">7</span>
+                                <span class="ml-3 mr-3"><b>تدشين الموقع</b></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-12 p-0">
+                <div class="form_wrapper">
+                    <div class="create_title">
+                        <h5 class="main_color"><b>معلومات المتجر</b></h5>
+                        <span>ادخل اسم المتجر ومعلومات خاصة بمتجرك</span>
+                    </div>
+                    <form>
+                        <div class="row mt-5">
+                            <div class="col-12 mb-3 mt-3">
+                                <div class="form_input">
+                                    <label for="store_name" class="form_label"><b>اسم المتجر</b></label>
+                                    <input id="store_name" type="text" placeholder="أدخل اسم المتجر">
+                                    <div class="url_created">
+                                        <span>رابط متجرك سيكون <span class="text-secondary">www.salla.sa/eltawhed</span></span>
+                                        <a href="" class="default_link main_color ml-2 mr-2"><i class="fas fa-pen"></i>تعديل</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-3 mt-3">
+                                <div class="form_input">
+                                    <label for="store_url" class="form_label mb-1"><b>رابط المتجر</b></label>
+                                    <span class="text-secondary url_created">سيكون هو رابط المتجر الذي يمكن للعملاء الدخول عليه للطلب</span>
+                                    <input id="store_url" type="text" placeholder="أدخل اسم المتجر">
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <span class="form_label"><b>نوع الكيان</b></span>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="check_radio_div">
+                                        <input name="kaian" id="individual" class="custom_radio_input" type="radio">
+                                        <label for="individual" class="custom_radio_label">
+                                            <span class="radio_txt">فرد</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="kaian" id="company" class="custom_radio_input" type="radio">
+                                        <label for="company" class="custom_radio_label">
+                                            <span class="radio_txt">مؤسسة</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="kaian" id="firm" class="custom_radio_input" type="radio">
+                                        <label for="firm" class="custom_radio_label">
+                                            <span class="radio_txt">شركة</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="kaian" id="charity" class="custom_radio_input" type="radio">
+                                        <label for="charity" class="custom_radio_label">
+                                            <span class="radio_txt">مؤسسة خيرية</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <span class="form_label"><b>ما هو السبب لانشاءك متجر إلكتروني في سلة؟ </b><span class="text-secondary">(اختياري)</span></span>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="check_radio_div">
+                                        <input name="create_reason" id="option_1" class="custom_radio_input" type="radio">
+                                        <label for="option_1" class="custom_radio_label">
+                                            <span class="radio_txt">الإنتقال من منصة لأخري</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="create_reason" id="option_2" class="custom_radio_input" type="radio">
+                                        <label for="option_2" class="custom_radio_label">
+                                            <span class="radio_txt">الإستكشاف</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="create_reason" id="option_3" class="custom_radio_input" type="radio">
+                                        <label for="option_3" class="custom_radio_label">
+                                            <span class="radio_txt">إعداد متجر لطرف أخر</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="create_reason" id="option_4" class="custom_radio_input" type="radio">
+                                        <label for="option_4" class="custom_radio_label">
+                                            <span class="radio_txt">نقل تجارتي التقليدية إلكترونيا</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <span class="form_label"><b>المبيعات الشهرية المتوقعة، بالريال السعودي؟ </b><span class="text-secondary">(اختياري)</span></span>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="check_radio_div">
+                                        <input name="expected_sell" id="option_5" class="custom_radio_input" type="radio">
+                                        <label for="option_5" class="custom_radio_label">
+                                            <span class="radio_txt">أقل من 10 ألاف</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="expected_sell" id="option_6" class="custom_radio_input" type="radio">
+                                        <label for="option_6" class="custom_radio_label">
+                                            <span class="radio_txt">أقل من 100 ألاف</span>
+                                        </label>
+                                    </div>
+                                    <div class="check_radio_div">
+                                        <input name="expected_sell" id="option_7" class="custom_radio_input" type="radio">
+                                        <label for="option_7" class="custom_radio_label">
+                                            <span class="radio_txt">أقل من 1000 ألاف</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-end">
+                                    <a href="step_two.html" class="btn submit_btn next_step">التالي</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end register form-->
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+</body>
+</html>

@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </div>
+                <div class="dashboard_logo">
+                    <div class="container-fluid">
+                        <img src="images/logo.svg" alt="">
+                        <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                    </div>
+                </div>
+                <div class="user_nav">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <form class="search_form">
+                                <div class="d-flex align-items-center">
+                                    <label class="mb-0">
+                                        <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                    </label>
+                                    <div class="nice_select_label">
+                                        <select class="filter_search niceSelect" type="text">
+                                            <option value="">الطلبات</option>
+                                            <option value="">المنتجات</option>
+                                            <option value="">العملاء</option>
+                                        </select>
+                                    </div>
+                                    <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="user_dropdown dropdown pl-3 pr-3">
+                                <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="user_box">
+                                        <img src="images/4284.jpg" alt="">
+                                        <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="user_drop">
+                                    <a class="dropdown-item default_link" href="profile.html" type="button">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="ml-2 mr-2">الملف الشخصي</span>
+                                    </a>
+                                    <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span class="ml-2 mr-2">التنبيهات</span>
+                                    </a>
+                                    <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                        <i class="fa-solid fa-wrench"></i>
+                                        <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item default_link" href="login.html" type="button">
+                                        <i class="fa-solid fa-power-off"></i>
+                                        <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">الشراكات</li>
+                    </ol>
+                </nav>
+                <div class="d-flex align-items-center justify-content-between mb-5">
+                    <button data-toggle="modal" data-target="#add_shipping_company" class="btn round_btn_main">
+                        <span class="d-flex align-items-center">
+                            <i class="fa-solid fa-plus"></i>
+                            <span class="ml-2 mr-2">شركة شحن جديده</span>
+                        </span>
+                    </button>
+                    <a href="" data-target="#settings" data-toggle="modal" class="default_link main_link font14">
+                        <span class="d-flex align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="ml-2 mr-2">الاعدادات</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
+                        <div class="bg-white shadow-sm pt-4 shipping_company_box">
+                            <a href="" data-toggle="modal" data-target="#free_shipping_settings" class="default_link d-flex flex-column align-items-center w-100 mb-4">
+                                <span class="font30 main_color mb-2 mt-3"><i class="fa-solid fa-gift"></i></span>
+                                <span class="font10 fontBold">الشحن المجاني</span>
+                            </a>
+                            <span class="card_footer font11 text-secondary">
+                                <a href="" data-target="#free_shipping_settings" data-toggle="modal" class="default_link"><i class="fa-solid fa-gear"></i> إعدادات</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
+                        <div class="bg-white shadow-sm pt-4 shipping_company_box">
+                            <a href="" data-toggle="modal" data-target="#cash_on_delivery_settings" class="default_link d-flex flex-column align-items-center w-100 mb-4">
+                                <span class="font30 main_color mb-2 mt-3"><i class="fa-solid fa-gifts"></i></span>
+                                <span class="font10 fontBold">شروط الدفع عند الاستلام</span>
+                            </a>
+                            <span class="card_footer font11 text-secondary">
+                                <a href="" data-target="#cash_on_delivery_settings" data-toggle="modal" class="default_link"><i class="fa-solid fa-gear"></i> إعدادات</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
+                        <div class="bg-white shadow-sm pt-4 shipping_company_box">
+                            <a href="" data-toggle="modal" data-target="#shipping_company" class="default_link d-flex flex-column align-items-center w-100 mb-4">
+                                <span class="mb-2 mt-3"><img width="130px" height="43px" src="images/aramex.jpg" alt=""></span>
+                                <div class="d-flex align-items-center">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </a>
+                            <div class="card_footer font11 text-secondary">
+                                <div class="d-flex align-items-center justify-content-between pl-2 pr-2">
+                                    <a href="" data-target="#shipping_company" data-toggle="modal" class="default_link"><i class="fa-solid fa-gear"></i> إعدادات</a>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
+                        <div class="bg-white shadow-sm pt-4 shipping_company_box">
+                            <a href="" data-toggle="modal" data-target="#edit_shipping_company" class="default_link d-flex flex-column align-items-center w-100 mb-4">
+                                <span class="font25 main_color mb-2 mt-3"><i class="fa-solid fa-truck"></i></span>
+                                <div class="d-flex align-items-center">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <h6 class="font12 mt-2 mb-2">البريد السعودي المحترف</h6>
+                            </a>
+                            <div class="card_footer font11 text-secondary">
+                                <div class="d-flex align-items-center justify-content-between pl-2 pr-2">
+                                    <a href="" data-target="#edit_shipping_company" data-toggle="modal" class="default_link"><i class="fa-solid fa-gear"></i> إعدادات</a>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-12 mt-2 mb-2">
+                        <div class="bg-white shadow-sm pt-4 shipping_company_box">
+                            <a href="" data-toggle="modal" data-target="#shipping_company" class="default_link d-flex flex-column align-items-center w-100 mb-4">
+                                <span class="mb-2 mt-3"><img width="130px" height="43px" src="images/aramex.jpg" alt=""></span>
+                                <div class="d-flex align-items-center">
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                            </a>
+                            <div class="card_footer font11 text-secondary">
+                                <div class="d-flex justify-content-center pl-2 pr-2 h-100 align-items-center">
+                                    <a href="" data-target="#shipping_company" data-toggle="modal" class="btn round_btn_main font10 pt-1 pb-1 pl-2 pr-2"><i class="fa-solid fa-link"></i> ربط الخدمة</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--add shipping company-->
+<div id="add_shipping_company" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>إضافة شركة شحن أو مندوب توصيل</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="d-block mt-2 mb-2">اسم الشركة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="اسم الشركة">
+                                        <span class="input_icon"><i class="fa-solid fa-building"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing">
+                            <div class="row secondary_bg mb-4 ml-0 mr-0">
+                                <div class="col-12 mb-2 mt-2">
+                                    <label class="form_label">الدولة</label>
+                                    <div class="form_input">
+                                        <select class="select_2">
+                                            <option value="" selected >All Countries</option>
+                                            <option value="">Saudi Arabia</option>
+                                            <option value="">United Arab Emirates</option>
+                                            <option value="">Qatar</option>
+                                            <option value="">Egypt</option>
+                                            <option value="">Kuwait</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-map"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2 mt-2">
+                                    <div class="mb-3">
+                                        <label class="form_label mb-0">المدن المدعومة</label>
+                                        <span class="text-secondary font11">اختيار المدن المدعومة ضمن هذه التسعيرة</span>
+                                    </div>
+                                    <div class="form_input">
+                                        <select class="select_2" multiple>
+                                            <option value="" selected >All City</option>
+                                            <option value="">Saudi Arabia</option>
+                                            <option value="">United Arab Emirates</option>
+                                            <option value="">Qatar</option>
+                                            <option value="">Egypt</option>
+                                            <option value="">Kuwait</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form_label mb-0">نوع التسعيرة</label>
+                                    <div class="input_select p-0">
+                                        <select class="niceSelect Pricing_type">
+                                            <option value="const_cost">ثابتة</option>
+                                            <option value="by_weight">حسب الوزن</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 const_cost">
+                                    <div class="form_input">
+                                        <span class="d-block mt-2 mb-2">تكلفة الشحن</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">
+                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 by_weight d-none">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="d-block mt-2 mb-2">التكلفة</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="اول كيلو جرام">
+                                                    <span class="input_icon fontBold font11">اول</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">
+                                                    <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="d-block mt-2 mb-2">تكلفة الزيادة</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الزيادة">
+                                                    <span class="input_icon fontBold font11 text-dark"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="التكلفة بالوزن">
+                                                    <span class="input_icon fontBold font11 text-dark">لكل</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form_input">
+                                        <span class="d-block mt-2 mb-2">مدة الشحن</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="مدة الشحن">
+                                            <span class="input_icon"><i class="fa-solid fa-clock"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form_label mb-0">الدفع عند الاستلام ؟</label>
+                                    <div class="input_select p-0">
+                                        <select class="niceSelect">
+                                            <option value="">الدفع عند الاستلام ؟</option>
+                                            <option value="">متوفر</option>
+                                            <option value="">غير متوفر</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2 mb-4">
+                                    <a class="btn red__btn pricing_remove" href="">
+                                        <i class="fa-solid fa-x"></i>
+                                        <span>حذف التسعيره</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mb-4">
+                            <a class="btn main_btn pricing_add" href="">
+                                <span>إضافة تسعيرة شحن</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end add shipping company-->
+
+<!--free_shipping_settings-->
+<div id="free_shipping_settings" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>إعدادات الشحن المجاني</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="alert alert-primary d-flex align-items-baseline" role="alert">
+                        <span class="M_end_13"><i class="fa-solid fa-bell"></i></span>
+                        <span>بإمكانك تحديد المدينة أو الدولة التي تدعم الشحن المجاني لها في حال تجاوز المشتريات للحد الأدنى الذي تحدده</span>
+                    </div>
+                    <div class="alert alert-warning d-flex align-items-baseline" role="alert">
+                        <span class="M_end_13"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <span>في حالة تحديد دولة معينة او مدن معينة فسيظهر الشحن المجاني بعد تسجيل دخول العميل واختياره عنوان الشحنفي حالة تحديد شركات شحن معينة سيظهر الشحن المجاني عند اختياره للشركة الشحن المحددة</span>
+                    </div>
+                </div>
+                <form action="">
+                    <div class="container-fluid">
+                        <div class="FreeShippingForm">
+                            <div class="row">
+                                <div class="col-12 mb-2 mt-2">
+                                    <div class="form_input mb-1">
+                                        <select class="select_3">
+                                            <option value="" selected >All Countries</option>
+                                            <option value="">Saudi Arabia</option>
+                                            <option value="">United Arab Emirates</option>
+                                            <option value="">Qatar</option>
+                                            <option value="">Egypt</option>
+                                            <option value="">Kuwait</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-map"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2 mt-2">
+                                    <div class="form_input mb-1">
+                                        <select class="select_3" multiple>
+                                            <option value="" selected >All City</option>
+                                            <option value="">Saudi Arabia</option>
+                                            <option value="">United Arab Emirates</option>
+                                            <option value="">Qatar</option>
+                                            <option value="">Egypt</option>
+                                            <option value="">Kuwait</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2 mt-2">
+                                    <div class="form_input mb-1">
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="الحد الادني للمشتريات">
+                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2 mt-2">
+                                    <span class="d-block mt-2 mb-2">شركات الشحن</span>
+                                    <div class="form_input mb-1">
+                                        <select class="select_3" multiple>
+                                            <option value="" selected >البريد السعودي | سُبل</option>
+                                            <option value="">DHL Express</option>
+                                            <option value="">ارامكس</option>
+                                            <option value="">LAFASTA</option>
+                                            <option value="">ريدبوكس</option>
+                                            <option value="">Xturbo</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-cart-flatbed"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2 mt-2">
+                                    <span class="d-block mt-2 mb-2">المنتجات</span>
+                                    <div class="form_input mb-1">
+                                        <select class="select_3" multiple>
+                                            <option value="" selected>DHL Express</option>
+                                            <option value="">ارامكس</option>
+                                            <option value="">LAFASTA</option>
+                                            <option value="">ريدبوكس</option>
+                                            <option value="">Xturbo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2 mb-4">
+                                    <a class="btn red__btn condition_remove" href="">
+                                        <i class="fa-solid fa-x"></i>
+                                        <span>حذف الشرط</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <a class="btn main_btn createFreeShippingForm" href="">
+                                <span> إضافة شرط</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end free_shipping_settings-->
+
+<!--cash_on_delivery_settings-->
+<div id="cash_on_delivery_settings" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>شروط الدفع عند الاستلام</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <p class="mb-2 fontBold font12">
+                        بإمكانك تحديد الشروط التي عند تحققها يتم <span class="text-danger">(تعطيل)</span> خيار الدفع عند الاستلام في صفحة الدفع بالمتجر
+                    </p>
+                    <div class="alert alert-primary d-flex align-items-baseline" role="alert">
+                        <span class="M_end_13"><i class="fa-solid fa-bell"></i></span>
+                        <span>علما أن تفعيل خيار الدفع عند الاستلام يتم من خلال إعدادات شركة الشحن</span>
+                    </div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs " id="nav-tab" role="tablist">
+                                <a class="default_link active" id="coupon_data_tab" data-toggle="tab" href="#nav_coupon_data" role="tab" aria-controls="nav_coupon_data" aria-selected="true">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-list font14"></i>
+                                        <span class="ml-3 mr-3">شروط الدفع عند الاستلام</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_includes_tab" data-toggle="tab" href="#nav_coupon_includes" role="tab" aria-controls="nav_coupon_includes" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-folder font14"></i>
+                                        <span class="ml-3 mr-3">مستثناة عن الدفع عند الاستلام</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav_coupon_data" role="tabpanel" aria-labelledby="coupon_data_tab">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <div class="d-flex flex-column mb-2 mt-2">
+                                                <span class="font12 fontBold mb-1">شروط الدفع عند الاستلام</span>
+                                                <span class="font11 text-secondary">الحد الأعلى للمشتريات (إختياري)</span>
+                                            </div>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="ر.س">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font11 text-secondary mt-2 mb-2 d-block">الحد الأعلى لوزن المنتجات في السلة (إختياري)</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="KG">
+                                                <span class="input_icon"><i class="fa-solid fa-cart-flatbed-suitcase"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_coupon_includes" role="tabpanel" aria-labelledby="coupon_includes_tab">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="d-flex flex-column mb-2 mt-2">
+                                            <span class="font12 fontBold mb-1">منتجات مستثناة</span>
+                                            <span class="font11 text-secondary">المنتجات المستثناة من الدفع عند الاستلام (اختياري)</span>
+                                        </div>
+                                        <div class="form_input mb-1">
+                                            <select class="product_except" multiple="multiple">
+                                                <option value="">البريد السعودي | سُبل</option>
+                                                <option value="">DHL Express</option>
+                                                <option value="">ارامكس</option>
+                                                <option value="">LAFASTA</option>
+                                                <option value="">ريدبوكس</option>
+                                                <option value="">Xturbo</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-cart-flatbed"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="d-flex flex-column mb-2 mt-2">
+                                            <span class="font12 fontBold mb-1">تصنيفات المستثناة</span>
+                                            <span class="font11 text-secondary">التصنيفات المستثناة من الدفع عند الاستلام (اختياري)</span>
+                                        </div>
+                                        <div class="form_input mb-1">
+                                            <select class="class_except" multiple>
+                                                <option value="">DHL Express</option>
+                                                <option value="">ارامكس</option>
+                                                <option value="">LAFASTA</option>
+                                                <option value="">ريدبوكس</option>
+                                                <option value="">Xturbo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end cash_on_delivery_settings-->
+
+<!--shipping_company-->
+<div id="shipping_company" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>شروط الدفع عند الاستلام</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-2 mt-3 d-flex justify-content-center"><img width="130px" src="images/aramex.jpg" alt=""></div>
+                    <div class="d-flex flex-column align-items-center mb-3">
+                        <div class="d-flex align-items-center">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <h6 class="text-secondary font10 mt-2">تقييم 0</h6>
+                    </div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab" data-toggle="tab" href="#nav_one" role="tab" aria-controls="nav_one" aria-selected="true">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-earth-africa"></i>
+                                        <span class="ml-3 mr-3">بيانات الربط</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="two_tab" data-toggle="tab" href="#nav_two" role="tab" aria-controls="nav_two" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-list font14"></i>
+                                        <span class="ml-3 mr-3">نبذة</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="three_tab" data-toggle="tab" href="#nav_three" role="tab" aria-controls="nav_three" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <span class="ml-3 mr-3">تسعيرة الشحن</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="four_tab" data-toggle="tab" href="#nav_four" role="tab" aria-controls="nav_four" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <span class="ml-3 mr-3">طرق التوصيل</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one" role="tabpanel" aria-labelledby="one_tab">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <span class="font12">طريقة الربط</span>
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">بوليصات سلة المخفضة</option>
+                                                <option value="">الربط بحسابك في ارامكس</option>
+                                            </select>
+                                            <span class="input_icon"><i class="far fa-comment-alt"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12">AccountEntity</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="AccountEntity : RUH">
+                                                <span class="input_icon"><i class="fa-solid fa-building"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12">AccountNumber</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="AccountNumber : 20016">
+                                                <span class="input_icon"><i class="fa-solid fa-id-card"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12">AccountPin</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="AccountPin : 331421">
+                                                <span class="input_icon"><i class="fa-solid fa-id-card"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12">UserName</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="UserName :  testingapi@aramex.com">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12">Password</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="Password" placeholder="Password">
+                                                <span class="input_icon"><i class="fa-solid fa-key"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <span class="font12">Payment Type</span>
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">Payment Type 1</option>
+                                                <option value="">Payment Type 2</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <span class="font12">Payment currency</span>
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">الريال السعودي</option>
+                                                <option value="">الدولار الامريكي</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="text-secondary font13 mt-3 mb-3">اعدادات الشحن المحلي</h6>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12">Product Group</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Product Group">
+                                                <span class="input_icon"><i class="fa-solid fa-box-archive"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12">Product Type</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Product Type">
+                                                <span class="input_icon"><i class="fa-solid fa-box-archive"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <div class="d-flex flex-column mb-2">
+                                                <span class="font12"> اسم العرض</span>
+                                                <span class="text-secondary font11">يمكنك تخصيص اسم شركة الشحن الذي يتم عرضه للعملاء في قائمة شركات الشحن المتاحة لكل عميل في صفحة انهاء الطلب</span>
+                                            </div>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="شركة شحن سريع">
+                                                <span class="input_icon"><i class="fa-solid fa-address-card"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="text-secondary font13 mt-3 mb-3">بيانات العرض في البوليصة</h6>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12"> اسم الشركة</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="اسم الشركة">
+                                                <span class="input_icon"><i class="fa-solid fa-building"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12"> اسم المرسل</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="اسم المرسل">
+                                                <span class="input_icon"><i class="fa-solid fa-id-badge"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12"> وصف نوع المنتجات</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="وصف نوع المنتجات">
+                                                <span class="input_icon"><i class="fa-solid fa-box-archive"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-1">
+                                            <span class="font12"> رقم الجوال</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="رقم الجوال">
+                                                <span class="input_icon"><i class="fa-solid fa-phone"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <span class="font12">نوع الشحن</span>
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">دعم الشحن من الباب للباب</option>
+                                                <option value="">مفعل</option>
+                                                <option value="">معطل</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-house"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two" role="tabpanel" aria-labelledby="two_tab">
+                                <div>
+                                    <p class="font13 mt-3 mb-3">
+                                        حققت أرامكس نمواً سريعاً حتى أصبحت اليوم علامة تجارية مرموقة تتميز بخدماتها المتخصصة وحلولها العالمية المبتكرة. وتتخذ أرامكس، المدرجة في سوق دبي المالي، من دولة الإمارات العربية المتحدة مقراً رئيسياً لعملياتها، حيث تستفيد من موقع الدولة الذي يمثّل حلقة وصل بين الشرق والغرب، مما يمكّنها من توفير حلول لوجستية مخصصة في أي مكان حول العالم، فضلاً عن الوصول إلى قاعدة متنامية من العملاء من الشركات والأفراد في المنطقة والعالم.
+                                    </p>
+                                </div>
+                                <div class="mt-5 mb-5">
+                                    <h6 class="font12 fontBold">الخدمات :</h6>
+                                    <ul class="font12 pl-3 pr-3">
+                                        <li class="mt-3 mb-3">خدمة الشحن والتوصيل من الباب للباب Door To Door.</li>
+                                        <li class="mt-3 mb-3">خدمة التسليم والاستلام من/في الفرع.</li>
+                                    </ul>
+                                </div>
+                                <div class="mt-5 mb-5">
+                                    <h6 class="font12 fontBold">نطاق التغطبة :</h6>
+                                    <ul class="font12 pl-3 pr-3">
+                                        <li class="mt-3 mb-3">الوسطى والمناطق الشمالية </li>
+                                        <li class="mt-3 mb-3">الشرقية </li>
+                                        <li class="mt-3 mb-3">الغربية والمناطق الجنوبية </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_three" role="tabpanel" aria-labelledby="three_tab">
+                                <div class="mt-3 mb-3">
+                                    <div class="pricing2">
+                                        <div class="row secondary_bg mb-4 ml-0 mr-0">
+                                            <div class="col-12 mb-2 mt-2">
+                                                <label class="form_label">الدولة</label>
+                                                <div class="form_input">
+                                                    <select class="select_2">
+                                                        <option value="" selected >All Countries</option>
+                                                        <option value="">Saudi Arabia</option>
+                                                        <option value="">United Arab Emirates</option>
+                                                        <option value="">Qatar</option>
+                                                        <option value="">Egypt</option>
+                                                        <option value="">Kuwait</option>
+                                                    </select>
+                                                    <span class="input_icon"><i class="fa-solid fa-map"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mb-2 mt-2">
+                                                <div class="mb-3">
+                                                    <label class="form_label mb-0">المدن المدعومة</label>
+                                                    <span class="text-secondary font11">اختيار المدن المدعومة ضمن هذه التسعيرة</span>
+                                                </div>
+                                                <div class="form_input">
+                                                    <select class="select_2" multiple>
+                                                        <option value="" selected >All City</option>
+                                                        <option value="">Saudi Arabia</option>
+                                                        <option value="">United Arab Emirates</option>
+                                                        <option value="">Qatar</option>
+                                                        <option value="">Egypt</option>
+                                                        <option value="">Kuwait</option>
+                                                    </select>
+                                                    <span class="input_icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form_label mb-0">نوع التسعيرة</label>
+                                                <div class="input_select p-0">
+                                                    <select class="niceSelect Pricing_type">
+                                                        <option value="const_cost">ثابتة</option>
+                                                        <option value="by_weight">حسب الوزن</option>
+                                                    </select>
+                                                    <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 const_cost">
+                                                <div class="form_input">
+                                                    <span class="d-block mt-2 mb-2">تكلفة الشحن</span>
+                                                    <label class="position-relative w-100">
+                                                        <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">
+                                                        <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 by_weight d-none">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="d-block mt-2 mb-2">التكلفة</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form_input">
+                                                            <label class="position-relative w-100">
+                                                                <input class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="اول كيلو جرام">
+                                                                <span class="input_icon fontBold font11">اول</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form_input">
+                                                            <label class="position-relative w-100">
+                                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">
+                                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <span class="d-block mt-2 mb-2">تكلفة الزيادة</span>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form_input">
+                                                            <label class="position-relative w-100">
+                                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الزيادة">
+                                                                <span class="input_icon fontBold font11 text-dark"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form_input">
+                                                            <label class="position-relative w-100">
+                                                                <input class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="التكلفة بالوزن">
+                                                                <span class="input_icon fontBold font11 text-dark">لكل</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form_input">
+                                                    <span class="d-block mt-2 mb-2">مدة الشحن</span>
+                                                    <label class="position-relative w-100">
+                                                        <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="مدة الشحن">
+                                                        <span class="input_icon"><i class="fa-solid fa-clock"></i></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form_label mb-0">الدفع عند الاستلام ؟</label>
+                                                <div class="input_select p-0">
+                                                    <select class="niceSelect">
+                                                        <option value="">الدفع عند الاستلام ؟</option>
+                                                        <option value="">متوفر</option>
+                                                        <option value="">غير متوفر</option>
+                                                    </select>
+                                                    <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-2 mb-4">
+                                                <a class="btn red__btn pricing_remove" href="">
+                                                    <i class="fa-solid fa-x"></i>
+                                                    <span>حذف التسعيره</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end mb-4">
+                                        <a class="btn main_btn pricing2_add" href="">
+                                            <span>إضافة تسعيرة شحن</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_four" role="tabpanel" aria-labelledby="four_tab">
+                                <div class="container-fluid">
+                                    <div class="d-flex align-items-center justify-content-between mt-4 mb-4">
+                                        <h6 class="font13">رقم الهاتف :</h6>
+                                        <p class="mb-0">920027447</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mt-4 mb-4">
+                                        <h6 class="font13">رقم الجوال :</h6>
+                                        <p class="mb-0">920027447</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mt-4 mb-4">
+                                        <h6 class="font13">الايميل: :</h6>
+                                        <a class="default_link main_link main_color" href="">ALL_JED_CMT_Sallah_Support@aramex.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end shipping_company-->
+
+<!--settings-->
+<div id="settings" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>خيارات شركات الشحن</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                            <div class="d-flex flex-column">
+                                <span class="fontBold font13">السماح لشركات الشحن بتغيير حالة الطلب</span>
+                                <span class="text-secondary font11">بعض شركات الشحن توفر خاصية لتغيير حالة الطلبات تلقائياً، بناءً على حالة الشحن، مثل شركات فاستلو وسلاسة.</span>
+                            </div>
+                            <div class="turn_switch">
+                                <input type="checkbox" checked class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                            <div class="d-flex flex-column">
+                                <span class="fontBold font13">السماح لشركات الشحن بمزامنة الكميات</span>
+                                <span class="text-secondary font11">بعض شركات الشحن توفر خاصية مزامنة الكميات مع سلة مثل ديجي باكس و اسناد و تراك.</span>
+                            </div>
+                            <div class="turn_switch">
+                                <input type="checkbox" class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                            <div class="d-flex flex-column">
+                                <span class="fontBold font13">عرض شركة شحن واحدة من الشركات الخاصة عند وجود تطابق لرسوم الشحن في صفحة إنهاء الطلب</span>
+                                <span class="text-secondary font11">عند تفعيل الخيار ووجود أكثر من شركة شحن تخدم نفس مدينة او دولة العميل واسعار الشحن متطابقة يتم عرض شركة واحد فقط٫ يتم تطبيق ذلك على الشركات المضاة يدوياً فقط</span>
+                            </div>
+                            <div class="turn_switch">
+                                <input type="checkbox" checked class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                            <div class="d-flex flex-column">
+                                <span class="fontBold font13">إرسال بيانات المنتجات الفرعية ضمن منتج من نوع "مجموعة منتجات"</span>
+                                <span class="text-secondary font11">عند تفعيل هذا الخيار سيتم إرسال تفاصيل المنتج المجمع مع تفاصيل المنتجات الفرعية إلى شركة الشحن.</span>
+                            </div>
+                            <div class="turn_switch">
+                                <input type="checkbox" class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                            <div class="d-flex flex-column">
+                                <span class="fontBold font13">السماح للنظام بتحديد المستودع بشكل تلقائي حسب مدينة العميل</span>
+                                <span class="text-secondary font11">عند تفعيل الخيار سيقوم النظام باختيار المستودع (إن وجد) حسب المدينة في عنوان الشحن وذلك عند تحويل الطلب إلى "تم التنفيذ".</span>
+                            </div>
+                            <div class="turn_switch">
+                                <input type="checkbox" checked class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <div class="d-flex align-items-center justify-content-between w-100">
+                            <button class="btn main_btn">حفظ</button>
+                            <button class="btn gray__btn">إغلاق</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end settings-->
+
+<!--edit_shipping_company-->
+<div id="edit_shipping_company" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>تعديل شركة شحن / مندوب توصيل</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="d-block mt-2 mb-2">اسم الشركة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="اسم الشركة">
+                                        <span class="input_icon"><i class="fa-solid fa-building"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing">
+                            <div class="row secondary_bg mb-4 ml-0 mr-0">
+                                <div class="col-12 mb-2 mt-2">
+                                    <label class="form_label">الدولة</label>
+                                    <div class="form_input">
+                                        <select class="select_2">
+                                            <option value="" selected >All Countries</option>
+                                            <option value="">Saudi Arabia</option>
+                                            <option value="">United Arab Emirates</option>
+                                            <option value="">Qatar</option>
+                                            <option value="">Egypt</option>
+                                            <option value="">Kuwait</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-map"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-2 mt-2">
+                                    <div class="mb-3">
+                                        <label class="form_label mb-0">المدن المدعومة</label>
+                                        <span class="text-secondary font11">اختيار المدن المدعومة ضمن هذه التسعيرة</span>
+                                    </div>
+                                    <div class="form_input">
+                                        <select class="select_2" multiple>
+                                            <option value="" selected >All City</option>
+                                            <option value="">Saudi Arabia</option>
+                                            <option value="">United Arab Emirates</option>
+                                            <option value="">Qatar</option>
+                                            <option value="">Egypt</option>
+                                            <option value="">Kuwait</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form_label mb-0">نوع التسعيرة</label>
+                                    <div class="input_select p-0">
+                                        <select class="niceSelect Pricing_type">
+                                            <option value="const_cost">ثابتة</option>
+                                            <option value="by_weight">حسب الوزن</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 const_cost">
+                                    <div class="form_input">
+                                        <span class="d-block mt-2 mb-2">تكلفة الشحن</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">
+                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 by_weight d-none">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="d-block mt-2 mb-2">التكلفة</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="اول كيلو جرام">
+                                                    <span class="input_icon fontBold font11">اول</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">
+                                                    <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <span class="d-block mt-2 mb-2">تكلفة الزيادة</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الزيادة">
+                                                    <span class="input_icon fontBold font11 text-dark"><i class="fa-solid fa-dollar-sign"></i></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form_input">
+                                                <label class="position-relative w-100">
+                                                    <input class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="التكلفة بالوزن">
+                                                    <span class="input_icon fontBold font11 text-dark">لكل</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form_input">
+                                        <span class="d-block mt-2 mb-2">مدة الشحن</span>
+                                        <label class="position-relative w-100">
+                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="مدة الشحن">
+                                            <span class="input_icon"><i class="fa-solid fa-clock"></i></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form_label mb-0">الدفع عند الاستلام ؟</label>
+                                    <div class="input_select p-0">
+                                        <select class="niceSelect">
+                                            <option value="">الدفع عند الاستلام ؟</option>
+                                            <option value="">متوفر</option>
+                                            <option value="">غير متوفر</option>
+                                        </select>
+                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-2 mb-4">
+                                    <a class="btn red__btn pricing_remove" href="">
+                                        <i class="fa-solid fa-x"></i>
+                                        <span>حذف التسعيره</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end mb-4">
+                            <a class="btn main_btn pricing_add" href="">
+                                <span>إضافة تسعيرة شحن</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end edit_shipping_company-->
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/d3-5.8.2.min.js"></script>
+<script src="js/c3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).on("change" , ".Pricing_type" , function (){
+        if (this.value == 'by_weight'){
+            $(".const_cost").addClass("d-none")
+            $(".by_weight").removeClass("d-none")
+        } else{
+            $(".const_cost").removeClass("d-none")
+            $(".by_weight").addClass("d-none")
+        }
+    })
+</script>
+<script>
+    $(document).ready(function() {
+        $('.select_2').select2({
+            dropdownParent: $('#add_shipping_company')
+        });
+    })
+
+    $(document).ready(function() {
+        $('.class_except').select2({
+            dropdownParent: $('#cash_on_delivery_settings'),
+        });
+    })
+
+    $(document).ready(function() {
+        $('.product_except').select2({
+            dropdownParent: $('#cash_on_delivery_settings'),
+        });
+    })
+
+    $(document).ready(function() {
+        $('.select_3').select2({
+            dropdownParent: $('#free_shipping_settings')
+        });
+    })
+
+</script>
+<script>
+    $(document).on("click" , ".pricing_add" , function (e){
+        e.preventDefault();
+        $(".pricing").append('<div class="row secondary_bg mb-4 ml-0 mr-0">\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <label class="form_label">الدولة</label>\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <select name="country[]" class="select_2">\n' +
+            '                                            <option value="" selected >All Countries</option>\n' +
+            '                                            <option value="">Saudi Arabia</option>\n' +
+            '                                            <option value="">United Arab Emirates</option>\n' +
+            '                                            <option value="">Qatar</option>\n' +
+            '                                            <option value="">Egypt</option>\n' +
+            '                                            <option value="">Kuwait</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-map"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <div class="mb-3">\n' +
+            '                                        <label class="form_label mb-0">المدن المدعومة</label>\n' +
+            '                                        <span class="text-secondary font11">اختيار المدن المدعومة ضمن هذه التسعيرة</span>\n' +
+            '                                    </div>\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <select name="city[]" class="select_2" multiple>\n' +
+            '                                            <option value="" selected >All City</option>\n' +
+            '                                            <option value="">Saudi Arabia</option>\n' +
+            '                                            <option value="">United Arab Emirates</option>\n' +
+            '                                            <option value="">Qatar</option>\n' +
+            '                                            <option value="">Egypt</option>\n' +
+            '                                            <option value="">Kuwait</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-map-location-dot"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12">\n' +
+            '                                    <label class="form_label mb-0">نوع التسعيرة</label>\n' +
+            '                                    <div class="input_select p-0">\n' +
+            '                                        <select name="Pricing[]" class="niceSelect Pricing_type">\n' +
+            '                                            <option value="const_cost">ثابتة</option>\n' +
+            '                                            <option value="by_weight">حسب الوزن</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 const_cost">\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <span class="d-block mt-2 mb-2">تكلفة الشحن</span>\n' +
+            '                                        <label class="position-relative w-100">\n' +
+            '                                            <input class="pl-4 pr-4 pt-0 pb-0" name="recharge_cost[]" type="number" placeholder="تكلفة الشحن">\n' +
+            '                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>\n' +
+            '                                        </label>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 by_weight d-none">\n' +
+            '                                    <div class="row">\n' +
+            '                                        <div class="col-12">\n' +
+            '                                            <span class="d-block mt-2 mb-2">التكلفة</span>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="first_kg[]" class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="اول كيلو جرام">\n' +
+            '                                                    <span class="input_icon fontBold font11">اول</span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="recharge_cost1[]" class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">\n' +
+            '                                                    <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                    <div class="row">\n' +
+            '                                        <div class="col-12">\n' +
+            '                                            <span class="d-block mt-2 mb-2">تكلفة الزيادة</span>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="increase_cost[]" class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الزيادة">\n' +
+            '                                                    <span class="input_icon fontBold font11 text-dark"><i class="fa-solid fa-dollar-sign"></i></span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="weight_cost[]" class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="التكلفة بالوزن">\n' +
+            '                                                    <span class="input_icon fontBold font11 text-dark">لكل</span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12">\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <span class="d-block mt-2 mb-2">مدة الشحن</span>\n' +
+            '                                        <label class="position-relative w-100">\n' +
+            '                                            <input name="shipping_time[]" class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="مدة الشحن">\n' +
+            '                                            <span class="input_icon"><i class="fa-solid fa-clock"></i></span>\n' +
+            '                                        </label>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12">\n' +
+            '                                    <label class="form_label mb-0">الدفع عند الاستلام ؟</label>\n' +
+            '                                    <div class="input_select p-0">\n' +
+            '                                        <select name="pay[]" class="niceSelect">\n' +
+            '                                            <option value="">الدفع عند الاستلام ؟</option>\n' +
+            '                                            <option value="">متوفر</option>\n' +
+            '                                            <option value="">غير متوفر</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mt-2 mb-4">\n' +
+            '                                    <a class="btn red__btn pricing_remove" href="">\n' +
+            '                                        <i class="fa-solid fa-x"></i>\n' +
+            '                                        <span>حذف التسعيره</span>\n' +
+            '                                    </a>\n' +
+            '                                </div>\n' +
+            '                            </div>').hide().fadeIn(300);
+        $('.select_2').select2();
+        $('.niceSelect').niceSelect();
+    })
+
+    $(document).on("click" , ".pricing2_add" , function (e){
+        e.preventDefault();
+        $(".pricing2").append('<div class="row secondary_bg mb-4 ml-0 mr-0">\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <label class="form_label">الدولة</label>\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <select name="country[]" class="select_2">\n' +
+            '                                            <option value="" selected >All Countries</option>\n' +
+            '                                            <option value="">Saudi Arabia</option>\n' +
+            '                                            <option value="">United Arab Emirates</option>\n' +
+            '                                            <option value="">Qatar</option>\n' +
+            '                                            <option value="">Egypt</option>\n' +
+            '                                            <option value="">Kuwait</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-map"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <div class="mb-3">\n' +
+            '                                        <label class="form_label mb-0">المدن المدعومة</label>\n' +
+            '                                        <span class="text-secondary font11">اختيار المدن المدعومة ضمن هذه التسعيرة</span>\n' +
+            '                                    </div>\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <select name="city[]" class="select_2" multiple>\n' +
+            '                                            <option value="" selected >All City</option>\n' +
+            '                                            <option value="">Saudi Arabia</option>\n' +
+            '                                            <option value="">United Arab Emirates</option>\n' +
+            '                                            <option value="">Qatar</option>\n' +
+            '                                            <option value="">Egypt</option>\n' +
+            '                                            <option value="">Kuwait</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-map-location-dot"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12">\n' +
+            '                                    <label class="form_label mb-0">نوع التسعيرة</label>\n' +
+            '                                    <div class="input_select p-0">\n' +
+            '                                        <select name="Pricing[]" class="niceSelect Pricing_type">\n' +
+            '                                            <option value="const_cost">ثابتة</option>\n' +
+            '                                            <option value="by_weight">حسب الوزن</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 const_cost">\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <span class="d-block mt-2 mb-2">تكلفة الشحن</span>\n' +
+            '                                        <label class="position-relative w-100">\n' +
+            '                                            <input class="pl-4 pr-4 pt-0 pb-0" name="recharge_cost[]" type="number" placeholder="تكلفة الشحن">\n' +
+            '                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>\n' +
+            '                                        </label>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 by_weight d-none">\n' +
+            '                                    <div class="row">\n' +
+            '                                        <div class="col-12">\n' +
+            '                                            <span class="d-block mt-2 mb-2">التكلفة</span>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="first_kg[]" class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="اول كيلو جرام">\n' +
+            '                                                    <span class="input_icon fontBold font11">اول</span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="recharge_cost1[]" class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الشحن">\n' +
+            '                                                    <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                    <div class="row">\n' +
+            '                                        <div class="col-12">\n' +
+            '                                            <span class="d-block mt-2 mb-2">تكلفة الزيادة</span>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="increase_cost[]" class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="تكلفة الزيادة">\n' +
+            '                                                    <span class="input_icon fontBold font11 text-dark"><i class="fa-solid fa-dollar-sign"></i></span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                        <div class="col-6">\n' +
+            '                                            <div class="form_input">\n' +
+            '                                                <label class="position-relative w-100">\n' +
+            '                                                    <input name="weight_cost[]" class="pl-5 pr-5 pt-0 pb-0" type="number" placeholder="التكلفة بالوزن">\n' +
+            '                                                    <span class="input_icon fontBold font11 text-dark">لكل</span>\n' +
+            '                                                </label>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12">\n' +
+            '                                    <div class="form_input">\n' +
+            '                                        <span class="d-block mt-2 mb-2">مدة الشحن</span>\n' +
+            '                                        <label class="position-relative w-100">\n' +
+            '                                            <input name="shipping_time[]" class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="مدة الشحن">\n' +
+            '                                            <span class="input_icon"><i class="fa-solid fa-clock"></i></span>\n' +
+            '                                        </label>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12">\n' +
+            '                                    <label class="form_label mb-0">الدفع عند الاستلام ؟</label>\n' +
+            '                                    <div class="input_select p-0">\n' +
+            '                                        <select name="pay[]" class="niceSelect">\n' +
+            '                                            <option value="">الدفع عند الاستلام ؟</option>\n' +
+            '                                            <option value="">متوفر</option>\n' +
+            '                                            <option value="">غير متوفر</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-wallet"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mt-2 mb-4">\n' +
+            '                                    <a class="btn red__btn pricing_remove" href="">\n' +
+            '                                        <i class="fa-solid fa-x"></i>\n' +
+            '                                        <span>حذف التسعيره</span>\n' +
+            '                                    </a>\n' +
+            '                                </div>\n' +
+            '                            </div>').hide().fadeIn(300);
+        $('.select_2').select2();
+        $('.niceSelect').niceSelect();
+    })
+</script>
+
+
+<script>
+    $(document).on("click" , ".createFreeShippingForm" , function (e){
+        e.preventDefault();
+        $(".FreeShippingForm").append('<div class="row">\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <div class="form_input mb-1">\n' +
+            '                                        <select class="select_3">\n' +
+            '                                            <option value="" selected >All Countries</option>\n' +
+            '                                            <option value="">Saudi Arabia</option>\n' +
+            '                                            <option value="">United Arab Emirates</option>\n' +
+            '                                            <option value="">Qatar</option>\n' +
+            '                                            <option value="">Egypt</option>\n' +
+            '                                            <option value="">Kuwait</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-map"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <div class="form_input mb-1">\n' +
+            '                                        <select class="select_3" multiple>\n' +
+            '                                            <option value="" selected >All City</option>\n' +
+            '                                            <option value="">Saudi Arabia</option>\n' +
+            '                                            <option value="">United Arab Emirates</option>\n' +
+            '                                            <option value="">Qatar</option>\n' +
+            '                                            <option value="">Egypt</option>\n' +
+            '                                            <option value="">Kuwait</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-map-location-dot"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <div class="form_input mb-1">\n' +
+            '                                        <label class="position-relative w-100">\n' +
+            '                                            <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="الحد الادني للمشتريات">\n' +
+            '                                            <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>\n' +
+            '                                        </label>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <span class="d-block mt-2 mb-2">شركات الشحن</span>\n' +
+            '                                    <div class="form_input mb-1">\n' +
+            '                                        <select class="select_3" multiple>\n' +
+            '                                            <option value="" selected >البريد السعودي | سُبل</option>\n' +
+            '                                            <option value="">DHL Express</option>\n' +
+            '                                            <option value="">ارامكس</option>\n' +
+            '                                            <option value="">LAFASTA</option>\n' +
+            '                                            <option value="">ريدبوكس</option>\n' +
+            '                                            <option value="">Xturbo</option>\n' +
+            '                                        </select>\n' +
+            '                                        <span class="input_icon"><i class="fa-solid fa-cart-flatbed"></i></span>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mb-2 mt-2">\n' +
+            '                                    <span class="d-block mt-2 mb-2">المنتجات</span>\n' +
+            '                                    <div class="form_input mb-1">\n' +
+            '                                        <select class="select_3" multiple>\n' +
+            '                                            <option value="" selected>DHL Express</option>\n' +
+            '                                            <option value="">ارامكس</option>\n' +
+            '                                            <option value="">LAFASTA</option>\n' +
+            '                                            <option value="">ريدبوكس</option>\n' +
+            '                                            <option value="">Xturbo</option>\n' +
+            '                                        </select>\n' +
+            '                                    </div>\n' +
+            '                                </div>\n' +
+            '                                <div class="col-12 mt-2 mb-4">\n' +
+            '                                    <a class="btn red__btn condition_remove" href="">\n' +
+            '                                        <i class="fa-solid fa-x"></i>\n' +
+            '                                        <span>حذف الشرط</span>\n' +
+            '                                    </a>\n' +
+            '                                </div>\n' +
+            '                            </div>').hide().fadeIn(300);
+        $('.select_3').select2();
+        $('.niceSelect').niceSelect();
+    })
+</script>
+
+<script>
+    $(document).on("click" , ".pricing_remove" , function (e){
+        e.preventDefault();
+        $(this).parent().parent().toggle("slow" , function (){
+            $(this).remove();
+        });
+    })
+
+    $(document).on("click" , ".condition_remove" , function (e){
+        e.preventDefault();
+        $(this).parent().parent().toggle("slow" , function (){
+            $(this).remove();
+        });
+    })
+</script>
+</body>
+</html>

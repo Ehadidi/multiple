@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flatpicker.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/style_ltr.css">-->
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                    <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="dashboard_logo">
+                        <div class="container-fluid">
+                            <img src="images/logo.svg" alt="">
+                            <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                        </div>
+                    </div>
+                    <div class="user_nav">
+                        <div class="container-fluid">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <form class="search_form">
+                                    <div class="d-flex align-items-center">
+                                        <label class="mb-0">
+                                            <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                        </label>
+                                        <div class="nice_select_label">
+                                            <select class="filter_search niceSelect" type="text">
+                                                <option value="">الطلبات</option>
+                                                <option value="">المنتجات</option>
+                                                <option value="">العملاء</option>
+                                            </select>
+                                        </div>
+                                        <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                                <div class="user_dropdown dropdown pl-3 pr-3">
+                                    <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user_box">
+                                            <img src="images/4284.jpg" alt="">
+                                            <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="user_drop">
+                                        <a class="dropdown-item default_link" href="profile.html" type="button">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="ml-2 mr-2">الملف الشخصي</span>
+                                        </a>
+                                        <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <span class="ml-2 mr-2">التنبيهات</span>
+                                        </a>
+                                        <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                            <i class="fa-solid fa-wrench"></i>
+                                            <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item default_link" href="login.html" type="button">
+                                            <i class="fa-solid fa-power-off"></i>
+                                            <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">التسويق بالعمولة</li>
+                    </ol>
+                </nav>
+                <div class="mt-3 mb-3">
+                    <button data-toggle="modal" data-target="#add_link" class="btn round_btn_main">
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-plus"></i>
+                            <span class="M_start_10">إضافة رابط</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="main_card">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <span><i class="fa-solid fa-dollar-sign"></i></span>
+                            <span class="fontBold ml-2 mr-2">التسويق بالعمولة</span>
+                            <span class="font10 text-secondary">(رابط واحد)</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="define_row p-3">
+                            <a href="" data-target="#edit_link" data-toggle="modal" class="default_link main_color main_link add_Q">
+                                LINK
+                            </a>
+                            <div class="define_option">
+                                <div class="turn_switch">
+                                    <input type="checkbox" class="float_input">
+                                    <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="btn" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-ellipsis"></i></a>
+                                    <ul class="dropdown-menu quick" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 32px, 0px);">
+                                        <li>
+                                            <a data-toggle="modal" data-target="#share_link" class="default_link">
+                                                <span class="main_color"><i class="fa-solid fa-share"></i></span>
+                                                <span class="ml-2 mr-2">مشاركة الرابط</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="default_link">
+                                                <span class="main_color"><i class="fa-solid fa-clone"></i></span>
+                                                <span class="ml-2 mr-2">نسخ الرابط</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a data-target="#statistics" data-toggle="modal" class="default_link">
+                                                <span class="main_color"><i class="fa-solid fa-chart-bar"></i></span>
+                                                <span class="ml-2 mr-2">إحصائيات</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--share_link-->
+<div id="share_link" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>الرابط التسويقي</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <h6 class="fontBold font13">شارك هذه الرسالة مع المسوّق ليبدأ في التسويق لمتجرك</h6>
+                        <div class="row ml-2 mr-2">
+                            <div class="col-12 secondary_bg mt-2 mb-2 pt-3 pb-3">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font13">مرحبا</h6>
+                                    <h6 class="fontBold font13">LINK</h6>
+                                    <p class="font12">مبروك 🎉 تم انشاء حساب للتسويق بالعمولة، معنا احصل على 10.00 % من أي طلب من خلال الرابط المرسل</p>
+                                </div>
+                                <hr>
+                                <div class="d-flex flex-column mt-3 mb-3">
+                                    <h6 class="fontBold font13">رابط التسويق الخاص بك:</h6>
+                                    <a class="default_link main_link main_color" href="">https://salla.sa/fashion.house/?utm_source=aff&utm_campaign=5WPYy</a>
+                                </div>
+                                <div class="d-flex flex-column mt-3 mb-3">
+                                    <h6 class="fontBold font13">الاطلاع على احصائيات الرابط من هنا:</h6>
+                                    <a class="default_link main_link main_color" href="">https://salla.sa/fashion.house/?utm_source=aff&utm_campaign=5WPYy</a>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2 p-0">
+                                <button class="btn main_btn w-100"><i class="fa-solid fa-clone M_end_10"></i> نسخ الرسالة </button>
+                            </div>
+                        </div>
+                        <h6 class="font13 fontBold">تفاصيل الرابط</h6>
+                        <div class="row ml-2 mr-2">
+                            <div class="col-12">
+                                <div class="form_input input45">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" readonly type="text" placeholder="الرابط التسويقي">
+                                        <span class="input_icon"><i class="fa-solid fa-users"></i></span>
+                                        <button class="btn white_btn float_btn"><i class="fa-solid fa-clone M_end_10"></i> نسخ الرابط </button>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end share_link-->
+
+<!--add_link-->
+<div id="add_link" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>الرابط التسويقي</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row ml-2 mr-2">
+                            <div class="col-12 mt-3 mb-3">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font13 mb-1">البيانات الأساسية</h6>
+                                    <p class="mb-0 font11">ادخل البيانات الأساسية لإنشاء رابط جديد للتسويق بالعمولة</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">اسم المسوق</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="اسم المسوق">
+                                        <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">بريد المسوق</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="بريد المسوق">
+                                        <span class="input_icon"><i class="fa-solid fa-at"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">مدينة المسوق</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="مدينة المسوق">
+                                        <span class="input_icon"><i class="fa-solid fa-building"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">معلومات اضافية</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="معلومات اضافية">
+                                        <span class="input_icon"><i class="fa-solid fa-circle-info"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font13 mb-1">نوع العمولة الممنوحة</h6>
+                                    <p class="mb-0 font11">حدد نوع ومقدار العمولة التي ستمنحها للمسوق مقابل كل طلب يتم من خلال رابط التسويق بالعمولة</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <span class="font13">نوع العمولة</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect type_com">
+                                        <option selected value="const">مبلغ ثابت</option>
+                                        <option value="percent">نسبة من المبيعات</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-money-bill"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 _option const show">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">مبلغ العمولة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="ادخل مبلغ العمولة">
+                                        <span class="input_icon"><i class="fa-solid fa-coins"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 _option percent">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">نسبة العمولة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="ادخل نسبة العموله">
+                                        <span class="input_icon"><i class="fa-solid fa-percent"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <span class="font13">تطبيق العمولة على</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">جميع الطلبات</option>
+                                        <option value="">اول طلب فقط</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-money-bill"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <h6 class="fontBold font13">اظهار إجمالي المبيعات في صفحة احصائيات المسوق</h6>
+                                        <p class="mb-0">تحكم بإظهار أو إخفاء إجمالي المبيعات في صفحة احصائيات المسوق</p>
+                                    </div>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end add_link-->
+
+<!--edit_link-->
+<div id="edit_link" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>تعديل رابط التسويق بالعمولة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row ml-2 mr-2">
+                            <div class="col-12 mt-3 mb-3">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font13 mb-1">البيانات الأساسية</h6>
+                                    <p class="mb-0 font11">ادخل البيانات الأساسية لإنشاء رابط جديد للتسويق بالعمولة</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">اسم المسوق</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="اسم المسوق">
+                                        <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">بريد المسوق</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="بريد المسوق">
+                                        <span class="input_icon"><i class="fa-solid fa-at"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">مدينة المسوق</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="مدينة المسوق">
+                                        <span class="input_icon"><i class="fa-solid fa-building"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">معلومات اضافية</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="معلومات اضافية">
+                                        <span class="input_icon"><i class="fa-solid fa-circle-info"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <div class="d-flex flex-column">
+                                    <h6 class="fontBold font13 mb-1">نوع العمولة الممنوحة</h6>
+                                    <p class="mb-0 font11">حدد نوع ومقدار العمولة التي ستمنحها للمسوق مقابل كل طلب يتم من خلال رابط التسويق بالعمولة</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <span class="font13">نوع العمولة</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect type_com">
+                                        <option selected value="const">مبلغ ثابت</option>
+                                        <option value="percent">نسبة من المبيعات</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-money-bill"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 _option const show">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">مبلغ العمولة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="ادخل مبلغ العمولة">
+                                        <span class="input_icon"><i class="fa-solid fa-coins"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 _option percent">
+                                <div class="form_input">
+                                    <span class="font13 d-block mb-2">نسبة العمولة</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="ادخل نسبة العموله">
+                                        <span class="input_icon"><i class="fa-solid fa-percent"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <span class="font13">تطبيق العمولة على</span>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">جميع الطلبات</option>
+                                        <option value="">اول طلب فقط</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-money-bill"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-3 mb-3">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex flex-column">
+                                        <h6 class="fontBold font13">اظهار إجمالي المبيعات في صفحة احصائيات المسوق</h6>
+                                        <p class="mb-0">تحكم بإظهار أو إخفاء إجمالي المبيعات في صفحة احصائيات المسوق</p>
+                                    </div>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                            <span class="tracker_ball"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end edit_link-->
+
+<!--statistics-->
+<div id="statistics" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>احصائيات الرابط التسويقي [ 5WPYy ]</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="alert alert-warning" role="alert">
+                            <div class="d-flex align-items-start">
+                                <span class="font25"><i class="fa-solid fa-circle-exclamation"></i></span>
+                                <div class="d-flex flex-column ml-2 mr-2">
+                                    <p class="mb-1">يتم عرض الاحصائيات فقط لحالات الطلب التالية:</p>
+                                    <p class="mb-0">قيد التنفيذ - تم التنفيذ - جاري التوصيل - تم التوصيل - تم الشحن</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputs_row">
+                            <div class="input_cell">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect report__filter">
+                                        <option value="daily">يومي</option>
+                                        <option value="weekly">اسبوعي</option>
+                                        <option value="monthly">شهري</option>
+                                        <option value="annual">سنوي</option>
+                                        <option selected value="beginning">منذ البداية</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell _option daily">
+                                <div class="form_input mb-0">
+                                    <label class="position-relative w-100 mb-0">
+                                        <input class="pl-4 pt-2 pr-4 flatpickr-input daily__date" type="text" placeholder="" readonly="readonly">
+                                        <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input_cell _option weekly">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>الاسبوع الحالي</option>
+                                        <option>الاسبوع الماضي</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell _option monthly">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>يناير</option>
+                                        <option>فبراير</option>
+                                        <option>مارس</option>
+                                        <option>ابريل</option>
+                                        <option>مايو</option>
+                                        <option>يونيو</option>
+                                        <option>يوليو</option>
+                                        <option>اغسطص</option>
+                                        <option>اغسطس</option>
+                                        <option>سبتمبر</option>
+                                        <option>أكتوبر</option>
+                                        <option>نوفمبر</option>
+                                        <option>ديسمبر</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell _option monthly">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell _option annual">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn main_btn">عرض</button>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-3 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="text-info font30"><i class="fa-solid fa-ticket-simple"></i></span>
+                                    <span class="font14 mt-2 mb-2"><b>0</b></span>
+                                    <span class="text-secondary font10">مرات الاستخدام</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="text-info font30"><i class="fa-solid fa-money-bill-wave"></i></span>
+                                    <span class="font14 mt-2 mb-2"><b>0</b></span>
+                                    <span class="text-secondary font10">اجمالي الربح</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="text-success font30"><i class="fa-solid fa-money-bill-wave"></i></span>
+                                    <span class="font14 mt-2 mb-2"><b>0 ر.س</b></span>
+                                    <span class="text-secondary font10">اجمالي المبيعات</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="text-move font30"><i class="fa-solid fa-user-plus"></i></span>
+                                    <span class="font14 mt-2 mb-2"><b>0 ر.س</b></span>
+                                    <span class="text-secondary font10">العملاء الجدد</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn gray__btn" data-dismiss="modal">إغلاق</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end statistics-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/flatpicker.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(".report__filter").change(function (){
+        $("._option").removeClass("show")
+        var select_val = $(this).val();
+        console.log(select_val)
+        $("."+select_val).addClass("show")
+    })
+
+    $(".type_com").change(function (){
+        $("._option").removeClass("show")
+        var select_val = $(this).val();
+        console.log(select_val)
+        $("."+select_val).addClass("show")
+    })
+</script>
+</body>
+</html>

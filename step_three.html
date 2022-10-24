@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <title>multi tenant</title>
+</head>
+<body class="creatStoreBody">
+
+<!--register form-->
+<section class="register pt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12 p-0">
+                <div class="create_steps">
+                    <div class="logo mb-4 mt-4">
+                        <div class="main_color d-flex align-items-center"  href="index.html">
+                            <img style="width: 40px" src="images/logo.svg" alt="logo">
+                            <h5 class="mb-0 ml-3 mr-3"><b>سلة</b></h5>
+                        </div>
+                    </div>
+                    <ul class="steps_list">
+                        <li class="completed">
+                            <div class="step_link">
+                                <span class="num"><i class="fas fa-check"></i></span>
+                                <span class="ml-3 mr-3"><b>معلومات المتجر</b></span>
+                            </div>
+                        </li>
+                        <li class="completed">
+                            <div class="step_link">
+                                <span class="num"><i class="fas fa-check"></i></span>
+                                <span class="ml-3 mr-3"><b>هوية المتجر</b></span>
+                            </div>
+                        </li>
+                        <li class="act">
+                            <div class="step_link">
+                                <span class="num">3</span>
+                                <span class="ml-3 mr-3"><b>موقع استلام الشحنات</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">4</span>
+                                <span class="ml-3 mr-3"><b>شركات الشحن</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">5</span>
+                                <span class="ml-3 mr-3"><b>الدفع الإلكتروني</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">6</span>
+                                <span class="ml-3 mr-3"><b>باقات سلة</b></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step_link">
+                                <span class="num">7</span>
+                                <span class="ml-3 mr-3"><b>تدشين الموقع</b></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9 col-12 p-0">
+                <div class="form_wrapper">
+                    <div class="create_title">
+                        <h5 class="main_color"><b>حدد موقع استلام الشحنات</b></h5>
+                        <span>يرجى التأكد من صحة الموقع المحدد ليتمكن مندوبي شركات الشحن الوصول له </span>
+                    </div>
+                    <form>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <label for="pac-input"></label>
+                                <input id="pac-input" class="controls" type="text" placeholder="ابحث بإسم الحي او الشارع"/>
+                                <div id="map"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <label for="store_address" class="form_label"><b>العنوان</b></label>
+                                    <input id="store_address" type="text" placeholder="أدخل العنوان">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form_input">
+                                    <label for="store_neighbourhood" class="form_label"><b>الحي</b></label>
+                                    <input id="store_neighbourhood" type="text" placeholder="أدخل الحي">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="form_input">
+                                    <label for="store_post" class="form_label"><b>الرمز البريدي</b></label>
+                                    <input id="store_post" type="text" placeholder="أدخل الرمز البريدي">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="form_input">
+                                    <label for="store_street" class="form_label"><b>الشارع</b></label>
+                                    <input id="store_street" type="text" placeholder="أدخل الشارع">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="step_two.html" class="btn next_step">السابق</a>
+                                    <div>
+                                        <a href="step_four.html" class="btn next_step">تخطي</a>
+                                        <a href="step_four.html" class="btn submit_btn next_step">التالي</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end register form-->
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn3NtsJ5lgHSIxUJ4AuqAMm2RXldDDjN8&callback=initAutocomplete&libraries=places&v=weekly" async></script>
+
+<script>
+    function initAutocomplete() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: -33.8688, lng: 151.2195 },
+            zoom: 13,
+            mapTypeId: "roadmap",
+        });
+        // Create the search box and link it to the UI element.
+        const input = document.getElementById("pac-input");
+        const searchBox = new google.maps.places.SearchBox(input);
+
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener("bounds_changed", () => {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        let markers = [];
+
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener("places_changed", () => {
+            const places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            // Clear out the old markers.
+            markers.forEach((marker) => {
+                marker.setMap(null);
+            });
+            markers = [];
+
+            // For each place, get the icon, name and location.
+            const bounds = new google.maps.LatLngBounds();
+
+            places.forEach((place) => {
+                if (!place.geometry || !place.geometry.location) {
+                    console.log("Returned place contains no geometry");
+                    return;
+                }
+
+                const icon = {
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(25, 25),
+                };
+
+                // Create a marker for each place.
+                markers.push(
+                    new google.maps.Marker({
+                        map,
+                        icon,
+                        title: place.name,
+                        position: place.geometry.location,
+                    })
+                );
+                if (place.geometry.viewport) {
+                    // Only geocodes have viewport.
+                    bounds.union(place.geometry.viewport);
+                } else {
+                    bounds.extend(place.geometry.location);
+                }
+            });
+            map.fitBounds(bounds);
+        });
+    }
+</script>
+</body>
+</html>

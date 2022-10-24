@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .table td {
+            vertical-align: middle;
+            border: 0;
+            padding: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </div>
+                <div class="dashboard_logo">
+                    <div class="container-fluid">
+                        <img src="images/logo.svg" alt="">
+                        <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                    </div>
+                </div>
+                <div class="user_nav">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <form class="search_form">
+                                <div class="d-flex align-items-center">
+                                    <label class="mb-0">
+                                        <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                    </label>
+                                    <div class="nice_select_label">
+                                        <select class="filter_search niceSelect" type="text">
+                                            <option value="">الطلبات</option>
+                                            <option value="">المنتجات</option>
+                                            <option value="">العملاء</option>
+                                        </select>
+                                    </div>
+                                    <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                </div>
+                            </form>
+                            <div class="user_dropdown dropdown pl-3 pr-3">
+                                <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="user_box">
+                                        <img src="images/4284.jpg" alt="">
+                                        <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu" aria-labelledby="user_drop">
+                                    <a class="dropdown-item default_link" href="profile.html" type="button">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span class="ml-2 mr-2">الملف الشخصي</span>
+                                    </a>
+                                    <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span class="ml-2 mr-2">التنبيهات</span>
+                                    </a>
+                                    <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                        <i class="fa-solid fa-wrench"></i>
+                                        <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item default_link" href="login.html" type="button">
+                                        <i class="fa-solid fa-power-off"></i>
+                                        <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">اعدادت المتجر</li>
+                    </ol>
+                </nav>
+                <div class="link_box bg-white round_edge5 mt-4 mb-5 p-3">
+                    <a href="verify_store.html" class="d-block default_link">
+                        <div class="d-flex align-items-start">
+                            <div class="bg-danger text-white pt-1 pb-1 pr-2 pl-2 round_edge5 font20">
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+                            </div>
+                            <div class="d-flex flex-column ml-2 mr-2">
+                                <h6 class="fontBold font13">توثيق المتجر <span class="text-danger fontThin">(غير مكتمل)</span></h6>
+                                <p class="text-secondary font12 mb-1">يتطلب توثيق بيانات مالك المتجر والحساب البنكي لإستقبال المبالغ والمدفوعات الإلكترونية وسحب رصيد المتجر</p>
+                                <p class="mb-0 font12 text-danger"> فقط مالك المتجر يستطيع الدخول لتوثيق المتجر.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="bg-white mt-5 mb-5 round_edge5 p-3 bordered_eee">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <img src="images/logo.svg" alt="" width="60px">
+                            <div class="d-flex flex-column ml-3 mr-3">
+                                <h4 class="main_color fontBold">المدفوعات الإلكترونية</h4>
+                                <p class="font12 mb-0">فعّل المدفوعات الإلكترونية بسهولة، واستقبلها بأمان</p>
+                            </div>
+                        </div>
+                        <button class="btn toggle_btn disable">تعطيل</button>
+                    </div>
+                    <div class="mt-4">
+                        <div class="pt-4 pb-4">
+                            <a data-target="#generate_payment" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="font25 text-secondary mb-0"><i class="fa-solid fa-right-left"></i></h6>
+                                    <div class="d-flex flex-column ml-3 mr-3">
+                                        <h6 class="font14 fontBold text-dark">دورة التحويل</h6>
+                                        <p class="text-secondary font12 mb-0">تحويل المدفوعات الإلكترونية أسبوعيا</p>
+                                    </div>
+                                </div>
+                                <i class="arrow_left_gray"></i>
+                            </a>
+                        </div>
+                        <div class="pt-4 pb-4">
+                            <a data-target="#active_pay_way" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="font25 text-secondary mb-0"><i class="fa-solid fa-credit-card"></i></h6>
+                                    <div class="d-flex flex-column ml-3 mr-3">
+                                        <h6 class="font14 fontBold text-dark">وسائل الدفع المفعلة</h6>
+                                        <p class="text-secondary font12 mb-0">مدى ، البطاقة الإئتمانية</p>
+                                    </div>
+                                </div>
+                                <i class="arrow_left_gray"></i>
+                            </a>
+                        </div>
+                        <div class="pt-4 pb-4">
+                            <a href="payment_rules.html" class="d-flex align-items-center justify-content-between default_link">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="font25 text-secondary mb-0"><i class="fa-solid fa-triangle-exclamation"></i></h6>
+                                    <div class="d-flex flex-column ml-3 mr-3">
+                                        <h6 class="font14 fontBold text-dark">الحماية من الاحتيال</h6>
+                                        <p class="text-secondary font12 mb-0">خصص عمليات الدفع المتاحة وفق شروط محددة</p>
+                                    </div>
+                                </div>
+                                <i class="arrow_left_gray"></i>
+                            </a>
+                        </div>
+                        <div class="pt-4 pb-4">
+                            <a data-toggle="modal" data-target="#activate_applePay" href="" class="d-flex align-items-center justify-content-between default_link">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="font25 text-secondary mb-0"><i class="fa-brands fa-apple"></i></h6>
+                                    <div class="d-flex flex-column ml-3 mr-3">
+                                        <div class="font14 fontBold text-dark d-flex align-items-center">
+                                            <img width="40px" src="images/apple_pay_logo.svg" alt="">
+                                            <h6 class="ml-1 mr-1 mb-1">ابل باي</h6>
+                                        </div>
+                                        <p class="text-secondary font12 mb-0">انقر هنا لتفعيل خدمة ابل باي</p>
+                                    </div>
+                                </div>
+                                <i class="arrow_left_gray"></i>
+                            </a>
+                        </div>
+                        <div class="pt-4 pb-4">
+                            <a data-target="#calculate_price" data-toggle="modal" href="" class="d-flex align-items-center justify-content-between default_link">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="font25 text-secondary mb-0"><i class="fa-solid fa-calculator"></i></h6>
+                                    <div class="d-flex flex-column ml-3 mr-3">
+                                        <h6 class="font14 fontBold text-dark">حاسبة الرسوم</h6>
+                                        <p class="text-secondary font12 mb-0">احسب رسوم العمليات المالية</p>
+                                    </div>
+                                </div>
+                                <i class="arrow_left_gray"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_card mt-5 mb-5">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-2 mr-2"><i class="fa-solid fa-wallet"></i></span>
+                                <span><b>بوابات أخرى</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="d-block pt-3 pb-3" data-toggle="modal" data-target="#tap_pay_method" href="">
+                                <img width="40px" src="images/tap.png" alt="">
+                            </a>
+                            <button data-toggle="modal" data-target="#tap_pay_method" class="btn toggle_btn active">تفعيل</button>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="d-block pt-3 pb-3" data-toggle="modal" data-target="#paytabs_pay_method" href="">
+                                <img width="60px" src="images/paytabs.webp" alt="">
+                            </a>
+                            <button data-toggle="modal" data-target="#paytabs_pay_method" class="btn toggle_btn active">تفعيل</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_card mt-5 mb-5">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-2 mr-2"><i class="fa-solid fa-wallet"></i></span>
+                                <span><b>المحافظ الرقمية</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="d-block pt-3 pb-3" data-toggle="modal" data-target="#stcpay_method" href="">
+                                <img width="100px" src="images/stcpay.png" alt="">
+                            </a>
+                            <button data-toggle="modal" data-target="#stcpay_method" class="btn toggle_btn active">تفعيل</button>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="d-block pt-3 pb-3" data-toggle="modal" data-target="#payPal_method" href="">
+                                <img width="100px" src="images/paypal.png" alt="">
+                            </a>
+                            <button data-toggle="modal" data-target="#payPal_method" class="btn toggle_btn active">تفعيل</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_card mt-5 mb-5">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-2 mr-2"><i class="fa-solid fa-cart-arrow-down"></i></span>
+                                <span><b>اشتري الآن وادفع لاحقا</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="d-block pt-3 pb-3" data-toggle="modal" data-target="#tabby_method" href="">
+                                <img width="100px" src="images/tabby_en.png" alt="">
+                            </a>
+                            <button data-toggle="modal" data-target="#tabby_method" class="btn toggle_btn active">تفعيل</button>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="d-block pt-3 pb-3" data-toggle="modal" data-target="#tamara_method" href="">
+                                <img width="100px" src="images/tamara.svg" alt="">
+                            </a>
+                            <button data-toggle="modal" data-target="#tamara_method" class="btn toggle_btn active">تفعيل</button>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a class="d-block pt-3 pb-3" data-toggle="modal" data-target="#spotii_method" href="">
+                                <img width="100px" src="images/spotii.svg" alt="">
+                            </a>
+                            <button data-toggle="modal" data-target="#spotii_method" class="btn toggle_btn active">تفعيل</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main_card mt-5 mb-5">
+                    <div class="title_card">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-2 mr-2"><i class="fa-solid fa-hotel"></i></span>
+                                <span><b>الحسابات البنكية</b></span>
+                            </div>
+                        </div>
+                        <button class="btn main_btn font13" data-toggle="modal" data-target="#add_bank_account"><i class="fa-solid fa-plus"></i> حساب جديد</button>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <a class="default_link main_color main_link" data-toggle="modal" data-target="#edit_bank_account" href="">مصرف الراجحي</a>
+                            </td>
+                            <td>
+                                <span class="text-dark font13">متجر موضة</span>
+                            </td>
+                            <td>
+                                <span class="text-dark font13">	550608010080053</span>
+                            </td>
+                            <td>
+                                <span class="text-dark font13">SA5880000550608010080053</span>
+                            </td>
+                            <td>
+                                <button data-toggle="modal" data-target="#edit_bank_account" class="btn toggle_btn disable">تعطيل</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="default_link main_color main_link" data-toggle="modal" data-target="#edit_bank_account" href="">البنك الأهلي التجاري</a>
+                            </td>
+                            <td>
+                                <span class="text-dark font13">متجر موضة</span>
+                            </td>
+                            <td>
+                                <span class="text-dark font13">	550608010080053</span>
+                            </td>
+                            <td>
+                                <span class="text-dark font13">SA5880000550608010080053</span>
+                            </td>
+                            <td>
+                                <button data-toggle="modal" data-target="#edit_bank_account" class="btn toggle_btn disable">تعطيل</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--generate_payment-->
+<div id="generate_payment" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>دورة تحويل المدفوعات الالكترونية</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column">
+                                    <h6 class="text-dark fontBold font14">ماهي المدفوعات الالكترونية؟</h6>
+                                    <p class="text-secondary font10">
+                                        هي الطلبات التي تمت من خلال وسائل الدفع الالكتروني مثل مدى، البطاقات الائتمانية وآبل باي. حيث تتم جدولتها بشكل دوري وتحويلها إلى حسابكم البنكي الأساسي (يمكن التحكم بالحساب البنكي من اعدادات الدفع).
+                                    </p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="col-12 mb-2 mt-2">
+                                <div class="d-flex flex-column">
+                                    <span class="fontBold">دورة تحويل المدفوعات</span>
+                                    <span class="font11 text-secondary">المتاجر الرقمية: يتم إصدار الفاتورة يوم الأربعاء والتحويل يوم الأحد*</span>
+                                </div>
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option value="">أسبوعيا (سلة بلس ، سلة برو ، سلة سبيشل)</option>
+                                        <option value="">٤٨ ساعة (سلة برو ، سلة سبيشل)</option>
+                                        <option value="">يومياً (سلة سبيشل)</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end generate_payment-->
+
+
+<!--add_bank_account-->
+<div id="add_bank_account" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>دورة تحويل المدفوعات الالكترونية</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mb-2 mt-2">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option selected disabled value="">حدد البنك</option>
+                                        <option value="">البنك الاهلي</option>
+                                        <option value="">بنك مصر</option>
+                                        <option value="">بنك القاهره</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="إسم صاحب الحساب">
+                                        <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="رقم الحساب">
+                                        <span class="input_icon"><i class="fa-solid fa-id-card"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="رقم الإبيان">
+                                        <span class="input_icon"><i class="fa-solid fa-id-card"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                                    <div class="d-flex flex-column">
+                                        <span class="fontBold font13">إضافة المعرّف البديل للتحوبل الفوري (سريع) </span>
+                                        <span class="text-secondary font11">قم بتفعيل هذا الخيار لتتمكن من إضافة المعرّف</span>
+                                    </div>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end add_bank_account-->
+
+<!--edit_bank_account-->
+<div id="edit_bank_account" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>دورة تحويل المدفوعات الالكترونية</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mb-2 mt-2">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option selected disabled value="">حدد البنك</option>
+                                        <option value="">البنك الاهلي</option>
+                                        <option value="">بنك مصر</option>
+                                        <option value="">بنك القاهره</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-file-lines"></i></span>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="إسم صاحب الحساب">
+                                        <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="رقم الحساب">
+                                        <span class="input_icon"><i class="fa-solid fa-id-card"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="رقم الإبيان">
+                                        <span class="input_icon"><i class="fa-solid fa-id-card"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                                    <div class="d-flex flex-column">
+                                        <span class="fontBold font13">إضافة المعرّف البديل للتحوبل الفوري (سريع) </span>
+                                        <span class="text-secondary font11">قم بتفعيل هذا الخيار لتتمكن من إضافة المعرّف</span>
+                                    </div>
+                                    <div class="turn_switch">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn red__btn">حذف الحساب</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end edit_bank_account-->
+
+<!--active_pay_way-->
+<div id="active_pay_way" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>وسائل الدفع المفعلة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12 mt-2 mb-2">
+                                <label class="position-relative d-block">
+                                    <input type="checkbox" class="float_input payCard_checkBox">
+                                    <div class="check_payCard">
+                                        <span class="round_check"><i class="fa-solid fa-check"></i></span>
+                                        <img src="images/mada.png" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mt-2 mb-2">
+                                <label class="position-relative d-block">
+                                    <input type="checkbox" class="float_input payCard_checkBox">
+                                    <div class="check_payCard">
+                                        <span class="round_check"><i class="fa-solid fa-check"></i></span>
+                                        <img src="images/visa_mastercard.png" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn" data-dismiss="modal">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end active_pay_way-->
+
+<!--activate_applePay-->
+<div id="activate_applePay" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>Apple Pay</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body">
+                <div class="container-fluid">
+                    <div class="pt-4 pb-4">
+                        <p class="mb-0 text-dark font14">
+                            تم الانتهاء من تفعيل Apple Pay بنجاح
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end activate_applePay-->
+
+<!--calculate_price-->
+<div id="calculate_price" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>Apple Pay</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 mt-2 mb-2">
+                                <div class="form_input">
+                                    <span class="font12">القيمة الإجمالية</span>
+                                    <label class="position-relative w-100">
+                                        <input class="pl-4 pr-4 pt-0 pb-0" type="number" value="200" placeholder="أدخل القيمة الإجمالية">
+                                        <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-12 mt-2 mb-2">
+                                <label class="position-relative d-block">
+                                    <input name="radio_pay_way" type="radio" class="float_input payCard_checkBox">
+                                    <div class="check_payCard">
+                                        <span class="round_check"><i class="fa-solid fa-check"></i></span>
+                                        <img src="images/mada.png" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mt-2 mb-2">
+                                <label class="position-relative d-block">
+                                    <input name="radio_pay_way" type="radio" class="float_input payCard_checkBox">
+                                    <div class="check_payCard">
+                                        <span class="round_check"><i class="fa-solid fa-check"></i></span>
+                                        <img src="images/apple_pay_logo.svg" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mt-2 mb-2">
+                                <label class="position-relative d-block">
+                                    <input name="radio_pay_way" type="radio" class="float_input payCard_checkBox">
+                                    <div class="check_payCard">
+                                        <span class="round_check"><i class="fa-solid fa-check"></i></span>
+                                        <img src="images/visa_mastercard.png" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="bordered_f8 round_edge5 d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex flex-column">
+                                <h6 class="text-dark font14 fontBold">رسوم بوابة الدفع 1 ريال + 1.75%</h6>
+                                <span class="text-secondary font10">نسبة بوابة الدفع من العمليات المالية</span>
+                            </div>
+                            <h6 class="text-dark font14 fontBold">2.75 ر.س</h6>
+                        </div>
+                        <div class="bordered_f8 round_edge5 d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex flex-column">
+                                <h6 class="text-dark font14 fontBold">ضريبة الرسوم المدفوعة (15%)</h6>
+                                <span class="text-secondary font10">15% من قيمة رسوم بوابة الدفع</span>
+                            </div>
+                            <h6 class="text-dark font14 fontBold">2.75 ر.س</h6>
+                        </div>
+                        <div class="bordered_f8 round_edge5 d-flex align-items-center justify-content-between p-3">
+                            <div class="d-flex flex-column">
+                                <h6 class="text-dark font14 fontBold">اجمالي المبلغ المستحق</h6>
+                                <span class="text-secondary font10">القيمة الاجمالية مخصوم منها رسوم بوابة الدفع + ضريبة الرسوم المدفوعة</span>
+                            </div>
+                            <h6 class="text-dark font14 fontBold">96.84 ر.س</h6>
+                        </div>
+                    </div>
+                    <div class="modal__footer mt-3 justify-content-end">
+                        <button class="btn gray__btn" data-dismiss="modal">إغلاق</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end calculate_price-->
+
+
+<!--tap_pay_method-->
+<div id="tap_pay_method" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>Tab</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-4 mt-3 d-flex justify-content-center"><img width="90px" src="images/tap.png" alt=""></div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab" data-toggle="tab" href="#nav_one" role="tab" aria-controls="nav_one" aria-selected="true">
+                                    <span class="ml-3 mr-3 fontBold">نبذة</span>
+                                </a>
+                                <a class="default_link" id="two_tab" data-toggle="tab" href="#nav_two" role="tab" aria-controls="nav_two" aria-selected="false">
+                                    <span class="ml-3 mr-3 fontBold">الربط و الاعدادات</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one" role="tabpanel" aria-labelledby="one_tab">
+                                <div class="pt-3 pb-3">
+                                    <p class="text-secondary font12">
+                                        اسهل حلول الدفع الإلكتروني محلياً ودولياً
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two" role="tabpanel" aria-labelledby="two_tab">
+                                <div class="row pt-3 pb-3">
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">معلومات الربط</h6>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Publishable API Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Publishable API Key">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Secret API Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Secret API Key">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0">
+                                                <input type="checkbox" class="d-none checkAll">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span class="text-secondary font11 ml-2 mr-2">الموافقة على <a class="default_link main_color main_link" href="">سياسة البيع</a> في منصة سلة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end tap_pay_method-->
+
+<!--paytabs_pay_method-->
+<div id="paytabs_pay_method" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>Pay Tabs</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-4 mt-3 d-flex justify-content-center"><img width="90px" src="images/paytabs.webp" alt=""></div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab_paytabs" data-toggle="tab" href="#nav_one_paytabs" role="tab" aria-controls="nav_one_paytabs" aria-selected="true">
+                                    <span class="ml-3 mr-3 fontBold">نبذة</span>
+                                </a>
+                                <a class="default_link" id="two_tab_paytabs" data-toggle="tab" href="#nav_two_paytabs" role="tab" aria-controls="nav_two_paytabs" aria-selected="false">
+                                    <span class="ml-3 mr-3 fontBold">الربط و الاعدادات</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one_paytabs" role="tabpanel" aria-labelledby="one_tab_paytabs">
+                                <div class="pt-3 pb-3">
+                                    <p class="text-secondary font12">
+                                        اسهل حلول الدفع الإلكتروني محلياً ودولياً
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two_paytabs" role="tabpanel" aria-labelledby="two_tab_paytabs">
+                                <div class="row pt-3 pb-3">
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">معلومات الربط</h6>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Profile ID</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Profile ID">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Server Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Server Key">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0">
+                                                <input type="checkbox" class="d-none checkAll">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span class="text-secondary font11 ml-2 mr-2">الموافقة على <a class="default_link main_color main_link" href="">سياسة البيع</a> في منصة سلة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end paytabs_pay_method-->
+
+
+<!--stcpay_method-->
+<div id="stcpay_method" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>STC Pay</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-4 mt-3 d-flex justify-content-center"><img width="90px" src="images/stcpay.png" alt=""></div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab_stcpay" data-toggle="tab" href="#nav_one_stcpay" role="tab" aria-controls="nav_one_stcpay" aria-selected="true">
+                                    <span class="ml-3 mr-3 fontBold">نبذة</span>
+                                </a>
+                                <a class="default_link" id="two_tab_stcpay" data-toggle="tab" href="#nav_two_stcpay" role="tab" aria-controls="nav_two_stcpay" aria-selected="false">
+                                    <span class="ml-3 mr-3 fontBold">الربط و الاعدادات</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one_stcpay" role="tabpanel" aria-labelledby="one_tab_stcpay">
+                                <div class="pt-3 pb-3">
+                                    <p class="text-secondary font12">
+                                        ما هي stc pay؟
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        شركة المدفوعات الرقمية السعودية STC Pay، وهي محفظة رقميّة آمنة مصممة خصيصاً لتمنحك حلول مدفوعات رقمية بمنتهى السهولة والسرعة، باستخدام الأجهزة الذكيّة.
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        يمكنك زيارة موقع <a class="default_link main_link main_color" target="_blank" href="https://stcpay.com.sa/faq/">stc pay</a> للاطلاع على الأسئلة الشائعة
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two_stcpay" role="tabpanel" aria-labelledby="two_tab_stcpay">
+                                <div class="row pt-3 pb-3">
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">معلومات الربط</h6>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">رمز تعريف التاجر</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Merchant Id">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0">
+                                                <input type="checkbox" class="d-none checkAll">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span class="text-secondary font11 ml-2 mr-2">الموافقة على <a class="default_link main_color main_link" href="">سياسة البيع</a> في منصة سلة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end stcpay_method-->
+
+
+<!--payPal_method-->
+<div id="payPal_method" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>payPal</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-4 mt-3 d-flex justify-content-center"><img width="90px" src="images/paypal.png" alt=""></div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab_paypal" data-toggle="tab" href="#nav_one_paypal" role="tab" aria-controls="nav_one_paypal" aria-selected="true">
+                                    <span class="ml-3 mr-3 fontBold">نبذة</span>
+                                </a>
+                                <a class="default_link" id="two_tab_paypal" data-toggle="tab" href="#nav_two_paypal" role="tab" aria-controls="nav_two_paypal" aria-selected="false">
+                                    <span class="ml-3 mr-3 fontBold">الربط و الاعدادات</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one_paypal" role="tabpanel" aria-labelledby="one_tab_paypal">
+                                <div class="pt-3 pb-3">
+                                    <p class="text-secondary font12">
+                                        ما هي باي بال؟
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        شركة عالمية تتيح إجراء عمليات تحويل الأموال والمدفوعات عبر الإنترنت، وتمكِن المشتركين من تحويل الأموال واستقبالها وتحويلها لحسابات مصرفية، أو التسوق من خلال المتاجر الإلكترونية التي تسمح باستخدام باي بال كوسيلة للدفع.
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        يُمكنك زيارة باي بال عبر الرابط: <a class="main_color main_link default_link" href="https://www.paypal.com/eg/home">www.paypal.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two_paypal" role="tabpanel" aria-labelledby="two_tab_paypal">
+                                <div class="row pt-3 pb-3">
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="alert alert-primary d-flex align-items-baseline" role="alert">
+                                            <span class="M_end_13"><i class="fa-solid fa-bell"></i></span>
+                                            <span>رسوم الشركة لكل عملية هي ( 4.9% + $0.30 USD )</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">معلومات الربط</h6>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">البريد الإلكتروني</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="البريد الإلكتروني">
+                                                <span class="input_icon"><i class="fa-brands fa-paypal"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0">
+                                                <input type="checkbox" class="d-none checkAll">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span class="text-secondary font11 ml-2 mr-2">الموافقة على <a class="default_link main_color main_link" href="">سياسة البيع</a> في منصة سلة</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end payPal_method-->
+
+
+<!--tabby_method-->
+<div id="tabby_method" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>tabby</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-4 mt-3 d-flex justify-content-center"><img width="90px" src="images/paypal.png" alt=""></div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab_tabby" data-toggle="tab" href="#nav_one_tabby" role="tab" aria-controls="nav_one_tabby" aria-selected="true">
+                                    <span class="ml-3 mr-3 fontBold">نبذة</span>
+                                </a>
+                                <a class="default_link" id="two_tab_tabby" data-toggle="tab" href="#nav_two_tabby" role="tab" aria-controls="nav_two_tabby" aria-selected="false">
+                                    <span class="ml-3 mr-3 fontBold">الربط و الاعدادات</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one_tabby" role="tabpanel" aria-labelledby="one_tab_tabby">
+                                <div class="pt-3 pb-3">
+                                    <p class="text-secondary font12">
+                                        لتفعيل خدمة تابي, الرجاء تعبئة النموذج <a class="default_link main_link main_color" href="https://merchant.tabby.ai/registration?">هنا</a>
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        تميز عن سائر المتاجر الأخرى وانضم لمجموعة من أكبر المتاجر في المنطقة مثل 6th ستريت، جولدن سنت وعبدالصمد القرشي بتوفير وسيلة دفع مرنة وسهلة لزبائنك مع تابي. إضافة تابي كوسيلة دفع على متجرك ستعزز من فرص زيادة المبيعات حيث تقوم الخدمة بتحفيز زبائنك للشراء من متجرك دون القلق من مبلغ المشتريات!
+                                    </p>
+                                    <h6 class="font12 fontBold">تقدم تابي طريقتي دفع مميزة لعملائكم:</h6>
+                                    <ul>
+                                        <li class="text-secondary font12">الدفع بعد 14 يوماً من الشراء.</li>
+                                        <li class="text-secondary font12">الدفع من خلال اقساط شهرية.</li>
+                                    </ul>
+
+                                    <p class="text-secondary font12">
+                                        كلتا الطريقتان مقدمة دون أي تكلفة إضافية على الزبون. اعط فرصة لزبائنك لسداد مشترياتهم على فترة أطول وعزز مبيعاتك!
+                                    </p>
+                                    <h6 class="font12 fontBold">ماذا سيستفيد متجرك مع إضافة تابي؟</h6>
+                                    <ul>
+                                        <li class="text-secondary font12">زيادة القوة الشرائية لزبائنكم من خلال توفير خيارات دفع سهلة ومرنة.</li>
+                                        <li class="text-secondary font12">زيادة حجم سلة الشراء + نسبة إتمام عملية الشراء مع خيار التقسيط المقدم من تابي.</li>
+                                        <li class="text-secondary font12"> احصل على سيولة ثابتة ومعتمدة حيث تقوم تابي بالتحويل لمتجرك أولاً والتحصيل من عملائك لاحقاً.</li>
+                                        <li class="text-secondary font12">تخلص من المتاعب المرتبطة بطريقة الدفع عند الاستلام مع خيار الدفع بعد 14 يوم.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two_tabby" role="tabpanel" aria-labelledby="two_tab_tabby">
+                                <div class="row pt-3 pb-3">
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">معلومات الربط</h6>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Public Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Public Key">
+                                                <span class="input_icon"><i class="fa fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Private Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Private Key">
+                                                <span class="input_icon"><i class="fa fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0">
+                                                <input type="checkbox" class="d-none checkAll">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span class="text-secondary font11 ml-2 mr-2">الموافقة على <a class="default_link main_color main_link" href="">سياسة البيع</a> في منصة سلة</span>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">الإعدادات</h6>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                                            <h6 class="font13 mb-0">إظهار شعار تابي في صفحة المنتج</h6>
+                                            <div class="turn_switch">
+                                                <input type="checkbox" checked="" class="float_input">
+                                                <span class="button_track">
+                                                    <span class="tracker_ball"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                                            <h6 class="font13 mb-0">تفعيل الدفع بعد ١٤ يوم</h6>
+                                            <div class="turn_switch">
+                                                <input type="checkbox" checked="" class="float_input">
+                                                <span class="button_track">
+                                                    <span class="tracker_ball"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                                            <h6 class="font13 mb-0">تفعيل الدفع من خلال أقساط شهرية</h6>
+                                            <div class="turn_switch">
+                                                <input type="checkbox" checked="" class="float_input">
+                                                <span class="button_track">
+                                                    <span class="tracker_ball"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end tabby_method-->
+
+<!--spotii_method-->
+<div id="spotii_method" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>spotii</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-4 mt-3 d-flex justify-content-center"><img width="90px" src="images/spotii.svg" alt=""></div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab_spotii" data-toggle="tab" href="#nav_one_spotii" role="tab" aria-controls="nav_one_spotii" aria-selected="true">
+                                    <span class="ml-3 mr-3 fontBold">نبذة</span>
+                                </a>
+                                <a class="default_link" id="two_tab_spotii" data-toggle="tab" href="#nav_two_spotii" role="tab" aria-controls="nav_two_spotii" aria-selected="false">
+                                    <span class="ml-3 mr-3 fontBold">الربط و الاعدادات</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one_spotii" role="tabpanel" aria-labelledby="one_tab_spotii">
+                                <div class="pt-3 pb-3">
+                                    <p class="text-secondary font12">
+                                        قم بتفعيل <a class="default_link main_link main_color" target="_blank" href="">سبوتي</a> كوسيلة دفع لمتجرك ومكّن عملائك من التسوق الآن والدفع لاحقًا.
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        يمكنك الاستفادة من حلول الدفع المبتكرة من <a class="default_link main_link main_color" target="_blank" href="">سبوتي</a> والتي ستساعدك على زيادة القوة الشرائية، وتقليل المبالغ المستردة، وزيادة حجم سلة الشراء لعملائك، دون القلق من مبلغ المشتريات .
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        أضف إلى ذلك، حصولك على كامل مبلغ الدفعات مقدما خلال 48 ساعة!
+                                    </p>
+
+                                    <p class="text-secondary font12">
+                                        بجانب ذلك، مساعدتك في التسويق لعلامتك التجارية على منصات التواصل الاجتماعي والحملات الترويجية.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two_spotii" role="tabpanel" aria-labelledby="two_tab_spotii">
+                                <div class="row pt-3 pb-3">
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">معلومات الربط</h6>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Public Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Public Key">
+                                                <span class="input_icon"><i class="fa fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Private Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Private Key">
+                                                <span class="input_icon"><i class="fa fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0">
+                                                <input type="checkbox" class="d-none checkAll">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span class="text-secondary font11 ml-2 mr-2">الموافقة على <a class="default_link main_color main_link" href="">سياسة البيع</a> في منصة سلة</span>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">الإعدادات</h6>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                                            <h6 class="font13 mb-0">اظهار شعار سبوتي في صفحة المنتج</h6>
+                                            <div class="turn_switch">
+                                                <input type="checkbox" checked="" class="float_input">
+                                                <span class="button_track">
+                                                    <span class="tracker_ball"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end spotii_method-->
+
+<!--tamara_method-->
+<div id="tamara_method" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>tamara</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <div class="container-fluid">
+                    <div class="mb-4 mt-3 d-flex justify-content-center"><img width="90px" src="images/tamara.svg" alt=""></div>
+                </div>
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs" role="tablist">
+                                <a class="default_link active" id="one_tab_tamara" data-toggle="tab" href="#nav_one_tamara" role="tab" aria-controls="nav_one_tamara" aria-selected="true">
+                                    <span class="ml-3 mr-3 fontBold">نبذة</span>
+                                </a>
+                                <a class="default_link" id="two_tab_tamara" data-toggle="tab" href="#nav_two_tamara" role="tab" aria-controls="nav_two_tamara" aria-selected="false">
+                                    <span class="ml-3 mr-3 fontBold">الربط و الاعدادات</span>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="nav_one_tamara" role="tabpanel" aria-labelledby="one_tab_tamara">
+                                <div class="pt-3 pb-3">
+                                    <h6 class="font12 fontBold">مزايا خدمة <a class="main_color main_link default_link" target="_blank" href="https://tamara.co/partners.html">تمارا</a> لمتجرك:</h6>
+                                    <ul>
+                                        <li class="text-secondary font12"> زيادة المبيعات لسهولة وسيلة الدفع</li>
+                                        <li class="text-secondary font12"> تخطي مشاكل الدفع عند الاستلام</li>
+                                        <li class="text-secondary font12"> احصل على سيولة ثابتة ومعتمدة حيث تقوم تابي بالتحويل لمتجرك أولاً والتحصيل من عملائك لاحقاً.</li>
+                                        <li class="text-secondary font12">ارتاح من مشاكل الاحتيال و عدم الدفع</li>
+                                    </ul>
+                                    <h6 class="font12 fontBold">مزايا خدمة <a class="main_color main_link default_link" target="_blank" href="https://tamara.co/partners.html">تمارا</a> لعملائك:</h6>
+                                    <ul>
+                                        <li class="text-secondary font12">0% رسوم خفية أو فوائد</li>
+                                        <li class="text-secondary font12">ما يحتاجون بطاقة ائتمان, التسديد بأي بطاقة لمدى أو بحوالات بنكية</li>
+                                        <li class="text-secondary font12">سهل وسريع, باستخدم رقم الجوال للمشتريات</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_two_tamara" role="tabpanel" aria-labelledby="two_tab_tamara">
+                                <div class="row pt-3 pb-3">
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">معلومات الربط</h6>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_input">
+                                            <span class="font12">Merchant Key</span>
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="Merchant Key">
+                                                <span class="input_icon"><i class="fa fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0">
+                                                <input type="checkbox" class="d-none checkAll">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span class="text-secondary font11 ml-2 mr-2">الموافقة على <a class="default_link main_color main_link" href="">سياسة البيع</a> في منصة سلة</span>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <h6 class="fontBold font14">الإعدادات</h6>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+                                            <h6 class="font13 mb-0">إظهار شعار تابي في صفحة المنتج</h6>
+                                            <div class="turn_switch">
+                                                <input type="checkbox" checked="" class="float_input">
+                                                <span class="button_track">
+                                                    <span class="tracker_ball"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn gray__btn">إلغاء</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end tamara_method-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/flatpicker.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="js/main.js"></script>
+<script>
+    $(document).on("click" , ".toggle_btn.disable" , function (){
+        $(this).toggleClass("disable active");
+        $(this).text("تفعيل");
+    })
+    $(document).on("click" , ".toggle_btn.active" , function (){
+        $(this).toggleClass("active disable");
+        $(this).text("تعطيل");
+    })
+</script>
+</body>
+</html>

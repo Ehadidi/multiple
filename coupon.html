@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flatpicker.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_ltr.css">
+    <title>multi tenant</title>
+</head>
+<body class="index_dashboard">
+<div class="drop_down_layer"></div>
+<div class="side_bar_layer"></div>
+<!--loader-->
+<div class="loader">
+    <div class="lds-hourglass"></div>
+</div>
+<div class="side_option_layer"></div>
+
+
+<!--dashboard body-->
+<div class="dashboard_body">
+    <!--side bar-->
+    <section class="side_bar">
+        <div class="container-fluid">
+            <div class="user_store">
+                <div class="store_user_logo">
+                    <img src="images/dkc.jpg" alt="">
+                    <a href="plans.html" class="default_link patch_pack main_bg">بيسك</a>
+                </div>
+                <div class="d-flex flex-column ml-3 mr-3">
+                    <span class="text-white"><b>salah store</b></span>
+                </div>
+            </div>
+        </div>
+        <ul class="side_bar_ul">
+            <li class="">
+                <a class="default_link" href="dashboard_index.html">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span>المستودع</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="products.html">
+                    <i class="fas fa-tshirt"></i>
+                    <span>المنتجات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="orders.html">
+                    <i class="fas fa-box"></i>
+                    <span>الطلبات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="customers.html">
+                    <i class="fas fa-users"></i>
+                    <span>العملاء</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="reports.html">
+                    <i class="fas fa-file-alt"></i>
+                    <span>التقارير</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="rates.html">
+                    <i class="far fa-comment-alt"></i>
+                    <span>الأسئلة و التقيمات</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="defines.html">
+                    <i class="fas fa-book"></i>
+                    <span>الصفحات التعريفية</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">التسويق</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="coupon.html">
+                    <i class="fa-solid fa-ticket-simple"></i>
+                    <span>كوبونات التخفيض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="special_marketing.html">
+                    <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                    <span>التسويق بالعمولة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="offers.html">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>العروض</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="marketing.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>الحملات التسويقية</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="pending_carts.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>السلات المتروكة</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="partnerships.html">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span> الشراكات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">الإعدادات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_subscribe.html">
+                    <i class="fa-solid fa-store"></i>
+                    <span>باقة المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_setting.html">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>إعدادات المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="wallet.html">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>المحفظة و الفواتير</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">مظهر المتجر</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="store_design.html">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>تصميم المتجر</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="app_meeker.html">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <span>صانع التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">متجر التطبيقات</span></a>
+            </li>
+            <li class="">
+                <a class="default_link" href="Installed_apps.html">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    <span>التطبيقات المثبته</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="default_link" href="apps_store.html">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>زيارة كتجر التطبيقات</span>
+                </a>
+            </li>
+            <li class="title_li">
+                <a class="default_link"><span class="main_color">تطبيق التاجر</span></a>
+            </li>
+            <li class="appStore_li">
+                <div class="d-flex align-items-center">
+                    <a href="">
+                        <img src="images/appstore.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/googleplay.png" alt="">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!--end side bar-->
+
+    <!--side option-->
+    <section class="side_option">
+        <div class="d-flex align-items-center justify-content-between mb-4 pl-2 pr-2">
+            <div class="d-flex align-items-center">
+                <span><i class="fa-solid fa-filter"></i></span>
+                <span class="ml-2 mr-2"><b>فرز الطلبات حسب</b></span>
+            </div>
+            <button class="btn remove_modal"><b>X</b></button>
+        </div>
+        <form>
+            <div class="container-fluid">
+                <div class="form_input mb-2 mt-2">
+                    <label class="position-relative w-100">
+                        <input class="pl-4 pr-4" type="text" placeholder="اسم الكوبون">
+                        <span class="input_icon"><i class="fas fa-search"></i></span>
+                    </label>
+                </div>
+            </div>
+            <div id="accordion">
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <span><i class="fa-solid fa-eye"></i></span>
+                    <span class="ml-3 mr-3">عرض كوبونات التخفيض</span>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">المفعلة</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">المعطلة</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">المنتهية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                    <span><i class="fa-solid fa-eye"></i></span>
+                    <span class="ml-3 mr-3">نوع الكوبون</span>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">الكل</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">كوبون عادي</span>
+                        </div>
+                        <div class="check_box">
+                            <label class="check_label mb-0 ml-2 mr-2">
+                                <input type="checkbox" class="d-none">
+                                <div class="check_span"><i class="fas fa-check"></i></div>
+                            </label>
+                            <span class="ml-2 mr-2">كوبون تسويقي</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                    <span><i class="fa-solid fa-arrow-down-wide-short"></i></span>
+                    <span class="ml-3 mr-3">ترتيب كوبونات التخفيض</span>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">حسب الإضافة</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">ابجديا</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">تاريخ الانتهاء</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">الاكثر مبيعا</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_section" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >
+                    <span><i class="fa-solid fa-arrow-down-wide-short"></i></span>
+                    <span class="ml-3 mr-3">عرض حسب</span>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="check_box_group">
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">الاحدث اولا</span>
+                            </label>
+                        </div>
+                        <div class="position-relative pt-2 pb-2 ml-3 mr-3">
+                            <label class="radio-label">
+                                <input class="radio-input" name="activation" type="radio" value="">
+                                <span class="custom_checked"></span>
+                                <span class="ml-1 mr-1">الاقدم اولا</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn submit_btn">عرض الناتج</button>
+                    </div>
+                    <div class="col-md-4 col-12 pl-1 pr-1 mt-1 mb-1">
+                        <button class="btn gray_btn2 w-100">إعادة تعيين</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!--end side option-->
+
+    <!--content-->
+    <div class="dashboard_content">
+
+        <!--header-->
+        <section class="dashboard_header">
+            <div class="nav_bar">
+                    <div class="bars d-lg-none d-block mb-2 ml-3 mr-3">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="dashboard_logo">
+                        <div class="container-fluid">
+                            <img src="images/logo.svg" alt="">
+                            <span class="ml-2 mr-2 text-white"><b>سلة</b></span>
+                        </div>
+                    </div>
+                    <div class="user_nav">
+                        <div class="container-fluid">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <form class="search_form">
+                                    <div class="d-flex align-items-center">
+                                        <label class="mb-0">
+                                            <input class="input_search" type="text" placeholder="ابحث برقم الطلب ، اسم العميل ، رقم الشحنة">
+                                        </label>
+                                        <div class="nice_select_label">
+                                            <select class="filter_search niceSelect" type="text">
+                                                <option value="">الطلبات</option>
+                                                <option value="">المنتجات</option>
+                                                <option value="">العملاء</option>
+                                            </select>
+                                        </div>
+                                        <button class="search_btn btn"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                                <div class="user_dropdown dropdown pl-3 pr-3">
+                                    <div class="user_drop_toggle dropdown-toggle" type="button" id="user_drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user_box">
+                                            <img src="images/4284.jpg" alt="">
+                                            <span class="ml-2 mr-2 d-lg-block d-none">Salah</span>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-menu" aria-labelledby="user_drop">
+                                        <a class="dropdown-item default_link" href="profile.html" type="button">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="ml-2 mr-2">الملف الشخصي</span>
+                                        </a>
+                                        <a  class="dropdown-item default_link" href="notification.html" type="button">
+                                            <i class="fa-solid fa-bell"></i>
+                                            <span class="ml-2 mr-2">التنبيهات</span>
+                                        </a>
+                                        <a class="dropdown-item default_link" href="updates_stage.html" type="button">
+                                            <i class="fa-solid fa-wrench"></i>
+                                            <span class="ml-2 mr-2">تحديثات المنصة</span>
+                                        </a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item default_link" href="login.html" type="button">
+                                            <i class="fa-solid fa-power-off"></i>
+                                            <span class="ml-2 mr-2">تسجيل الخروج</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--end header-->
+
+        <!--page content-->
+        <section class="page_content">
+            <div class="container-fluid mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="default_link main_color" href="dashboard_index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">كوبونات التخفيض</li>
+                    </ol>
+                </nav>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="dropdown coupon_drop">
+                        <div data-toggle="dropdown" class="default_link btn round_btn_main">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="plus_icon"><b class="ml-2 mr-2"><i class="fa-solid fa-plus"></i></b></span>
+                                <span>إضافة</span>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu quick">
+                            <li>
+                                <a href="" data-toggle="modal" data-target="#new_coupon" class="default_link main_color main_link add_Q">
+                                    <span><i class="fa-solid fa-ticket-simple"></i></span>
+                                    <span class="ml-2 mr-2">كوبون جديد</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" data-toggle="modal" data-target="#group_coupon" class="default_link main_color main_link add_Q">
+                                    <span><i class="fa-solid fa-ticket-simple"></i></span>
+                                    <span class="ml-2 mr-2">مجموعة كوبونات</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="filter_modal btn main_btn">
+                        <i class="fa-solid fa-filter"></i>
+                        <span>تصفية</span>
+                    </button>
+                </div>
+                <div class="main_card mt-4 mb-4">
+                    <div class="title_card flex-column align-items-start">
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <span class="ml-2 mr-2"><i class="fa-solid fa-ticket-simple"></i></span>
+                                <span><b>كوبونات التخفيض</b></span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <div class="color-guide actReal">
+                                <span>مفعل</span>
+                            </div>
+                            <div class="color-guide expired">
+                                <span>منتهي الصلاحية</span>
+                            </div>
+                            <div class="color-guide closed">
+                                <span>مغلق</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="define_row">
+                        <a href="" data-target="#edit_coupon" data-toggle="modal" class="default_link main_color main_link status__link expired">STSS</a>
+                        <div class="define_option">
+                            <a href="" data-target="#report_coupon" data-toggle="modal" class="default_link main_color main_link ml-3 mr-3">
+                                <span class="ml-1 mr-1"><i class="fa-solid fa-chart-bar"></i></span>
+                                <span>إحصائيات</span>
+                            </a>
+                            <div class="turn_switch">
+                                <input type="checkbox" class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="define_row">
+                        <a href="" data-target="#edit_coupon" data-toggle="modal" class="default_link main_color main_link status__link actReal">STSS</a>
+                        <div class="define_option">
+                            <a href="" data-target="#report_coupon" data-toggle="modal" class="default_link main_color main_link ml-3 mr-3">
+                                <span class="ml-1 mr-1"><i class="fa-solid fa-chart-bar"></i></span>
+                                <span>إحصائيات</span>
+                            </a>
+                            <div class="turn_switch">
+                                <input type="checkbox" class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="define_row">
+                        <a href="" data-target="#edit_coupon" data-toggle="modal" class="default_link main_color main_link status__link closed">STSS</a>
+                        <div class="define_option">
+                            <a href="" data-target="#report_coupon" data-toggle="modal" class="default_link main_color main_link ml-3 mr-3">
+                                <span class="ml-1 mr-1"><i class="fa-solid fa-chart-bar"></i></span>
+                                <span>إحصائيات</span>
+                            </a>
+                            <div class="turn_switch">
+                                <input type="checkbox" class="float_input">
+                                <span class="button_track">
+                                    <span class="tracker_ball"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end page content-->
+
+    </div>
+    <!--end content-->
+    <div class="float_drop">
+        <div class="btn-group dropup">
+            <button type="button" class="btn main_bg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="font25"><i class="fa-solid fa-face-smile"></i></span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">مركز المساعدة</span>
+                    <span class="font25"><i class="fa-solid fa-life-ring"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">تحديثات المنصه</span>
+                    <span class="font25"><i class="fa-solid fa-wrench"></i></span>
+                </a>
+                <a class="dropdown-item tooltip--parent" href="#">
+                    <span class="tooltip--after">الأقتراحات</span>
+                    <span class="font25"><i class="fa-solid fa-pencil"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard body-->
+
+<!--new_coupon-->
+<div id="new_coupon" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>إنشاء كوبونات التخفيض</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs " id="nav-tab" role="tablist">
+                                <a class="default_link active" id="coupon_data_tab" data-toggle="tab" href="#nav_coupon_data" role="tab" aria-controls="nav_coupon_data" aria-selected="true">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-list font14"></i>
+                                        <span class="ml-3 mr-3">بيانات الكوبون</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_includes_tab" data-toggle="tab" href="#nav_coupon_includes" role="tab" aria-controls="nav_coupon_includes" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-folder font14"></i>
+                                        <span class="ml-3 mr-3">مشمول في الكوبون</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_excludes_tab" data-toggle="tab" href="#nav_coupon_excludes" role="tab" aria-controls="nav_coupon_excludes" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-file-excel font14"></i>
+                                        <span class="ml-3 mr-3">مستثني من الكوبون</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav_coupon_data" role="tabpanel" aria-labelledby="coupon_data_tab">
+                                <div class="row mt-3 mb-3">
+                                    <div class="col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="كود الكوبون (حروف انجليزية وارقام وبدون مسافات)">
+                                                <span class="input_icon"><i class="fa-solid fa-ticket-simple"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="input_select p-0 position-relative">
+                                            <select id="type_change" class="niceSelect">
+                                                <option value="">نوع الخصم للعميل</option>
+                                                <option value="percent">نسبة من مجموع مشتريات العميل</option>
+                                                <option value="const">ملغ ثابت من مجموع مشتريات العميل</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_val d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة من مجموع مشتريات العميل">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 const_val d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="المبلغ الاقصي للتخفيض">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pt-2 pr-4 flatpickr flatpickr-input" type="text" placeholder="تاريخ نهاية التخفيض" readonly="readonly">
+                                                <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">مع شحن مجاني ؟</option>
+                                                <option value="">نعم</option>
+                                                <option value="">لا</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-truck"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">استثناء المنتجات المخفضة ؟</option>
+                                                <option value="">نعم</option>
+                                                <option value="">لا</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-percent"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="الحد الأدني من المشتريات">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="عدد مرات الاستخدام للجميع">
+                                                <span class="input_icon"><i class="fa-solid fa-user-group"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="عدد مرات الاستخدام للعميل الواحد">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="mb-2"><b>كوبون تسويقي</b></span>
+                                                <div class="turn_switch">
+                                                    <input type="checkbox" class="float_input marketing_coupon">
+                                                    <span class="button_track">
+                                                        <span class="tracker_ball"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="font11">ادخل بيانات المسوّق والعمولة الخاصة به من المبيعات، كما يمكن مشاركة رابط الاحصائيات بعد إنشاء الكوبون</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row check_collapse_row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100 mb-0">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="اسم الشخص">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="input_select p-0 position-relative">
+                                            <select id="typeComChange" class="niceSelect">
+                                                <option value="">نوع العمولة للمسوق</option>
+                                                <option value="percent_order"> نسبة من اجمالي الطلب </option>
+                                                <option value="const_order"> مبلغ ثابت عن كل الطلب </option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_commission">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة العمولة">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة من اجمالي الطلب">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 const_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="مبلغ ثابت عن كل طلب">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_textarea">
+                                            <span class="input_icon"><i class="fa-solid fa-t"></i></span>
+                                            <textarea style="min-height: 60px;" type="text" placeholder="معلومات إضافية"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="mb-2"><b>إخفاء إجمالي المبيعات</b></span>
+                                                <div class="turn_switch">
+                                                    <input type="checkbox" class="float_input">
+                                                    <span class="button_track">
+                                                        <span class="tracker_ball"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="font11">إخفاء اجمالي المبيعات من صفحة احصائيات المسوق</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="المبلغ الاقصي للعمولة">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 percent_order d-none">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0 ml-2 mr-2">
+                                                <input type="checkbox" class="d-none">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span>إظهار المبلغ الأقصى للعمولة للمسوقين</span>
+                                        </div>
+                                        <span class="font10">إظهار المبلغ الأقصى لللعمولة في نموذج مراسلة المسوقين بتفاصيل الكوبون</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_coupon_includes" role="tabpanel" aria-labelledby="coupon_includes_tab">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">طرق الدفع المشمولة في الكوبون</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>جميع طرق الدفع</option>
+                                                <option value="">البطاقات الإتمانية</option>
+                                                <option value="">التحويل البنكي</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">تصنيفات مشمولة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label mb-1">منتجات مشمولة</label>
+                                            <span class="text-secondary url_created">يمكنك البحث في المنتجات الجاهزة التي لا تحتوي على خيارات</span>
+                                            <input type="text" placeholder="ابحث عن المنتج ...">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">مجموعة العملاء المشمولة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>العملاء الاكثر شرائا</option>
+                                                <option value="">عملاء اصحاب ولاء مرتفع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="aait@at.co">
+                                                <span class="input_icon"><i class="fa-solid fa-at"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>ميك اوفر 22 - باليت مجموعة ظلال العيون شدو 16 لون برو PR01</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>ميك اوفر 22 - باليت مجموعة ظلال العيون شدو 16 لون برو PR01</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_coupon_excludes" role="tabpanel" aria-labelledby="coupon_excludes_tab">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">تصنيفات مستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">ماركات مستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label mb-1">منتجات مستثناة</label>
+                                            <input type="text" placeholder="ابحث عن المنتج ...">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">مجموعة العملاء المستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>الفئة الذهبية</option>
+                                                <option value="">العملاء الاكثر شرائا</option>
+                                                <option value="">الفئة الماسية</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>بينفت - ماسكرا Bad gal</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>بينفت - ماسكرا Bad gal</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn save_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end new_coupon-->
+
+<!--edit_coupon-->
+<div id="edit_coupon" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>تعديل كوبونات التخفيض</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs " id="nav-tab2" role="tablist">
+                                <a class="default_link active" id="coupon_data_tab2" data-toggle="tab" href="#nav_coupon_data2" role="tab" aria-controls="nav_coupon_data2" aria-selected="true">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-list font14"></i>
+                                        <span class="ml-3 mr-3">بيانات الكوبون</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_includes_tab2" data-toggle="tab" href="#nav_coupon_includes2" role="tab" aria-controls="nav_coupon_includes2" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-folder font14"></i>
+                                        <span class="ml-3 mr-3">مشمول في الكوبون</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_excludes_tab2" data-toggle="tab" href="#nav_coupon_excludes2" role="tab" aria-controls="nav_coupon_excludes2" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-file-excel font14"></i>
+                                        <span class="ml-3 mr-3">مستثني من الكوبون</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent2">
+                            <div class="tab-pane fade show active" id="nav_coupon_data2" role="tabpanel" aria-labelledby="coupon_data_tab2">
+                                <div class="row mt-3 mb-3">
+                                    <div class="col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="كود الكوبون (حروف انجليزية وارقام وبدون مسافات)">
+                                                <span class="input_icon"><i class="fa-solid fa-ticket-simple"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect type_change">
+                                                <option value="">نوع الخصم للعميل</option>
+                                                <option value="percent">نسبة من مجموع مشتريات العميل</option>
+                                                <option value="const">ملغ ثابت من مجموع مشتريات العميل</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_val d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة من مجموع مشتريات العميل">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 const_val d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="المبلغ الاقصي للتخفيض">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pt-2 pr-4 flatpickr flatpickr-input" type="text" placeholder="تاريخ نهاية التخفيض" readonly="readonly">
+                                                <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">مع شحن مجاني ؟</option>
+                                                <option value="">نعم</option>
+                                                <option value="">لا</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-truck"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">استثناء المنتجات المخفضة ؟</option>
+                                                <option value="">نعم</option>
+                                                <option value="">لا</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-percent"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="الحد الأدني من المشتريات">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="عدد مرات الاستخدام للجميع">
+                                                <span class="input_icon"><i class="fa-solid fa-user-group"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="عدد مرات الاستخدام للعميل الواحد">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="mb-2"><b>كوبون تسويقي</b></span>
+                                                <div class="turn_switch">
+                                                    <input type="checkbox" class="float_input marketing_coupon">
+                                                    <span class="button_track">
+                                                        <span class="tracker_ball"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="font11">ادخل بيانات المسوّق والعمولة الخاصة به من المبيعات، كما يمكن مشاركة رابط الاحصائيات بعد إنشاء الكوبون</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row check_collapse_row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100 mb-0">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="اسم الشخص">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect typeComChange">
+                                                <option value="">نوع العمولة للمسوق</option>
+                                                <option value="percent_order"> نسبة من اجمالي الطلب </option>
+                                                <option value="const_order"> مبلغ ثابت عن كل الطلب </option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_commission">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة العمولة">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة من اجمالي الطلب">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 const_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="مبلغ ثابت عن كل طلب">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_textarea">
+                                            <span class="input_icon"><i class="fa-solid fa-t"></i></span>
+                                            <textarea style="min-height: 60px;" type="text" placeholder="معلومات إضافية"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="mb-2"><b>إخفاء إجمالي المبيعات</b></span>
+                                                <div class="turn_switch">
+                                                    <input type="checkbox" class="float_input">
+                                                    <span class="button_track">
+                                                        <span class="tracker_ball"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="font11">إخفاء اجمالي المبيعات من صفحة احصائيات المسوق</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="المبلغ الاقصي للعمولة">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 percent_order d-none">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0 ml-2 mr-2">
+                                                <input type="checkbox" class="d-none">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span>إظهار المبلغ الأقصى للعمولة للمسوقين</span>
+                                        </div>
+                                        <span class="font10">إظهار المبلغ الأقصى لللعمولة في نموذج مراسلة المسوقين بتفاصيل الكوبون</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_coupon_includes2" role="tabpanel" aria-labelledby="coupon_includes_tab2">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">طرق الدفع المشمولة في الكوبون</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>جميع طرق الدفع</option>
+                                                <option value="">البطاقات الإتمانية</option>
+                                                <option value="">التحويل البنكي</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">تصنيفات مشمولة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label mb-1">منتجات مشمولة</label>
+                                            <span class="text-secondary url_created">يمكنك البحث في المنتجات الجاهزة التي لا تحتوي على خيارات</span>
+                                            <input type="text" placeholder="ابحث عن المنتج ...">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">مجموعة العملاء المشمولة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>العملاء الاكثر شرائا</option>
+                                                <option value="">عملاء اصحاب ولاء مرتفع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="aait@at.co">
+                                                <span class="input_icon"><i class="fa-solid fa-at"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>ميك اوفر 22 - باليت مجموعة ظلال العيون شدو 16 لون برو PR01</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>ميك اوفر 22 - باليت مجموعة ظلال العيون شدو 16 لون برو PR01</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav_coupon_excludes2" role="tabpanel" aria-labelledby="coupon_excludes_tab2">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">تصنيفات مستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">ماركات مستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label mb-1">منتجات مستثناة</label>
+                                            <input type="text" placeholder="ابحث عن المنتج ...">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">مجموعة العملاء المستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>الفئة الذهبية</option>
+                                                <option value="">العملاء الاكثر شرائا</option>
+                                                <option value="">الفئة الماسية</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>بينفت - ماسكرا Bad gal</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>بينفت - ماسكرا Bad gal</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">حفظ</button>
+                        <button class="btn red__btn">حذف الكوبون</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end edit_coupon-->
+
+<!--report_coupon-->
+<div id="report_coupon" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>كود الكوبون(STSS)</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <div class="inputs_row">
+                            <div class="input_cell">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect report__filter">
+                                        <option value="daily">يومي</option>
+                                        <option value="weekly">اسبوعي</option>
+                                        <option value="monthly">شهري</option>
+                                        <option value="annual">سنوي</option>
+                                        <option selected value="beginning">منذ البداية</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell daily d-none">
+                                <div class="form_input mb-0">
+                                    <label class="position-relative w-100 mb-0">
+                                        <input class="pl-4 pt-2 pr-4 flatpickr-input daily__date" type="text" placeholder="" readonly="readonly">
+                                        <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input_cell weekly d-none">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>الاسبوع الحالي</option>
+                                        <option>الاسبوع الماضي</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell monthly d-none">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>يناير</option>
+                                        <option>فبراير</option>
+                                        <option>مارس</option>
+                                        <option>ابريل</option>
+                                        <option>مايو</option>
+                                        <option>يونيو</option>
+                                        <option>يوليو</option>
+                                        <option>اغسطص</option>
+                                        <option>اغسطس</option>
+                                        <option>سبتمبر</option>
+                                        <option>أكتوبر</option>
+                                        <option>نوفمبر</option>
+                                        <option>ديسمبر</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell monthly d-none">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <div class="input_cell annual d-none">
+                                <div class="input_select p-0 position-relative">
+                                    <select class="niceSelect">
+                                        <option>2015</option>
+                                        <option>2016</option>
+                                        <option>2017</option>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+                                    <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn main_btn">عرض</button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="text-info font30"><i class="fa-solid fa-ticket-simple"></i></span>
+                                    <span class="font14 mt-2 mb-2"><b>0</b></span>
+                                    <span class="text-secondary font10">مرات الاستخدام</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="main_color font30"><i class="fa-solid fa-user-group"></i></span>
+                                    <span class="font14 mt-2 mb-2"><b>0</b></span>
+                                    <span class="text-secondary font10">عدد العملاء</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12 mt-2 mb-2">
+                                <div class="d-flex flex-column align-items-center">
+                                    <span class="text-move font30"><i class="fa-solid fa-dollar-sign"></i></span>
+                                    <span class="font14 mt-2 mb-2"><b>0 ر.س</b></span>
+                                    <span class="text-secondary font10">مبيعات الكوبون</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn main_btn">تصدير الاحصائيات في ملف إكسل</button>
+                        <button class="btn gray__btn" data-dismiss="modal">إغلاق</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end report_coupon-->
+
+<!--group_coupon-->
+<div id="group_coupon" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal__title">
+                <span><b>انشاء صفحة</b></span>
+                <button type="button" class="close_modal btn" data-dismiss="modal">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal_body mt-3">
+                <form>
+                    <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs create_coupon_tabs " id="nav-tab1" role="tablist">
+                                <a class="default_link active" id="coupon_data_tab1" data-toggle="tab" href="#nav_coupon_data1" role="tab" aria-controls="nav_coupon_data1" aria-selected="true">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-list font14"></i>
+                                        <span class="ml-3 mr-3">بيانات الكوبون</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_includes_tab1" data-toggle="tab" href="#nav_coupon_includes1" role="tab" aria-controls="nav_coupon_includes1" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-folder font14"></i>
+                                        <span class="ml-3 mr-3">مشمول في الكوبون</span>
+                                    </div>
+                                </a>
+                                <a class="default_link" id="coupon_excludes_tab1" data-toggle="tab" href="#nav_coupon_excludes1" role="tab" aria-controls="nav_coupon_excludes1" aria-selected="false">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <i class="fa-solid fa-file-excel font14"></i>
+                                        <span class="ml-3 mr-3">مستثني من الكوبون</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent1">
+                            <div class="tab-pane fade show active" id="nav_coupon_data1" role="tabpanel" aria-labelledby="coupon_data_tab1">
+                                <div class="row mt-3 mb-3">
+                                    <div class="col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="اسم المجموعة">
+                                                <span class="input_icon"><i class="fa-solid fa-ticket-simple"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="يبدأ الكوبون بالاحرف: (5 أحرف انجليزية كحد أقصى)">
+                                                <span class="input_icon"><i class="fa-solid fa-ticket-simple"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="عدد الكوبونات في المجموعة">
+                                                <span class="input_icon"><i class="fa-solid fa-ticket-simple"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="input_select p-0 position-relative">
+                                            <select id="type_change1" class="niceSelect">
+                                                <option value="">نوع الخصم للعميل</option>
+                                                <option value="percent">نسبة من مجموع مشتريات العميل</option>
+                                                <option value="const">ملغ ثابت من مجموع مشتريات العميل</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_val d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة من مجموع مشتريات العميل">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 const_val d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="المبلغ الاقصي للتخفيض">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pt-2 pr-4 flatpickr flatpickr-input" type="text" placeholder="تاريخ نهاية التخفيض" readonly="readonly">
+                                                <span class="input_icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">مع شحن مجاني ؟</option>
+                                                <option value="">نعم</option>
+                                                <option value="">لا</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-truck"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input_select p-0 position-relative">
+                                            <select class="niceSelect">
+                                                <option value="">استثناء المنتجات المخفضة ؟</option>
+                                                <option value="">نعم</option>
+                                                <option value="">لا</option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-percent"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="الحد الأدني من المشتريات">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="عدد مرات الاستخدام للجميع">
+                                                <span class="input_icon"><i class="fa-solid fa-user-group"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="عدد مرات الاستخدام للعميل الواحد">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="mb-2"><b>كوبون تسويقي</b></span>
+                                                <div class="turn_switch">
+                                                    <input type="checkbox" class="float_input marketing_coupon">
+                                                    <span class="button_track">
+                                                        <span class="tracker_ball"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="font11">ادخل بيانات المسوّق والعمولة الخاصة به من المبيعات، كما يمكن مشاركة رابط الاحصائيات بعد إنشاء الكوبون</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row check_collapse_row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100 mb-0">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="number" placeholder="اسم الشخص">
+                                                <span class="input_icon"><i class="fa-solid fa-user"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="input_select p-0 position-relative">
+                                            <select id="typeComChange1" class="niceSelect">
+                                                <option value="">نوع العمولة للمسوق</option>
+                                                <option value="percent_order"> نسبة من اجمالي الطلب </option>
+                                                <option value="const_order"> مبلغ ثابت عن كل الطلب </option>
+                                            </select>
+                                            <span class="input_icon"><i class="fa-solid fa-bars"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_commission">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة العمولة">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="نسبة من اجمالي الطلب">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 const_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="مبلغ ثابت عن كل طلب">
+                                                <span class="input_icon"><i class="fa-solid fa-calculator"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="form_textarea">
+                                            <span class="input_icon"><i class="fa-solid fa-t"></i></span>
+                                            <textarea style="min-height: 60px;" type="text" placeholder="معلومات إضافية"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <span class="mb-2"><b>إخفاء إجمالي المبيعات</b></span>
+                                                <div class="turn_switch">
+                                                    <input type="checkbox" class="float_input">
+                                                    <span class="button_track">
+                                                        <span class="tracker_ball"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <span class="font11">إخفاء اجمالي المبيعات من صفحة احصائيات المسوق</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2 percent_order d-none">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="المبلغ الاقصي للعمولة">
+                                                <span class="input_icon"><i class="fa-solid fa-dollar-sign"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 percent_order d-none">
+                                        <div class="d-flex align-items-center">
+                                            <label class="check_label mb-0 ml-2 mr-2">
+                                                <input type="checkbox" class="d-none">
+                                                <div class="check_span"><i class="fas fa-check"></i></div>
+                                            </label>
+                                            <span>إظهار المبلغ الأقصى للعمولة للمسوقين</span>
+                                        </div>
+                                        <span class="font10">إظهار المبلغ الأقصى لللعمولة في نموذج مراسلة المسوقين بتفاصيل الكوبون</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav_coupon_includes1" role="tabpanel" aria-labelledby="coupon_includes_tab1">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">طرق الدفع المشمولة في الكوبون</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>جميع طرق الدفع</option>
+                                                <option value="">البطاقات الإتمانية</option>
+                                                <option value="">التحويل البنكي</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">تصنيفات مشمولة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label mb-1">منتجات مشمولة</label>
+                                            <span class="text-secondary url_created">يمكنك البحث في المنتجات الجاهزة التي لا تحتوي على خيارات</span>
+                                            <input type="text" placeholder="ابحث عن المنتج ...">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">مجموعة العملاء المشمولة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>العملاء الاكثر شرائا</option>
+                                                <option value="">عملاء اصحاب ولاء مرتفع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input mb-0">
+                                            <label class="position-relative w-100">
+                                                <input class="pl-4 pr-4 pt-0 pb-0" type="text" placeholder="aait@at.co">
+                                                <span class="input_icon"><i class="fa-solid fa-at"></i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>ميك اوفر 22 - باليت مجموعة ظلال العيون شدو 16 لون برو PR01</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>ميك اوفر 22 - باليت مجموعة ظلال العيون شدو 16 لون برو PR01</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav_coupon_excludes1" role="tabpanel" aria-labelledby="coupon_excludes_tab1">
+                                <div class="row">
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">تصنيفات مستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">ماركات مستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>مستلزمات اطفال</option>
+                                                <option value="">تبرع</option>
+                                                <option value="">كويلات</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label mb-1">منتجات مستثناة</label>
+                                            <input type="text" placeholder="ابحث عن المنتج ...">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2 mt-2">
+                                        <div class="form_input">
+                                            <label class="form_label">مجموعة العملاء المستثناة</label>
+                                            <select class="select2" multiple="multiple">
+                                                <option value="" selected>الفئة الذهبية</option>
+                                                <option value="">العملاء الاكثر شرائا</option>
+                                                <option value="">الفئة الماسية</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>بينفت - ماسكرا Bad gal</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2 mb-2 col__search">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <span>بينفت - ماسكرا Bad gal</span>
+                                            <a class="default_link remove_col_search" href=""><b>X</b></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="btn save_btn">حفظ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end group_coupon-->
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/select2.js"></script>
+<script src="js/d3-5.8.2.min.js"></script>
+<script src="js/flatpicker.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/c3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script src="charts/charts.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(document).on("change" , ".report__filter" , function (){
+        if (this.value == 'daily'){
+            $(".daily").removeClass("d-none");
+            $(".weekly").addClass("d-none");
+            $(".monthly").addClass("d-none");
+            $(".annual").addClass("d-none");
+        } else if (this.value == 'weekly'){
+            $(".daily").addClass("d-none");
+            $(".weekly").removeClass("d-none");
+            $(".monthly").addClass("d-none");
+            $(".annual").addClass("d-none");
+        } else if (this.value == 'monthly'){
+            $(".daily").addClass("d-none");
+            $(".weekly").addClass("d-none");
+            $(".monthly").removeClass("d-none");
+            $(".annual").addClass("d-none");
+        } else if (this.value == 'annual'){
+            $(".daily").addClass("d-none");
+            $(".weekly").addClass("d-none");
+            $(".monthly").addClass("d-none");
+            $(".annual").removeClass("d-none");
+        } else {
+            $(".daily").addClass("d-none");
+            $(".weekly").addClass("d-none");
+            $(".monthly").addClass("d-none");
+            $(".annual").addClass("d-none");
+        }
+    })
+
+    $(document).on("change" , ".typeComChange" , function (){
+        if (this.value == 'percent_order'){
+            $(".percent_order").removeClass("d-none")
+            $(".const_order").addClass("d-none")
+            $(".percent_commission").addClass("d-none")
+        } else if (this.value == 'const_order'){
+            $(".percent_order").addClass("d-none")
+            $(".const_order").removeClass("d-none")
+            $(".percent_commission").addClass("d-none")
+        }else {
+            $(".percent_order").addClass("d-none")
+            $(".const_order").addClass("d-none")
+            $(".percent_commission").removeClass("d-none")
+        }
+    })
+    $(document).on("change" , "#typeComChange1" , function (){
+        if (this.value == 'percent_order'){
+            $(".percent_order").removeClass("d-none")
+            $(".const_order").addClass("d-none")
+            $(".percent_commission").addClass("d-none")
+        } else if (this.value == 'const_order'){
+            $(".percent_order").addClass("d-none")
+            $(".const_order").removeClass("d-none")
+            $(".percent_commission").addClass("d-none")
+        }else {
+            $(".percent_order").addClass("d-none")
+            $(".const_order").addClass("d-none")
+            $(".percent_commission").removeClass("d-none")
+        }
+    })
+    $(document).on("change" , "#typeComChange" , function (){
+        if (this.value == 'percent_order'){
+            $(".percent_order").removeClass("d-none")
+            $(".const_order").addClass("d-none")
+            $(".percent_commission").addClass("d-none")
+        } else if (this.value == 'const_order'){
+            $(".percent_order").addClass("d-none")
+            $(".const_order").removeClass("d-none")
+            $(".percent_commission").addClass("d-none")
+        }else {
+            $(".percent_order").addClass("d-none")
+            $(".const_order").addClass("d-none")
+            $(".percent_commission").removeClass("d-none")
+        }
+    })
+    $(document).on("change" , "#type_change" , function (){
+        if (this.value == 'percent'){
+            $(".percent_val").removeClass("d-none")
+            $(".const_val").removeClass("d-none")
+        } else if (this.value == 'const'){
+            $(".const_val").removeClass("d-none")
+            $(".percent_val").addClass("d-none")
+        }else {
+            $(".percent_val").addClass("d-none")
+            $(".const_val").addClass("d-none")
+        }
+    })
+    $(document).on("change" , "#type_change1" , function (){
+        if (this.value == 'percent'){
+            $(".percent_val").removeClass("d-none")
+            $(".const_val").removeClass("d-none")
+        } else if (this.value == 'const'){
+            $(".const_val").removeClass("d-none")
+            $(".percent_val").addClass("d-none")
+        }else {
+            $(".percent_val").addClass("d-none")
+            $(".const_val").addClass("d-none")
+        }
+    })
+
+    $(document).on("change" , ".type_change" , function (){
+        if (this.value == 'percent'){
+            $(".percent_val").removeClass("d-none")
+            $(".const_val").removeClass("d-none")
+        } else if (this.value == 'const'){
+            $(".const_val").removeClass("d-none")
+            $(".percent_val").addClass("d-none")
+        }else {
+            $(".percent_val").addClass("d-none")
+            $(".const_val").addClass("d-none")
+        }
+    })
+</script>
+</body>
+</html>

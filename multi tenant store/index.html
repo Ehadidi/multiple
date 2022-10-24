@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="css/styleEn.css"> -->
+    <title>multi tenant store</title>
+</head>
+<body>
+<div class="loader">
+    <img src="imgs/logo_comp.jpeg" alt="logo">
+</div>
+<div class="nav-layer"></div>
+
+
+<!--start header-->
+<section class="header">
+    <div class="mainHead">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo-head">
+                    <a class="defultlink" href="index.html"><img width="40px" src="imgs/logo_comp.jpeg" alt="logo head"></a>
+                </div>
+                <div class="navbar">
+                    <ul class="mb-0">
+                        <li class="d-lg-none d-block"><a class="defultlink" href="index.html"><img width="40px" src="imgs/logo_comp.jpeg" alt="logo head"></a></li>
+                        <li><a class="defultlink" href="index.html">الرئيسيه</a></li>
+                        <li><a class="defultlink" href="product-section.html">منتجات</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="default_link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    الاقسام
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another</a>
+                                    <a class="dropdown-item" href="#">Something</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="defultlink" href="contact-us.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="userhead">
+<!--                    <a class="defultlink M_end_10 d-flex align-items-center" href="login.html">-->
+<!--                        <img width="20px" class="M_end_10" src="images/usericon.png" alt="">-->
+<!--                        <p class="mb-0">تسجيل الدخول / جديد</p>-->
+<!--                    </a>-->
+                    <a class="defultlink M_end_10 d-flex align-items-center" href="my-account.html">
+                        <img width="20px" class="M_end_10" src="images/usericon.png" alt="">
+                        <p class="mb-0">اسم صاحب الحساب</p>
+                    </a>
+                    <a class="M_end_10" href="favorite.html"><img width="20px" src="images/favorit.png" alt=""></a>
+                    <a class="defultlink M_end_10" href="cart.html">
+                        <div class="position-relative">
+                            <img width="20px" src="images/carticon.png" alt="">
+                            <span class="patch">1</span>
+                        </div>
+                    </a>
+                    <a class="defultlink M_end_10" href="">
+                        <div class="lang-link">
+                            <i class="fas fa-globe"></i>
+                            <p>اللغة الانجليزية</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="bars d-lg-none d-block mb-2 ml-3 mr-3" style="z-index: 999;">
+                  <span class="bar-1"></span>
+                  <span class="bar-2"></span>
+                  <span class="bar-3"></span>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="carusel-div1 mb-2">
+      <div class="owl-carousel owl-theme">
+        <div style="background: url('imgs/photo-of-people.png');background-position: center;height: 400px;background-size: auto;" class="item">
+          <div class="sliderLayer d-flex align-items-center">
+            <div class="container overflow-hidden">
+              <div style="float: right;" class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">
+                <h4 class="mb-0">هدايا عيد الأم</h4>
+                <h6 class="mt-2 mb-3">تصل الي 70%</h6>
+                <a class="defultlink btn main_btn" href="product-section.html">تسوق الان</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background: url('imgs/offerpic.webp');background-position: center;height: 400px;background-size: auto;" class="item">
+          <div class="sliderLayer d-flex align-items-center">
+            <div class="container overflow-hidden">
+              <div style="float: right;" class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">
+                <h4 class="mb-0">هدايا عيد الأم</h4>
+                <h6 class="mt-2 mb-3">تصل الي 70%</h6>
+                <a class="defultlink btn main_btn" href="product-section.html">تسوق الان</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background: url('imgs/photo-of-people.png');background-position: center;height: 400px;background-size: auto;" class="item">
+          <div class="sliderLayer d-flex align-items-center">
+            <div class="container overflow-hidden">
+              <div style="float: right;" class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">
+                <h4 class="mb-0">هدايا عيد الأم</h4>
+                <h6 class="mt-2 mb-3">تصل الي 70%</h6>
+                <a class="defultlink btn main_btn" href="product-section.html">تسوق الان</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    </div>
+</section>
+
+    <!--start content-->
+    <div class='content'>
+
+          <!--start about Us-->
+          <section class="aboutUs mt-5 mb-5">
+            <div class="container mt-4 mb-4">
+              <div class="intoSite">
+                <h3 class="spic-title main_color2">اهلا</h3>
+                <h3 class="spic-title main_color2">بك في متجرنا</h3>
+                <p class="definTxt">
+                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                  إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص
+                </p>
+              </div>
+            </div>
+            <div class="carusel-div2 mt-2 mb-2">
+              <div class="owl-carousel owl-theme">
+                <div style="background: url('img/pexels-anna-shvets-1.png');background-position: center;height: 250px; " class="item">
+                  <div class="sliderLayer d-flex align-items-center">
+                    <div class="container overflow-hidden">
+                      <div class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">
+                        <h4>خواتم</h4>
+                        <p class="mb-0" style="text-align: center;">هذا النص هو مثال لنص يمكن ايستبدل بنص في نفس المساحه</p>
+                        <a class="default_link btn sliderBtn mt-3" href="product-section.html"><span>تسوق الان</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="background: url('img/pexels-anna-shvets-1.png');background-position: center;height: 250px;" class="item">
+                  <div class="sliderLayer d-flex align-items-center">
+                    <div class="container overflow-hidden">
+                      <div class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">
+                        <h4>خواتم</h4>
+                        <p class="mb-0" style="text-align: center;">هذا النص هو مثال لنص يمكن ايستبدل بنص في نفس المساحه</p>
+                        <a class="default_link btn sliderBtn mt-3" href="product-section.html"><span>تسوق الان</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="background: url('img/pexels-anna-shvets-1.png');background-position: center;height: 250px;" class="item">
+                  <div class="sliderLayer d-flex align-items-center">
+                    <div class="container overflow-hidden">
+                      <div class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">
+                        <h4>خواتم</h4>
+                        <p class="mb-0" style="text-align: center;">هذا النص هو مثال لنص يمكن ايستبدل بنص في نفس المساحه</p>
+                        <a class="default_link btn sliderBtn mt-3" href="product-section.html"><span>تسوق الان</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="background: url('img/pexels-anna-shvets-1.png');background-position: center;height: 250px;" class="item">
+                  <div class="sliderLayer d-flex align-items-center">
+                    <div class="container overflow-hidden">
+                      <div class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">
+                        <h4>خواتم</h4>
+                        <p class="mb-0" style="text-align: center;">هذا النص هو مثال لنص يمكن ايستبدل بنص في نفس المساحه</p>
+                          <a class="default_link btn sliderBtn mt-3" href="product-section.html"><span>تسوق الان</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--start new Product-->
+          <section class="newProduct mt-5 mb-5">
+            <div class="container mt-4 mb-4">
+                <h4 class="normaltite">المنتجات الجديده</h4>
+                <div class="row mt-3 mb-3">
+                    <div class="mt-3 mb-3 col-lg-3 col-md-4 col-sm-6 col-12 overflow-hidden">
+                        <div class="itemOffered mixitgrad wow fadeInDown">
+                            <div class="defultlink productlink">
+                                <div class="mixtLayer">
+                                    <a href="cart.html" class="btnOption default"><img alt="act icon" src="images/web icon/addcart.png"></a>
+                                    <a href="Product-details.html" class="btnOption default"><img alt="act icon" src="images/web icon/view.png"></a>
+                                    <a href="favorite.html" class="btnOption default"><img alt="act icon" src="images/web icon/love.png"></a>
+                                </div>
+                            </div>
+                            <img class="mixtimg" src="images/pexels-the-glorious-studio-7541807.jpg" alt="product img">
+                            <h6 class="mixtitle"><b>مجموعة الحب</b></h6>
+                            <p class="mb-0 font12"><b>هذا النص هو مثال لنص يمكن ان</b></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="oldPrice mr-3 ml-3">9000 رس</span>
+                                <span class="mixtprice">6000 رس</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-3 col-lg-3 col-md-4 col-sm-6 col-12 overflow-hidden">
+                        <div class="itemOffered mixitgrad wow fadeInDown">
+                            <div class="defultlink productlink">
+                                <div class="mixtLayer">
+                                    <a href="cart.html" class="btnOption default"><img alt="act icon" src="images/web icon/addcart.png"></a>
+                                    <a href="Product-details.html" class="btnOption default"><img alt="act icon" src="images/web icon/view.png"></a>
+                                    <a href="favorite.html" class="btnOption default"><img alt="act icon" src="images/web icon/love.png"></a>
+                                </div>
+                            </div>
+                            <img class="mixtimg" src="images/pexels-the-glorious-studio-7541807.jpg" alt="product img">
+                            <h6 class="mixtitle"><b>مجموعة الحب</b></h6>
+                            <p class="mb-0 font12"><b>هذا النص هو مثال لنص يمكن ان</b></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="oldPrice mr-3 ml-3">9000 رس</span>
+                                <span class="mixtprice">6000 رس</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-3 col-lg-3 col-md-4 col-sm-6 col-12 overflow-hidden">
+                        <div class="itemOffered mixitgrad wow fadeInDown">
+                            <div class="defultlink productlink">
+                                <div class="mixtLayer">
+                                    <a href="cart.html" class="btnOption default"><img alt="act icon" src="images/web icon/addcart.png"></a>
+                                    <a href="Product-details.html" class="btnOption default"><img alt="act icon" src="images/web icon/view.png"></a>
+                                    <a href="favorite.html" class="btnOption default"><img alt="act icon" src="images/web icon/love.png"></a>
+                                </div>
+                            </div>
+                            <img class="mixtimg" src="images/pexels-the-glorious-studio-7541807.jpg" alt="product img">
+                            <h6 class="mixtitle"><b>مجموعة الحب</b></h6>
+                            <p class="mb-0 font12"><b>هذا النص هو مثال لنص يمكن ان</b></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="oldPrice mr-3 ml-3">9000 رس</span>
+                                <span class="mixtprice">6000 رس</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-3 col-lg-3 col-md-4 col-sm-6 col-12 overflow-hidden">
+                        <div class="itemOffered mixitgrad wow fadeInDown">
+                            <div class="defultlink productlink">
+                                <div class="mixtLayer">
+                                    <a href="cart.html" class="btnOption default"><img alt="act icon" src="images/web icon/addcart.png"></a>
+                                    <a href="Product-details.html" class="btnOption default"><img alt="act icon" src="images/web icon/view.png"></a>
+                                    <a href="favorite.html" class="btnOption default"><img alt="act icon" src="images/web icon/love.png"></a>
+                                </div>
+                            </div>
+                            <img class="mixtimg" src="images/pexels-the-glorious-studio-7541807.jpg" alt="product img">
+                            <h6 class="mixtitle"><b>مجموعة الحب</b></h6>
+                            <p class="mb-0 font12"><b>هذا النص هو مثال لنص يمكن ان</b></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="oldPrice mr-3 ml-3">9000 رس</span>
+                                <span class="mixtprice">6000 رس</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-3 col-lg-3 col-md-4 col-sm-6 col-12 overflow-hidden">
+                        <div class="itemOffered mixitgrad wow fadeInDown">
+                            <div class="defultlink productlink">
+                                <div class="mixtLayer">
+                                    <a href="cart.html" class="btnOption default"><img alt="act icon" src="images/web icon/addcart.png"></a>
+                                    <a href="Product-details.html" class="btnOption default"><img alt="act icon" src="images/web icon/view.png"></a>
+                                    <a href="favorite.html" class="btnOption default"><img alt="act icon" src="images/web icon/love.png"></a>
+                                </div>
+                            </div>
+                            <img class="mixtimg" src="images/pexels-the-glorious-studio-7541807.jpg" alt="product img">
+                            <h6 class="mixtitle"><b>مجموعة الحب</b></h6>
+                            <p class="mb-0 font12"><b>هذا النص هو مثال لنص يمكن ان</b></p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="oldPrice mr-3 ml-3">9000 رس</span>
+                                <span class="mixtprice">6000 رس</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="product-section.html" class="btn main_btn"> <b>المزيد</b></a>
+                </div>
+            </div>
+          </section>
+
+<!--          &lt;!&ndash;start ad Discount&ndash;&gt;-->
+<!--          <section class="adDiscount mt-5 mb-5">-->
+<!--            <div class="carusel-div3 mt-2 mb-2">-->
+<!--              <div class="owl-carousel owl-theme">-->
+<!--                <div style="background: url('images/pexels-the-glorious-studio-5370647.jpg');background-position: center;background-size: cover; height: 300px;" class="item">-->
+<!--                  <div class="sliderLayer d-flex align-items-center">-->
+<!--                    <div class="container overflow-hidden">-->
+<!--                      <div class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">-->
+<!--                        <h5 class="text-white">تألقي مع اساور الماس</h5>-->
+<!--                        <h6 class="text-white">تصل الي 70%</h6>-->
+<!--                        <a class="default_link btn sliderBtn mt-3" href="product-section.html">تسوق الان</a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div style="background: url('images/pexels-the-glorious-studio-5442465.jpg');background-position: center;background-size: cover; height: 300px;" class="item">-->
+<!--                  <div class="sliderLayer d-flex align-items-center">-->
+<!--                    <div class="container overflow-hidden">-->
+<!--                      <div class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">-->
+<!--                        <h5 class="text-white">تألقي مع اساور الماس</h5>-->
+<!--                        <h6 class="text-white">تصل الي 70%</h6>-->
+<!--                        <a class="default_link btn sliderBtn mt-3" href="product-section.html">تسوق الان</a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                <div style="background: url('images/pexels-axecop-2697616.jpg');background-position: center;background-size: cover; height: 300px;" class="item">-->
+<!--                  <div class="sliderLayer d-flex align-items-center">-->
+<!--                    <div class="container overflow-hidden">-->
+<!--                      <div class="d-flex flex-column justify-content-center align-items-center wow fadeInDown">-->
+<!--                        <h5 class="text-white">تألقي مع اساور الماس</h5>-->
+<!--                        <h6 class="text-white">تصل الي 70%</h6>-->
+<!--                        <a class="default_link btn sliderBtn mt-3" href="product-section.html">تسوق الان</a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--          </section>-->
+
+          <!--start benefits-->
+          <section class="benefits mt-5 mb-5">
+            <div class="container mt-4 mb-4 overflow-hidden">
+              <h5 class="normaltite font17 wow fadeInDown">اخر الأخبار</h5>
+              <p class="mt-3 mb-4 main_color2 text-center font14 wow fadeInDown">سجل لتحصل علي صحيفه الاخبار</p>
+              <form class="send-mail wow fadeInDown">
+                <input type="email" required>
+                <button class="btn main_btn mt-3 mb-3">إرسال</button>
+              </form>
+              <h5 class="normaltite wow fadeInDown">مزايا متجر المتحده</h5>
+              <div class="mt-5 mb-5 row">
+                <div class="col-lg-4 col-sm-6 col-12 overflow-hidden">
+                  <div class="about wow fadeInDown">
+                    <span class="infoimg"><img alt="benefits icon" src="img/quality.png"></span>
+                    <h5>الجودة</h5>
+                    <p class="mb-1">جميع منتجاتنا اصليه و هي مصنة خصيصا لك</p>
+                    <p class="mb-1"> و نضمن لك اعلي جوده بأفضل سعر</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 overflow-hidden">
+                  <div class="about wow fadeInDown">
+                    <span class="infoimg"><img alt="benefits icon" src="img/customerservis.png"></span>
+                    <h5>خدمة العملاء</h5>
+                    <p class="mb-1">جميع منتجاتنا اصليه و هي مصنة خصيصا لك</p>
+                    <p class="mb-1"> و نضمن لك اعلي جوده بأفضل سعر</p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-12 overflow-hidden">
+                  <div class="about wow fadeInDown">
+                    <span class="infoimg"><img alt="benefits icon" src="img/ounst.png"></span>
+                    <h5>الشفافية</h5>
+                    <p class="mb-1">جميع منتجاتنا اصليه و هي مصنة خصيصا لك</p>
+                    <p class="mb-1"> و نضمن لك اعلي جوده بأفضل سعر</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    </div>
+
+<!--start footer-->
+<footer class="mt-4">
+  <div class="container pt-4 pb-4">
+    <div class="row">
+      <div class="col-md-8 col-12 d-lg-block d-none">
+        <h4>مجموعة المتحده</h4>
+        <div class="footerLinks">
+          <div class="d-flex flex-column">
+            <a class="default_link" href="index.html"><span class="fotlink">_ الرئيسية</span></a>
+            <a class="default_link" href="contact-us.html"><span class="fotlink">_ اتصل بنا</span></a>
+            <a class="default_link" href="terms.html"><span class="fotlink">_ الشروط و الأحكام</span></a>
+          </div>
+          <div class="d-flex flex-column">
+            <a class="default_link" href="cart.html"><span class="fotlink">_ السلة</span></a>
+            <a class="default_link" href="favorite.html"><span class="fotlink">_ المفضلة</span></a>
+            <a class="default_link" href="my-addresses.html"><span class="fotlink">_ عناويني</span></a>
+          </div>
+          <div class="d-flex flex-column">
+            <a class="default_link" href="offers.html"><span class="fotlink">_ العروض</span></a>
+            <a class="default_link" href="order.html"><span class="fotlink">_ طلباتي</span></a>
+            <a class="default_link" href="compare.html"><span class="fotlink">_ مقارنة المنتجات</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <h5 class="text-center">روابط تطبيقاتنا</h5>
+        <div class="appLinks">
+          <a class="default_link" href=""><img alt="store icon" class="mt-2 mb-2" src="img/googleplay.png"></a>
+          <a class="default_link" href=""><img alt="store icon" class="mt-2 mb-2" src="img/appstor.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lastfooter pt-4 pb-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 col-sm-6 col-12 d-lg-block d-none">
+          <div class="logofoot">
+            <img src="imgs/logo_comp.jpeg">
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="social">
+            <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-twitter"></i></a>
+            <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-instagram"></i></a>
+            <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="copyRight">جميع الحقوق محفوظه -المتحده 2022 </p>
+        </div>
+        <div class="col-md-4 col-sm-6 col-12 d-lg-block d-none">
+          <div class="pay-way">
+            <img src="imgs/mada.png">
+            <img src="imgs/visa.png">
+            <img src="imgs/mastercard.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<div class="bottom-nav d-lg-none d-flex">
+  <div class="bottom-tabs">
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+            <i class="fas fa-user-alt"></i>
+              <span>الشخصية</span>
+          </div>
+      </a>
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+              <i class="fas fa-shopping-cart"></i>
+              <span>السله الخاصه بك</span>
+          </div>
+      </a>
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+            <i class="fas fa-heart"></i>
+              <span>المفضلة</span>
+          </div>
+      </a>
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+            <i class="fas fa-compress-arrows-alt"></i>
+              <span>المقارنة</span>
+          </div>
+      </a>
+  </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script>
+$('.carusel-div1 .owl-carousel').owlCarousel({
+    rtl:true,
+    // loop:true,
+    nav:false,
+    items:1,
+    autoplay:true,
+    animateOut: 'fadeOut',
+    // animateIn:true,
+    smartSpeed :1000,
+    // slideTransition:"1s",
+});
+// $('.carusel-div3 .owl-carousel').owlCarousel({
+//     rtl:true,
+//     loop:true,
+//     nav:false,
+//     items:1,
+//     autoplay:true,
+//     animateOut: 'fadeOut',
+//     animateIn:true,
+//     smartSpeed :1000,
+//     // slideTransition:"1s",
+// });
+$('.carusel-div2 .owl-carousel').owlCarousel({
+    rtl:true,
+    loop:true,
+    nav:false,
+    items:4,
+    autoplay:true,
+    // animateOut: 'fadeOut',
+    // animateIn:true,
+    smartSpeed :1000,
+    // slideTransition:"1s",
+    responsive:{
+        0:{
+              items:1
+          },
+        700:{
+            items:2
+        },
+        900:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+
+var $owl = $('.owl-carousel');
+
+$owl.on('initialized.owl.carousel changed.owl.carousel resized.owl.carousel', function(e) {
+    $(e.target).toggleClass('hide-owl-next', e.item.index >= e.item.count - e.page.size);
+    $(e.target).toggleClass('hide-owl-prev', e.item.index == 0);
+});
+</script>
+</body>
+</html>

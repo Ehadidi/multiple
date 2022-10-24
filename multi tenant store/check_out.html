@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- for cart & check out page -->
+    <link rel="stylesheet" href="css/cart.css">
+   <!-- <link rel="stylesheet" href="css/styleEn.css"> -->
+    <title>المفضلة</title>
+</head>
+<body>
+<div class="loader">
+    <img src="imgs/logo_comp.jpeg" alt="logo">
+</div>
+<div class="nav-layer"></div>
+
+
+<!--start header-->
+<section class="header">
+    <div class="mainHead">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo-head">
+                    <a class="defultlink" href="index.html"><img width="40px" src="imgs/logo_comp.jpeg" alt="logo head"></a>
+                </div>
+                <div class="navbar">
+                    <ul class="mb-0">
+                        <li class="d-lg-none d-block"><a class="defultlink" href="index.html"><img width="40px" src="imgs/logo_comp.jpeg" alt="logo head"></a></li>
+                        <li><a class="defultlink" href="index.html">الرئيسيه</a></li>
+                        <li><a class="defultlink" href="product-section.html">منتجات</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="default_link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    الاقسام
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another</a>
+                                    <a class="dropdown-item" href="#">Something</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a class="defultlink" href="contact-us.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="userhead">
+                    <a class="defultlink M_end_10 d-flex align-items-center" href="login.html">
+                        <img width="20px" class="M_end_10" src="images/usericon.png" alt="">
+                        <p class="mb-0">تسجيل الدخول / جديد</p>
+                    </a>
+                    <a class="M_end_10" href="favorite.html"><img width="20px" src="images/favorit.png" alt=""></a>
+                    <a class="defultlink M_end_10" href="cart.html">
+                        <div class="position-relative">
+                            <img width="20px" src="images/carticon.png" alt="">
+                            <span class="patch">1</span>
+                        </div>
+                    </a>
+                    <a class="defultlink M_end_10" href="">
+                        <div class="lang-link">
+                            <i class="fas fa-globe"></i>
+                            <p>اللغة الانجليزية</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="bars d-lg-none d-block mb-2 ml-3 mr-3" style="z-index: 999;">
+                    <span class="bar-1"></span>
+                    <span class="bar-2"></span>
+                    <span class="bar-3"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--start content-->
+<div class='content'>
+  <section class="newProduct">
+    <div class="container mt-4 mb-4">
+        <h5 class="text-center">تأكيد الشراء</h5>
+        <div class="wow fadeInLeft mt-3 mb-3">
+            <form class="payment-form">
+                <div class="selectPay">
+                    <div class="position-relative">
+                        <input id="cash" class="checkk" name="payWay" type="radio">
+                        <label class="font13">الدفع عند الأستلام</label>
+                    </div>
+                    <div class="position-relative">
+                        <input id="credit" class="checkk" name="payWay" type="radio">
+                        <label class="font13">الدفع بالبطاقة الالكترونية</label>
+                    </div>
+                    <div class="position-relative">
+                        <input id="bank" class="checkk" name="payWay" type="radio">
+                        <label class="font13">الدفع بالتحويل البنكي</label>
+                    </div>
+                </div>
+                <div id="credit-inputs" class="credit-inputs row mt-5">
+                    <div class="col-12">
+                        <div class="input_select p-0">
+                            <select class="niceSelect">
+                                <option value="" disabled selected>الجنس</option>
+                                <option value="">ذكر</option>
+                                <option value="">انثي</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        رقم الكارت
+                        <input class="payInput" type="number">
+                    </div>
+                    <div class="col-12">
+                        تاريخ الأنتهاء
+                        <input class="payInput" type="date">
+                    </div>
+                    <div class="col-12">
+                        CVV
+                        <input class="payInput" type="number">
+                    </div>
+                </div>
+                <div id="bank-inputs">
+                    <div class="row">
+                        <div class="col-md-6 mt-3 overflow-hidden">
+                            <div class="our-banks">
+                                <img src="img/Banque du Caire-1.png">
+                                <div class="d-flex flex-column ml-2 mr-2">
+                                    <h5>بنك مصر</h5>
+                                    <h5>sd5488956321474587965489641147585214</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 overflow-hidden">
+                            <div class="our-banks">
+                                <img src="img/Banque du Caire-1.png">
+                                <div class="d-flex flex-column ml-2 mr-2">
+                                    <h5>بنك مصر</h5>
+                                    <h5>sd5488956321474587965489641147585214</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 overflow-hidden">
+                            <div class="our-banks">
+                                <img src="img/Banque du Caire2.png">
+                                <div class="d-flex flex-column ml-2 mr-2">
+                                    <h5>بنك مصر</h5>
+                                    <h5>sd5488956321474587965489641147585214</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-3 overflow-hidden">
+                            <div class="our-banks">
+                                <img src="img/Banque du Caire2.png">
+                                <div class="d-flex flex-column ml-2 mr-2">
+                                    <h5>بنك مصر</h5>
+                                    <h5>sd5488956321474587965489641147585214</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mt-5 mb-4" style="color: 1d0f18;">بيانات تحولك البنكي</h3>
+                    <div class="bank-inputs row mt-5">
+                        <label class="col-12">
+                            اسم صاحب التحويل
+                            <input class="trns-inp" type="text" placeholder="توماس شيلبي">
+                        </label>
+                        <label class="col-12">
+                            اسم البنك المحول منه
+                            <input class="trns-inp" type="text" placeholder="بنك فيصل">
+                        </label>
+                        <label class="col-12">
+                            صورة الحوالة البنكيه
+                            <input class="trns-inp image" type="file" placeholder="ارفق صورة">
+                        </label>
+                        <img src="" style="width: 50%; border-radius: 15px; border: 0;" class="img-thumbnail image-preview" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row mt-3 mb-3 overflow-hidden">
+            <div class="col-md-6 col-12 mt-3">
+                <div class="adreesCard wow fadeInDown">
+                    <span class="font14">اسم العنوان : <span class="text-dark fontBold">العمل</span></span>
+                    <div class="d-flex flex-column mt-2 mb-2">
+                        <p class="font12 mb-1 mt-1">ش مجمع المحاكم امام مدينة مبارك المنصورة , مصر الرقم البريدي 369</p>
+                        <p class="font12 mb-1 mt-1">0102478524(20)</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="font14 fontBold mb-2 d-block">الموقع</span>
+                        <p class="font12 mb-0">
+                            <img src="images/web icon/location-icon.png">
+                            الدقهلية, المنصورة (قسم 2) ,المنصورة ,مصر
+                        </p>
+                    </div>
+                    <span class="selectLocation"> استخدام </span>
+                    <input name="checkRdio" class="flot-inpt" type="radio"> 
+                </div>
+            </div>
+            <div class="col-md-6 col-12 mt-3">
+                <div class="adreesCard wow fadeInDown">
+                    <span class="font14">اسم العنوان : <span class="text-dark fontBold">العمل</span></span>
+                    <div class="d-flex flex-column mt-2 mb-2">
+                        <p class="font12 mb-1 mt-1">ش مجمع المحاكم امام مدينة مبارك المنصورة , مصر الرقم البريدي 369</p>
+                        <p class="font12 mb-1 mt-1">0102478524(20)</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="font14 fontBold mb-2 d-block">الموقع</span>
+                        <p class="font12 mb-0">
+                            <img src="images/web icon/location-icon.png">
+                            الدقهلية, المنصورة (قسم 2) ,المنصورة ,مصر
+                        </p>
+                    </div>
+                    <span class="selectLocation"> استخدام </span>
+                    <input name="checkRdio" class="flot-inpt" type="radio"> 
+                </div>
+            </div>
+            <div class="col-md-6 col-12 mt-3">
+                <a id="location-change" class="defultlink font13 main_color fontBold" href="" data-toggle="modal" data-target="#add_address">
+                    <span>اضافة عنوان جديد</span>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col-12 mt-2 mb-2 overflow-hidden">
+                <div class="totals wow fadeInRight">
+                    <div class="totals-item">
+                        <div class="totals-value" id="cart-subtotal">2504</div>
+                        <span>الاجمالي</span>
+                    </div>
+                    <div class="totals-item">
+                        <div class="totals-value" id="cart-tax">0</div>
+                        <span>الضريبة (5%)</span>
+                    </div>
+                    <div class="totals-item">
+                        <div class="totals-value" id="cart-shipping">0</div>
+                        <span>الشحن</span>
+                    </div>
+                    <div class="totals-item totals-item-total">
+                        <div class="totals-value" id="cart-total">0</div>
+                        <span>المبلغ الكلي</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="checkout btn main_btn">إتمام الشراء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</div>
+
+<!--start footer-->
+<footer class="mt-4">
+    <div class="container pt-4 pb-4">
+        <div class="row">
+            <div class="col-md-8 col-12 d-lg-block d-none">
+                <h4>مجموعة المتحده</h4>
+                <div class="footerLinks">
+                    <div class="d-flex flex-column">
+                        <a class="default_link" href="index.html"><span class="fotlink">_ الرئيسية</span></a>
+                        <a class="default_link" href="contact-us.html"><span class="fotlink">_ اتصل بنا</span></a>
+                        <a class="default_link" href="terms.html"><span class="fotlink">_ الشروط و الأحكام</span></a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a class="default_link" href="cart.html"><span class="fotlink">_ السلة</span></a>
+                        <a class="default_link" href="favorite.html"><span class="fotlink">_ المفضلة</span></a>
+                        <a class="default_link" href="my-addresses.html"><span class="fotlink">_ عناويني</span></a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a class="default_link" href="offers.html"><span class="fotlink">_ العروض</span></a>
+                        <a class="default_link" href="order.html"><span class="fotlink">_ طلباتي</span></a>
+                        <a class="default_link" href="compare.html"><span class="fotlink">_ مقارنة المنتجات</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <h5 class="text-center">روابط تطبيقاتنا</h5>
+                <div class="appLinks">
+                    <a class="default_link" href=""><img alt="store icon" class="mt-2 mb-2" src="img/googleplay.png"></a>
+                    <a class="default_link" href=""><img alt="store icon" class="mt-2 mb-2" src="img/appstor.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lastfooter pt-4 pb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-6 col-12 d-lg-block d-none">
+                    <div class="logofoot">
+                        <img src="imgs/logo_comp.jpeg">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="social">
+                        <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="default_link font17 ml-2 mr-2" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p class="copyRight">جميع الحقوق محفوظه -المتحده 2022 </p>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12 d-lg-block d-none">
+                    <div class="pay-way">
+                        <img src="imgs/mada.png">
+                        <img src="imgs/visa.png">
+                        <img src="imgs/mastercard.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="bottom-nav d-lg-none d-flex">
+  <div class="bottom-tabs">
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+            <i class="fas fa-user-alt"></i>
+              <span>الشخصية</span>
+          </div>
+      </a>
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+              <i class="fas fa-shopping-cart"></i>
+              <span>السله الخاصه بك</span>
+          </div>
+      </a>
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+            <i class="fas fa-heart"></i>
+              <span>المفضلة</span>
+          </div>
+      </a>
+      <a class="defultlink" href="">
+          <div class="bottom-tab">
+            <i class="fas fa-compress-arrows-alt"></i>
+              <span>المقارنة</span>
+          </div>
+      </a>
+  </div>
+</div>
+
+<div id="add_address" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div style="width:100%; height: 400px;" id='map'></div>
+        <div class="modal-footer">
+            <button type="button" class="btn main_btn">تأكيد</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn3NtsJ5lgHSIxUJ4AuqAMm2RXldDDjN8&libraries=places&language=ar"></script>
+<script src="js/location-picker.js"></script>
+<script src="js/main.js"></script>
+<!-- for cart & check out page -->
+<script src="js/c"></script>
+<script type="text/javascript">  new WOW().init(); </script>
+<script>
+    $(document).ready(function(){
+    $("#credit").on("change" , function(){
+        if($(this).is(':checked')){
+            $("#credit-inputs").addClass("appear");
+            $("#bank-inputs").removeClass("appear");
+        }else{
+            $("#credit-inputs").removeClass("appear");
+        }
+    });
+    $("#bank").on("change" , function(){
+        if($(this).is(':checked')){
+            $("#bank-inputs").addClass("appear");
+            $("#credit-inputs").removeClass("appear");
+        }else{
+            $("#bank-inputs").removeClass("appear");
+        }
+    })
+    $("#cach").on("change" , function(){
+            $("#bank-inputs").addClass("d-none");
+            $("#credit-inputs").addClass("d-none");
+     })
+    })
+</script>
+<script>
+    var latlng = new google.maps.LatLng(35.137879, -82.836914);
+    var map = new google.maps.Map(document.getElementById('map_canvas'), {
+        zoom: 11,
+        center: new google.maps.LatLng(35.137879, -82.836914),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var myMarker = new google.maps.Marker({
+        position: new google.maps.LatLng(47.651968, 9.478485),
+        draggable: true
+    });
+
+    var geocoder = new google.maps.Geocoder();
+    google.maps.event.addListener(myMarker, 'dragend', function (event) {
+        geocoder.geocode({'latLng': latlng}, function(results, status) {
+            if (status === 'OK') {
+                console.log(results)
+                document.getElementById('current').innerHTML = '<input id="address" class="location">' + results[1].formatted_address +'>';
+            }
+        });
+    });
+
+    google.maps.event.addListener(myMarker, 'dragstart', function(evt) {
+    });
+
+    map.setCenter(myMarker.position);
+    myMarker.setMap(map);
+</script>
+<script type="text/javascript">
+    $("#location-change").on('click',function(){
+        $('#map').locationpicker({
+            inputBinding: {
+                latitudeInput: $("#lat"),
+                longitudeInput: $("#lng"),
+                locationNameInput: $("#address")
+            },
+        });
+        navigator.geolocation.getCurrentPosition(function(position) {
+            $('#map').locationpicker('location', {
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                inputBinding: {
+                    latitudeInput: $("#lat"),
+                    longitudeInput: $("#lng"),
+                    locationNameInput: $("#address")
+                },
+            });
+        });
+    })
+
+</script>
+<script>
+    $(".flot-inpt").on("change" , function(){
+        if ($('.flot-inpt').is(':checked')){
+            $(".flot-inpt").parent(".adreesCard").removeClass("choose").find(".selectLocation").html(`استخدام`);
+            $(".flot-inpt").parent(".adreesCard").find(".selected1").removeClass("true");
+            $(".flot-inpt").parent(".adreesCard").find(".selectLocation").removeClass("change");
+            $(this).parent(".adreesCard").addClass("choose").find(".selectLocation").html(`<i class="fas fa-check-double main_color font15"></i>`);
+            $(this).parent(".adreesCard").find(".selected1").addClass("true");
+            $(this).parent(".adreesCard").find(".selectLocation").addClass("change");
+        }
+    })
+</script>
+</body>
+</html>
